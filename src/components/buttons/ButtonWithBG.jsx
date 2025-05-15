@@ -9,7 +9,6 @@ import styles from './styles/ButtonWithBG.module.css';
  * @param {string} rounded - Tailwind border radius type (e.g., 'full', 'lg').
  * @param {function} onclick - Callback function triggered when the button is clicked.
  */
-
 function ButtonWithBG({ label, background, rounded, onclick }) { //Pass background as 1 or 0 and rounded as "full" or "lg"
   return (
     <div>
