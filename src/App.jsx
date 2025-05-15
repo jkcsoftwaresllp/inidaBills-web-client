@@ -1,9 +1,8 @@
+import React from 'react';
+import Layout from './component/layout/Layout';
 
-import "./App.css";
-
-function App() {
-
-  return <>IndiaBills</>;
-}
+const App = () => {
+  return <Layout />;
+};
 
 export default App;
