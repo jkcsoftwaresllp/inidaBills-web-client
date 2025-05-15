@@ -1,16 +1,8 @@
-import "./App.css";
-import ButtonNav from "./components/buttons/buttonNav";
-import ButtonWithBG from "./components/buttons/buttonWithBG";
+import React from 'react';
+import Layout from './component/layout/Layout';
 
-function App() {
-
-  return <>IndiaBills
-  <ButtonNav label="Home" underline={1} />
-  <ButtonNav label="Home" underline={0} />
-  <ButtonWithBG label="Book Demo" background={1} rounded="full" />
-  <ButtonWithBG label="Book Demo" background={0} rounded="full" />
-  <ButtonWithBG label="Book Demo" background={1} rounded="lg" />
-  </>;
-}
+const App = () => {
+  return <Layout />;
+};
 
 export default App;
