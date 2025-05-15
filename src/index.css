@@ -1,11 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --nav-btn-hover: #ef4444;
+  --bg-btn-hover: #b91c1c;
+  --bg-btn: #f87171;
+  --nav-text: #4b5563;
+  --text-white: #ffffff;
+  --btn-bg-white: #ffffff;
+}
