@@ -17,4 +17,8 @@ body {
   --nav-text: #4b5563;
   --text-white: #ffffff;
   --btn-bg-white: #ffffff;
+  --tiles-container-bg: #fef2f2;
+  --tittle-container-text: #1F2937;
+  --description-container-text: #4B5563;
+  --tiles-border-bottom: #FB3535;
 }

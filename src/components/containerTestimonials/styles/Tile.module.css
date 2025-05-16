@@ -1,0 +1,18 @@
+.box{
+    background-color: var(--text-white);
+    width: fit-content;
+    font-family: 'Poppins', sans-serif ;
+    color: var(--tittle-container-text);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+  border-bottom: 3px solid var(--tiles-border-bottom); 
+}
+.tittle{
+    font-size: 30px;
+}
+.para{
+    color: var(--description-container-text);
+}

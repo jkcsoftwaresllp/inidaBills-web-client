@@ -1,6 +1,8 @@
 // src/component/layout/Main.jsx
 import React from 'react';
 import styles from './Main.module.css';
+import TilesContainer from '../../components/containerTestimonials/TilesContainer';
+import Tile from '../../components/containerTestimonials/tile';
 
 const Main = () => {
   return (
