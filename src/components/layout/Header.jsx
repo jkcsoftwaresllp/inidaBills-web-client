@@ -1,4 +1,3 @@
-// src/component/layout/Header.jsx
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 
@@ -12,7 +11,7 @@ const Header = () => {
       <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
           <div className={styles.navItem}>Home</div>
           <div className={styles.navItem}>Features</div>
-          <div className={styles.navItem}>Contact</div>
+          <div className={styles.navItem}>Pricing</div>
       </nav>
       <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
         ☰

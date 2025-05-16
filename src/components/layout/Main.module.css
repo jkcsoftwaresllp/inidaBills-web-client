@@ -1,5 +1,13 @@
 .main {
-    flex: 1;
-    padding: 2rem;
-  }
-  
+  padding: 2rem;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.pricingGrid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
