@@ -82,4 +82,10 @@
   .navItem {
     color: white; 
   }
+
+  .demoButtonWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 }
