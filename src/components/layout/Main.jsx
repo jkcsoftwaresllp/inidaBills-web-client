@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Main.module.css';
 import PricingCard from '../pricingCardTemplate/pricingCard';
+import TilesContainer from '../../components/containerTestimonials/TilesContainer';
+import Tile from '../../components/containerTestimonials/tile';
 
 const plans = [
   {
