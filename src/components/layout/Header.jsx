@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import ButtonNav from "../buttons/ButtonNav"
 import ButtonWithBG from "../buttons/ButtonWithBG"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,14 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.logo}>IndiaBills</div>
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
-          {navItems.map((label, idx) => (
-            <ButtonNav
-              key={label}
-              label={label}
-              underline={1}
-              onclick={() => handleNavClick(label)}
-            />
-          ))}
+          {navItems.map((label) => {
+            const route = '/' + label.toLowerCase().replace(/\s+/g, '');
+            return (
+              <Link to={route} key={label} onClick={() => handleNavClick(label)}>
+                <ButtonNav label={label} underline={1} />
+              </Link>
+            );
+          })}
         </nav>
 
         <div className={styles.demoButtonWrapper}>
