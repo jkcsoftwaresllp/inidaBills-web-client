@@ -1,0 +1,43 @@
+.container{
+    min-height: 100vh;
+    margin: 0%;
+    padding: 40px;
+}
+
+.containerBGwhite{
+    background-color: var(--btn-bg-white);
+}
+.containerBGpink{
+     background-color: var(--tiles-container-bg);
+}
+.tittle{
+    font-family: 'Poppins', sans-serif ;
+    font-weight:bolder ;
+    font-size: 45px ;
+    margin: auto;
+    padding-top: 50px;
+    width: fit-content;
+    color: var(--tittle-container-text);
+}
+.description{
+    color: var(--description-container-text);
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 400;
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 15px;margin-bottom: 60px;
+}
+
+.tilesRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+/* .tiles{
+    background-color: rgb(108, 1, 1);
+    width: 300px;
+    height: 100px;
+} */
