@@ -1,19 +1,33 @@
-.box{
+.box {
     background-color: var(--text-white);
     width: 300px;
-    font-family: 'Poppins', sans-serif ;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
     color: var(--tittle-container-text);
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
 }
+
 .box:hover {
-  border-bottom: 3px solid var(--tiles-border-bottom); 
+    border-bottom: 3px solid var(--tiles-border-bottom);
+    transform: translateY(-5px);
 }
-.tittle{
-    font-size: 30px;
+
+.tittle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
 }
-.para{
+
+.para {
     color: var(--description-container-text);
+    font-size: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
 }

@@ -15,11 +15,15 @@ import styles from './styles/Tile.module.css'
  *
  * @returns {JSX.Element} The rendered Tile component.
  */
-function Tile({ tittle , para }) {
+function Tile({ tittle, para }) {
     return (
-        <div className={styles.box} >
-          <h1 className={styles.tittle} >{tittle}</h1>
-          <h4 className={styles.para} >{para}</h4>
+        <div className={styles.box}>
+          <h1 className={styles.tittle}>{tittle}</h1>
+          <h4 className={styles.para}>
+        {Array.isArray(para)
+          ? para.map((line, idx) => <React.Fragment key={idx}>{line}<br/></React.Fragment>)
+          : para}
+      </h4>
         </div>
     )
 }
