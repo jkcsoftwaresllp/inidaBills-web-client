@@ -5,6 +5,8 @@ import Main from '../../pages/pricing';
 import Footer from './Footer';
 import styles from './Layout.module.css';
 import Features from '../../pages/features';
+import About from '../../pages/about';
+import Contact from '../../pages/contact';
 
 const Layout = () => {
   return (
@@ -16,6 +18,8 @@ const Layout = () => {
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Main />} />
+            <Route path="/aboutus" element={<About />} />
+            <Route path="/contactus" element={<Contact />} />
             {/* Add more routes as needed */}
           </Routes>
         </main>
