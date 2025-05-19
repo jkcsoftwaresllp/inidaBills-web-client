@@ -1,0 +1,129 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(to right, #f87171, #ef4444);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.mission {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.missionContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.missionContent h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.missionContent p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.statCard {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.statCard svg {
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.statCard h3 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.statCard p {
+  color: #6b7280;
+}
+
+.values {
+  padding: 4rem 0;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 3rem;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.valueCard h3 {
+  color: #ef4444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.valueCard p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
