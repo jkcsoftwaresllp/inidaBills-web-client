@@ -7,6 +7,7 @@ import styles from './Layout.module.css';
 import Features from '../../pages/features';
 import About from '../../pages/about';
 import Contact from '../../pages/contact';
+import FAQsPage from '../../pages/faqs';
 
 const Layout = () => {
   return (
@@ -20,6 +21,7 @@ const Layout = () => {
             <Route path="/pricing" element={<Main />} />
             <Route path="/aboutus" element={<About />} />
             <Route path="/contactus" element={<Contact />} />
+            <Route path="/faqs" element={<FAQsPage />} />
             {/* Add more routes as needed */}
           </Routes>
         </main>
