@@ -5,15 +5,18 @@ import Main from '../../pages/pricing';
 import Footer from './Footer';
 import styles from './Layout.module.css';
 import Features from '../../pages/features';
+import Home from '../../pages/Home';
+
 
 const Layout = () => {
   return (
     <Router>
       <div className={styles.container}>
         <Header />
+        {/* <Home /> */}
         <main className={styles.main}>
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Main />} />
             {/* Add more routes as needed */}

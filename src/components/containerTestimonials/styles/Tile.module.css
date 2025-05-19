@@ -1,19 +1,55 @@
+.whenTextInline{
+    margin-left: 60px;
+}
 .box{
     background-color: var(--text-white);
-    width: 300px;
     font-family: 'Poppins', sans-serif ;
-    color: var(--tittle-container-text);
-    padding: 25px;
+    color: var(--tittle-container-text);   
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    position: relative;
+    
 }
+.iconInlineBox{
+    display: flex;
+    justify-content: center; 
+    padding: 40px;
+    gap: 15px;
+}
+.iconBlockBox{
+    padding: 25px;
+}
+
 .box:hover {
   border-bottom: 3px solid var(--tiles-border-bottom); 
 }
 .tittle{
     font-size: 30px;
+    margin-bottom: 10px;
 }
 .para{
     color: var(--description-container-text);
+}
+.icon{
+    background: rgb(254 226 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+.iconBlock{
+    width: 70px;
+    height: 70px;
+}
+.iconInline{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 10;
+    /* width: 90px;
+    height: 60px; */
 }
