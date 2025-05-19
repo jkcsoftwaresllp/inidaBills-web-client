@@ -5,27 +5,44 @@ import PricingCard from '../components/pricingCardTemplate/pricingCard';
 const plans = [
   {
     isPopular: false,
-    title: 'Basic',
-    price: '499',
+    title: 'Standard',
+    price: '1,999',
     description: 'Perfect for small businesses just getting started',
     features: [
-      'Up to 100 invoices/month',
-      'Basic inventory management',
-      'GST compliant invoices',
-      'Email support',
+      {label: 'Setup Assistance', included: true},
+      {label: 'Live Testing', included: true},
+      {label: 'Product Listing', included: false},
+      {label: 'Inventory Update', included: false},
+      {label: 'Prior Data Import', included: false},
+      {label: 'Priority Support', included: false},
     ],
   },
   {
     isPopular: true,
-    title: 'Professional',
-    price: '999',
+    title: 'Business',
+    price: '5,999',
     description: 'For growing businesses with more requirements',
     features: [
-      'Unlimited invoices',
-      'Advanced inventory management',
-      'Multiple business locations',
-      'Priority phone & email support',
-      'Advanced reporting',
+      {label: 'Setup Assistance', included: true},
+      {label: 'Live Testing', included: true},
+      {label: 'Product Listing', included: true},
+      {label: 'Inventory Update', included: true},
+      {label: 'Prior Data Import', included: false},
+      {label: 'Priority Support', included: true},
+    ],
+  },
+  {
+    isPopular: false,
+    title: 'Business Plus',
+    price: '9,999',
+    description: 'For larger businesses with advanced needs',
+    features: [
+      {label: 'Setup Assistance', included: true},
+      {label: 'Live Testing', included: true},
+      {label: 'Product Listing', included: true},
+      {label: 'Inventory Update', included: true},
+      {label: 'Prior Data Import', included: true},
+      {label: 'Priority Support', included: true},
     ],
   },
 ];
@@ -34,7 +51,6 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <h1>Our Pricing Plans</h1>
-      {/* <p>This is defined here just for the demo purpose, later will be shifted to the Pricing page</p> */}
       <div className={styles.pricingGrid}>
         {plans.map((plan, index) => (
           <PricingCard key={index} {...plan} />
