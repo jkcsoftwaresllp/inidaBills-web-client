@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: #1f2937;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.businessList {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: #4b5563;
+}
+
+.businessList li {
+  margin-bottom: 0.5rem;
+}
+
+.imageContainer {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
