@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./pricingCard.module.css";
-import { CheckCircle} from "lucide-react";
+import { CheckCircle, XCircle} from "lucide-react";
 
 const PricingCard = ({ isPopular, title, price, description, features }) => {
   return (
@@ -12,7 +12,12 @@ const PricingCard = ({ isPopular, title, price, description, features }) => {
       <ul className={styles.featureList}>
         {features.map((feature, index) => (
           <li key={index} className={styles.feature}>
-            <CheckCircle size={16} color="green" /> {feature}
+            {feature.included ? (
+              <CheckCircle size={16} color="green" />
+            ) : (
+              <XCircle size={16} color="red" />
+            )}
+            <span className={styles.featureText}>{feature.label}</span>
           </li>
         ))}
       </ul>
