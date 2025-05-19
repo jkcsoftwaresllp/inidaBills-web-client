@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Main.module.css';
-import PricingCard from '../pricingCardTemplate/pricingCard';
+import styles from '../components/layout/Main.module.css';
+import PricingCard from '../components/pricingCardTemplate/pricingCard';
 
 const plans = [
   {
@@ -34,7 +34,7 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <h1>Our Pricing Plans</h1>
-      <p>This is defined here just for the demo purpose, later will be shifted to the Pricing page</p>
+      {/* <p>This is defined here just for the demo purpose, later will be shifted to the Pricing page</p> */}
       <div className={styles.pricingGrid}>
         {plans.map((plan, index) => (
           <PricingCard key={index} {...plan} />
