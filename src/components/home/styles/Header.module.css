@@ -112,3 +112,73 @@
     left: -100px;
     bottom: -100px;
 }
+
+/* ---------------- Responsive Styling ---------------- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px 200px 20px;
+    }
+
+    .leftBox {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .rightBox {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightBoxContainer {
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .firstDiv,
+    .secondDiv {
+        width: 100%;
+    }
+
+    .last {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .BGcircle1,
+    .BGcircle2,
+    .BGcircle3 {
+        display: none;
+    }
+}
