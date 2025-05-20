@@ -1,0 +1,50 @@
+.container{
+    font-family: 'Poppins', sans-serif ;
+
+}
+.tittle{
+    font-weight:bolder ;
+    font-size: 35px ;
+    margin: auto;
+    padding-top: 50px;
+    width: fit-content;
+    color: var(--tittle-container-text);
+    text-shadow: 1px 1px 2px var(--tittle-container-text);
+}
+.companyBox{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--description-container-text);
+    margin: 100px 0px;
+}
+.heading{
+    font-weight:bolder ;
+    font-size: 45px ;
+    margin: auto;
+    padding-top: 20px;
+    width: fit-content;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+    margin-bottom: 10px;
+}
+.bottomSection{
+    display: block;
+}
+.para{
+    color: wheat;
+    font-size: 20px;
+    font-weight: 400;
+}
+.btmBox{
+    display: flex;
+    padding: 80px;
+    background-color: var(--bg-btn-hover);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}

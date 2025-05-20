@@ -8,15 +8,18 @@ import Features from '../../pages/features';
 import About from '../../pages/about';
 import Contact from '../../pages/contact';
 import FAQsPage from '../../pages/faqs';
+import Home from '../../pages/Home';
+
 
 const Layout = () => {
   return (
     <Router>
       <div className={styles.container}>
         <Header />
+        {/* <Home /> */}
         <main className={styles.main}>
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Main />} />
             <Route path="/aboutus" element={<About />} />

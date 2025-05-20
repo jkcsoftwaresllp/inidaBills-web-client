@@ -1,0 +1,114 @@
+.container{
+    background: var(--tiles-container-bg);
+    display: flex;
+    padding-top: 100px ;
+    padding-bottom: 300px;
+    font-family: 'Poppins', sans-serif ;
+    overflow: hidden;
+}
+.leftBox{
+    width: 50vw;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.heading{
+    font-size: 55px;
+    font-weight:bolder ;
+    text-shadow: 1px 1px 1px var(--tittle-container-text);
+    line-height: 1;
+    color: var(--tittle-container-text);
+    margin-bottom: 20px;
+    /* background: rgb(160, 3, 3); */
+}
+.description{
+    color: var(--description-container-text);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btn{
+    display: flex;
+}
+.rightBox{
+    height: 400px;
+}
+.rightBoxContainer{
+    margin-top: 50px;
+    border: 3px solid red;
+    border-radius: 20px;
+    height: 450px;
+    width: 550px;
+    margin-left: 60px;
+    background: white;
+    padding: 30px;
+}
+.rightHead{
+    background-color:rgb(246, 249, 249);
+    padding: 20px 20px;
+    height: 70px;
+    border-radius: 5px;
+}
+.rightHead>div{
+    background-color: rgb(255, 64, 30);
+    height: 30px;
+    width: 40%;
+    border-radius: 5px;
+}
+.rightBoxContainer>h1{
+    margin: 20px 0px;
+    background-color:rgb(241, 239, 239);
+    height: 2px;
+
+}
+.mainContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.firstDiv{
+    background-color:rgb(242, 251, 254);   
+    height: 22px;
+    width: 70%;
+    border-radius: 5px;
+}
+.secondDiv{
+    background-color:rgb(251, 103, 77);
+    height: 22px;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.last{
+    background-color: rgb(255, 64, 30);
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 70%;
+}
+.BGcircle1{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background: rgba(254, 202, 202, 0.468);
+    border-radius: 100%;
+    right: 25px;
+    top: 120px;
+}
+.BGcircle2{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background: rgba(254, 202, 202, 0.468);
+    border-radius: 100%;
+    right: 42%;
+    top: 85%;
+}
+.BGcircle3{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background: rgba(254, 202, 202, 0.468);
+    border-radius: 100%;
+    left: -100px;
+    bottom: -100px;
+}

@@ -27,14 +27,15 @@
     text-align: center;
     margin: auto;
     font-size: 20px;
-    margin-top: 15px;margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 60px;
 }
 
 .tilesRow {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 /* .tiles{
     background-color: rgb(108, 1, 1);
