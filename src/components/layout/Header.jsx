@@ -25,7 +25,11 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.logo}>IndiaBills</div>
+        <div className={styles.logo}>
+          <Link to="/">
+            <img src="/favicon.png" alt="IndiaBills Logo" className={styles.logoImage} />
+          </Link>
+        </div>
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
           {navItems.map((label) => {
             const route = '/' + label.toLowerCase().replace(/\s+/g, '');

@@ -39,6 +39,11 @@
   opacity: 0.8;
 }
 
+.logoImage {
+  height: 40px; /* Adjust as needed */
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
