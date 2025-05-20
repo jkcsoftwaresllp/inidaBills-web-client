@@ -40,7 +40,7 @@
 .btmBox{
     display: flex;
     padding: 80px;
-    background-color: var(--bg-btn-hover);
+    background-color: #f87171;
 }
 .btn{
     display: flex;
