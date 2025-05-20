@@ -20,6 +20,7 @@ const Layout = () => {
         <main className={styles.main}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Main />} />
             <Route path="/aboutus" element={<About />} />
