@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from "./pricingCard.module.css";
-import { CheckCircle, XCircle} from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
 
-const PricingCard = ({ isPopular, title, price, description, features }) => {
+const PricingCard = ({ isPopular, title, price, description, features, validity }) => {
   return (
     <div className={`${styles.card} ${isPopular ? styles.popular : ''}`}>
       {isPopular && <div className={styles.popularTag}>MOST POPULAR</div>}
       <h2 className={styles.title}>{title}</h2>
-      <p className={styles.price}>₹{price}<span className={styles.month}>/month</span></p>
+      <p className={styles.price}>₹{price}<span className={styles.month}>/plan</span></p>
+      {validity && <p className={styles.validity}>Valid for {validity}</p>}
       <p className={styles.description}>{description}</p>
       <ul className={styles.featureList}>
         {features.map((feature, index) => (
