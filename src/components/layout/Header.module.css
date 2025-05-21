@@ -95,4 +95,15 @@
   align-items: center;
   margin-left: auto;
 }
+  .closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1003;
+}
 }
