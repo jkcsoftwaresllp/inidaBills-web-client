@@ -20,7 +20,7 @@ function TrustedCompaniesSection() {
                     <h2 className={styles.para} >Join thousands of businesses that trust IndiaBills for their billing and inventory needs.</h2>
                 </div>
                 <div className={styles.btn} >
-                <ButtonWithBG label={"Book a Demo"} background={0} rounded={"full"} />
+                <ButtonWithBG label={"Book a Demo"} background={0} rounded={"full"} border={1} />
                 </div>
             </div>
 

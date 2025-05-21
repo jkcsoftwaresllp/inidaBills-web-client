@@ -9,6 +9,7 @@ import styles from './styles/Testimonials.module.css'
  * @param {string} props.username - The name of the user providing the testimonial.
  * @param {string} props.review - The content of the testimonial or review.
  * @param {string} props.bio - A short bio or title of the user.
+ * @param {string} props.stars - Review Stars 
  * @param {JSX.Element} [props.iconText] - Optional icon or avatar JSX element displayed beside the user info.
  *
  * @example
@@ -19,15 +20,15 @@ import styles from './styles/Testimonials.module.css'
  *   iconText={<UserIcon />}
  * />
  */
-function Testimonials({ username, review, bio, iconText }) {
+function Testimonials({ username, review, bio, iconText , stars}) {  // paas stars={"★★★★★"}  for stars
     return (
         <div className={styles.box} >
             <div>
+            <div className={styles.star}>{stars}</div>
+            {/* <div className={styles.star}></div>
             <div className={styles.star}></div>
             <div className={styles.star}></div>
-            <div className={styles.star}></div>
-            <div className={styles.star}></div>
-            <div className={styles.star}></div>
+            <div className={styles.star}></div> */}
             </div>
             <h3 className={styles.review} >{review}</h3>
             <div className={styles.bottom} >

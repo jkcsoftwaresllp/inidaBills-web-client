@@ -16,7 +16,7 @@
   display: inline-block;
 }
 .star::before {
-  content: '★'; /* Unicode star */
+  /* content: '★'; Unicode star */
 }
 
 .username{

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-bottom: 1px solid #ddd;
 }
 
@@ -17,7 +17,7 @@
 
 .nav {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .toggle {
@@ -44,7 +44,8 @@
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+@media (max-width: 1054px) {
   .nav {
     flex-direction: column;
     position: fixed;
