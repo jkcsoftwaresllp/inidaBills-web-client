@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import styles from './Header.module.css';
-import ButtonNav from "../buttons/ButtonNav"
-import ButtonWithBG from "../buttons/ButtonWithBG"
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import styles from "./Header.module.css";
+import ButtonNav from "../buttons/ButtonNav";
+import ButtonWithBG from "../buttons/ButtonWithBG";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    'Home',
-    'Features',
-    'Pricing',
-    'About Us',
-    'Contact Us',
-    'FAQs',
+    "Home",
+    "Features",
+    "Pricing",
+    "About Us",
+    "Contact Us",
+    "FAQs",
   ];
 
   const handleNavClick = (label) => {
@@ -27,14 +27,22 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Link to="/">
-            <img src="/favicon.png" alt="IndiaBills Logo" className={styles.logoImage} />
+            <img
+              src="/favicon.png"
+              alt="IndiaBills Logo"
+              className={styles.logoImage}
+            />
           </Link>
         </div>
-        <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
+        <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
           {navItems.map((label) => {
-            const route = '/' + label.toLowerCase().replace(/\s+/g, '');
+            const route = "/" + label.toLowerCase().replace(/\s+/g, "");
             return (
-              <Link to={route} key={label} onClick={() => handleNavClick(label)}>
+              <Link
+                to={route}
+                key={label}
+                onClick={() => handleNavClick(label)}
+              >
                 <ButtonNav label={label} underline={1} />
               </Link>
             );
@@ -42,13 +50,14 @@ const Header = () => {
         </nav>
 
         <div className={styles.demoButtonWrapper}>
-    <ButtonWithBG 
-      label="Start Demo"
-      background={1}
-      rounded="full"
-      onclick={() => console.log('Start Demo Clicked')}
-    />
-  </div>
+          <ButtonWithBG
+            label="Start Demo"
+            background={1}
+            rounded="full"
+            onclick={() => console.log("Start Demo Clicked")}
+          />
+        </div>
+        
         <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
