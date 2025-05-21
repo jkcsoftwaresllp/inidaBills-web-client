@@ -9,11 +9,13 @@ import About from '../../pages/about';
 import Contact from '../../pages/contact';
 import FAQsPage from '../../pages/faqs';
 import Home from '../../pages/Home';
+import ScrollToTop from '../scrollToTop';
 
 
 const Layout = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className={styles.container}>
         <Header />
         {/* <Home /> */}
