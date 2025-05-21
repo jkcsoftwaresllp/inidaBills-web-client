@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem; */
+  padding: 0 1rem;
   border-bottom: 1px solid #ddd;
 }
 
@@ -87,12 +87,35 @@
   }
 
   .navItem {
-    color: white; 
+    color: white;
   }
 
   .demoButtonWrapper {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
+
+@media (max-width: 400px) {
+  .header button:first-child {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+
+  .nav {
+    width: 70%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header button:first-child {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .logoImage {
+    height: 30px; /* Adjust as needed */
+    object-fit: contain;
+  }
 }
