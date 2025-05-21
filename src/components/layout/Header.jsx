@@ -31,15 +31,6 @@ const Header = () => {
           </Link>
         </div>
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
-          {/* Cross button for closing mobile nav */}
-          <button
-            className={styles.closeBtn}
-            onClick={() => setIsOpen(false)}
-            aria-label="Close navigation"
-          >
-            ×
-          </button>
-          
           {navItems.map((label) => {
             const route = '/' + label.toLowerCase().replace(/\s+/g, '');
             return (
