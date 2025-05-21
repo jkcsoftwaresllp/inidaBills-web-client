@@ -6,7 +6,6 @@
     padding-bottom: 50px;
 }
 .tittle{
-    font-family: 'Poppins', sans-serif ;
     font-weight:bolder ;
     font-size: 35px ;
     margin: auto;
@@ -17,7 +16,6 @@
 }
 .para{
     color: var(--description-container-text);
-    font-family: 'Poppins', sans-serif ;
     font-weight: 400;
     width: 50vw;
     text-align: center;
