@@ -55,7 +55,7 @@
     background: #1f2937;
     padding: 4rem 2rem;
     gap: 2rem;
-    z-index: 1001;
+    z-index: 1002;
     transition: right 0.3s ease-in-out;
   }
 
@@ -82,6 +82,7 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    pointer-events: none;
   }
 
   .navItem {
