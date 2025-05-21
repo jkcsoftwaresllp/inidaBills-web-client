@@ -23,11 +23,11 @@ function Home() {
             </TilesContainer>
             <TilesContainer tittle={"What Our Clients Say"} description={"Don't just take our word for it. Here's what businesses like yours have to say."} background={1}  >
                 <Testimonials username={"Rajesh Kumar"} bio={"Retail Store Owner, Delhi"} review={"IndiaBills has transformed how we manage our invoicing. The GST compliance features alone have saved us countless hours of work each month."
-                } iconText={"RK"} />
+                } iconText={"RK"} stars={"★★★"} />
                 <Testimonials username={"Sunita Patel"} bio={"Wholesale Distributor, Mumbai"} review={"The inventory management system is a game-changer. We can now track our stock across multiple locations in real-time, which has reduced our stockouts by 70%."
-                } iconText={"SP"} />
+                } iconText={"SP"} stars={"★★★★★"} />
                 <Testimonials username={"Anand Reddy"} bio={"Restaurant Owner, Bangalore"} review={"Customer support is exceptional. Whenever we've had questions, the team has been quick to respond and incredibly helpful. The mobile app is also a huge plus."
-                } iconText={"AR"} />
+                } iconText={"AR"} stars={"★★★★"} />
             </TilesContainer>
             <TrustedCompaniesSection/>
             <UserDetails/>

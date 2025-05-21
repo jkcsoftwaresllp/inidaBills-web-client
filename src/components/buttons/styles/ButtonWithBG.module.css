@@ -49,4 +49,7 @@
   .roundednone {
     border-radius: 0;
   }
+  .border{
+    border: 3px solid white;
+  }
   
