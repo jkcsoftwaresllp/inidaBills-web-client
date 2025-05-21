@@ -1,10 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './contact.module.css';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import TilesContainer from '../components/containerTestimonials/TilesContainer';
 import Tile from '../components/containerTestimonials/Tile';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    Name: '',
+    Email: '',
+    Phone: '',
+    Subject: '',
+    Message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1EnDra5Y-JQx0AOyKzN2agONLm0S9dt-qbGSWShZ6x8SzvM6k05Q7LEpcE-8XNvFPpA/exec';
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      const result = await response.text();
+      alert(result);
+      setFormData({
+        Name: '',
+        Email: '',
+        Phone: '',
+        Subject: '',
+        Message: ''
+      });
+    } catch (error) {
+      alert('There was an error submitting the form.');
+    }
+  };
+
   return (
     <div className={styles.container}>
       <section className={styles.hero}>
@@ -20,7 +63,11 @@ const Contact = () => {
         >
           <Tile
             tittle="Visit Us"
-            para={["Kumar Commercial Complex, Opp. Gate No. 10", "Gandhi Maidan, Exhibition Road", "Patna, India 800001"]}
+            para={[
+              "Kumar Commercial Complex, Opp. Gate No. 10",
+              "Gandhi Maidan, Exhibition Road",
+              "Patna, India 800001"
+            ]}
           />
           <Tile
             tittle="Call Us"
@@ -28,28 +75,60 @@ const Contact = () => {
           />
           <Tile
             tittle="Email Us"
-            para={["team@jkcsoftwares.com", "support@indiabills.com"]}
+            para={[
+              "team@jkcsoftwares.com",
+              "support@indiabills.com"
+            ]}
           />
           <Tile
             tittle="Business Hours"
-            para={["Monday - Saturday", "9:00 AM - 6:00 PM"]}
+            para={[
+              "Monday - Saturday",
+              "9:00 AM - 6:00 PM"
+            ]}
           />
         </TilesContainer>
 
         <section className={styles.contactForm}>
           <h2>Send us a Message</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
-              <input type="text" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                value={formData.Name}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div className={styles.formGroup}>
-              <input type="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                value={formData.Email}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div className={styles.formGroup}>
-              <input type="tel" placeholder="Your Phone" required />
+              <input
+                type="tel"
+                name="Phone"
+                placeholder="Your Phone"
+                value={formData.Phone}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div className={styles.formGroup}>
-              <select required>
+              <select
+                name="Subject"
+                value={formData.Subject}
+                onChange={handleChange}
+                required
+              >
                 <option value="">Select Subject</option>
                 <option value="support">Technical Support</option>
                 <option value="sales">Sales Inquiry</option>
@@ -58,7 +137,14 @@ const Contact = () => {
               </select>
             </div>
             <div className={styles.formGroup}>
-              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="5"
+                value={formData.Message}
+                onChange={handleChange}
+                required
+              ></textarea>
             </div>
             <button type="submit" className={styles.submitButton}>
               Send Message
