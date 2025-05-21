@@ -157,7 +157,7 @@ const faqs = [
   },
   {
     question: "Can I export data from IndiaBills for accounting?",
-    answer: "Yes, data can be exported in Excel, CSV, or PDF formats."
+    answer: "IndiaBills allows you to export data in formats like Excel, CSV, or PDF, making it easy to share with accountants or import into other software."
   }
 ];
 
