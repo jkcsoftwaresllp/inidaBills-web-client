@@ -26,36 +26,8 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.contactInfo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-}
-
-.infoCard {
-  padding: 2rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.infoCard svg {
-  color: #ef4444;
-  margin-bottom: 1rem;
-}
-
-.infoCard h3 {
-  color: #1f2937;
-  margin-bottom: 1rem;
-}
-
-.infoCard p {
-  color: #6b7280;
-  margin-bottom: 0.5rem;
+  align-items: start;
 }
 
 .contactForm {
@@ -63,6 +35,7 @@
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-width: 400px;
 }
 
 .contactForm h2 {
@@ -110,13 +83,20 @@
   background: #dc2626;
 }
 
+@media (max-width: 1200px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 968px) {
   .content {
     grid-template-columns: 1fr;
   }
 
-  .contactInfo {
-    grid-template-columns: 1fr;
+  .contactForm {
+    min-width: unset;
   }
 }
 
