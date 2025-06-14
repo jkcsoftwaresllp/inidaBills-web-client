@@ -1,14 +1,19 @@
 .container{
     background: var(--tiles-container-bg);
     display: flex;
-    padding-top: 100px ;
-    padding-bottom: 300px;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 100px ;
+    padding-bottom: 300px; */
+    /* padding: 100px 50px 100px 50px; */
     overflow: hidden;
 }
 .leftBox{
+    flex: 1;
+    padding-right: 30px;
     width: 50vw;
     padding-left: 50px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 .heading{
     font-size: 55px;
@@ -29,17 +34,28 @@
     display: flex;
 }
 .rightBox{
-    height: 400px;
+    /* height: 400px; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.rightBoxContainer{
-    margin-top: 50px;
-    border: 3px solid red;
+.rightBoxContainer {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     border-radius: 20px;
-    height: 450px;
-    width: 550px;
-    margin-left: 60px;
-    background: white;
-    padding: 30px;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .rightHead{
     background-color:rgb(246, 249, 249);
