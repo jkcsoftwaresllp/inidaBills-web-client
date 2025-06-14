@@ -5,22 +5,70 @@ import Tile from '../components/containerTestimonials/Tile'
 import Testimonials from '../components/containerTestimonials/Testimonials'
 import TrustedCompaniesSection from '../components/home/TrustedCompaniesSection'
 import UserDetails from '../components/home/UserDetails'
-import PasteSVG from '../components/home/svg/pasteSVG'
-import CorrectSVG from '../components/home/svg/correctSVG'
-import LockSVG from '../components/home/svg/LockSVG'
-import ThunderSVG from '../components/home/svg/ThunderSVG'
-import SupportSVG from '../components/home/svg/SupportSVG'
+import FeatureTile from '../components/containerTestimonials/FeatureTile'
+import BankGradeSecurity from '../assets/BankGradeSecurity.png'
+import IndianBusiness from '../assets/IndianBusiness.png'
+import LightningFast from '../assets/LightningFast.png'
+import Support from '../assets/Support.png'
 
 function Home() {
     return (
         <div>
            <Header/>
-             <TilesContainer tittle={"Why IndiaBills?"} description={"We're more than just a billing software. Here's what sets us apart."} background={0} >
-            <Tile tittle={"Made for Indian Businesses"} para={"Designed specifically with Indian tax laws, business practices, and requirements in mind."} iconDirection={"inline"} width="45vw" icon={<CorrectSVG/>} />
-            <Tile tittle={"Bank-Grade Security"} para={"Your data is protected with enterprise-level encryption and regular security audits."} iconDirection={"inline"} width="45vw" icon={<LockSVG/>} />
-            <Tile tittle={"Lightning Fast"} para={"Optimized for speed, even with large datasets and multiple users."} iconDirection={"inline"} width="45vw" icon={<ThunderSVG/>} />
-            <Tile tittle={"24/7 Support"} para={"Our dedicated support team is always available to help you with any issues."} iconDirection={"inline"} width="45vw" icon={<SupportSVG/>} />
+             <TilesContainer 
+             tittle={"Why IndiaBills?"} 
+             description={"We're more than just a billing software. Here's what sets us apart."} 
+             background={0} 
+             >
+                {/* <FeatureTile
+                    title="Made for Indian Businesses"
+                    para="Designed specifically with Indian tax laws, business practices, and requirements in mind."
+                    graphic={<img src={IndianBusiness} alt="Business" width="200" />}
+                    graphicPosition="right"
+                />
+                <FeatureTile
+                    title="Bank-Grade Security"
+                    para="Your data is protected with enterprise-level encryption and regular security audits."
+                    graphic={<img src={BankGradeSecurity} alt="Security" width="200" />}
+                    graphicPosition="left"
+                />
+                <FeatureTile
+                    title="Lightning Fast"
+                    para="Optimized for speed, even with large datasets and multiple users."
+                    graphic={<img src={LightningFast} alt="Fast" width="200" />}
+                    graphicPosition="right"
+                />
+                <FeatureTile
+                    title="24/7 Support"
+                    para="Our dedicated support team is always available to help you with any issues."
+                    graphic={<img src={Support} alt="Support" width="200" />}
+                    graphicPosition="left"
+                /> */}
             </TilesContainer>
+            <FeatureTile
+                    title="Made for Indian Businesses"
+                    para="Designed specifically with Indian tax laws, business practices, and requirements in mind."
+                    graphic={<img src={IndianBusiness} alt="Business" width="200" />}
+                    graphicPosition="right"
+                />
+                <FeatureTile
+                    title="Bank-Grade Security"
+                    para="Your data is protected with enterprise-level encryption and regular security audits."
+                    graphic={<img src={BankGradeSecurity} alt="Security" width="200" />}
+                    graphicPosition="left"
+                />
+                <FeatureTile
+                    title="Lightning Fast"
+                    para="Optimized for speed, even with large datasets and multiple users."
+                    graphic={<img src={LightningFast} alt="Fast" width="200" />}
+                    graphicPosition="right"
+                />
+                <FeatureTile
+                    title="24/7 Support"
+                    para="Our dedicated support team is always available to help you with any issues."
+                    graphic={<img src={Support} alt="Support" width="200" />}
+                    graphicPosition="left"
+                />
             <TilesContainer tittle={"What Our Clients Say"} description={"Don't just take our word for it. Here's what businesses like yours have to say."} background={1}  >
                 <Testimonials username={"Rajesh Kumar"} bio={"Retail Store Owner, Delhi"} review={"IndiaBills has transformed how we manage our invoicing. The GST compliance features alone have saved us countless hours of work each month."
                 } iconText={"RK"} stars={"★★★"} />
