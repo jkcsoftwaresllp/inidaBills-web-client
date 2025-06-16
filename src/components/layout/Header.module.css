@@ -88,7 +88,7 @@
     background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
     padding: var(--space-16) var(--space-8);
     gap: var(--space-6);
-    z-index: 1002;
+    z-index: 1004; 
     transition: right var(--transition-normal);
     box-shadow: var(--shadow-2xl);
   }
@@ -115,7 +115,7 @@
 
   .toggle {
     display: block;
-    z-index: 1003;
+    z-index: 1003; 
   }
 
   .overlay {
@@ -125,9 +125,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    z-index: 1000; 
   }
 
   .demoButtonWrapper {
