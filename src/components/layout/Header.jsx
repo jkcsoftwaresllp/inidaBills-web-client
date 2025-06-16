@@ -34,6 +34,11 @@ const Header = () => {
             />
           </Link>
         </div>
+
+        {isOpen && (
+          <div className={styles.overlay} onClick={() => setIsOpen(false)}></div>
+        )}
+
         <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
           {navItems.map((label) => {
             const route = "/" + label.toLowerCase().replace(/\s+/g, "");
@@ -57,15 +62,11 @@ const Header = () => {
             onclick={() => console.log("Start Demo Clicked")}
           />
         </div>
-        
+
         <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
       </header>
-
-      {isOpen && (
-        <div className={styles.overlay} onClick={() => setIsOpen(false)}></div>
-      )}
     </>
   );
 };
