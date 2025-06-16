@@ -1,0 +1,213 @@
+.container {
+  background: linear-gradient(135deg, var(--primary-red-pale) 0%, rgba(255, 4, 4, 0.05) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: var(--space-20) var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 4, 4, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.leftBox {
+  flex: 1;
+  max-width: 600px;
+  padding-right: var(--space-12);
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--gray-900);
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.02em;
+}
+
+.heading span {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.heading span::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-red) 0%, var(--primary-red-light) 100%);
+  border-radius: var(--radius-full);
+  opacity: 0.3;
+}
+
+.description {
+  color: var(--gray-600);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+  max-width: 540px;
+}
+
+.btn {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rightBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.rightBoxContainer {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  padding: var(--space-8);
+}
+
+.headerImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* border-radius: var(--radius-2xl); */
+  /* box-shadow: var(--shadow-2xl); */
+  /* transition: var(--transition-slow); */
+  /* background: var(--white); */
+  /* padding: var(--space-4); */
+}
+
+.headerImage:hover {
+  transform: scale(1.02) rotate(1deg);
+  box-shadow: 0 30px 60px -12px rgba(255, 4, 4, 0.15);
+}
+
+/* Floating elements animation */
+.rightBoxContainer::before,
+.rightBoxContainer::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-red-light) 0%, var(--primary-red) 100%);
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.rightBoxContainer::before {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  right: -10%;
+  animation-delay: -2s;
+}
+
+.rightBoxContainer::after {
+  width: 80px;
+  height: 80px;
+  bottom: 20%;
+  left: -5%;
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 924px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-16) var(--space-6);
+    min-height: auto;
+    text-align: center;
+  }
+
+  .leftBox {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: var(--space-12);
+  }
+
+  .heading {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin-bottom: var(--space-5);
+  }
+
+  .description {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-6);
+  }
+
+  .btn {
+    justify-content: center;
+    gap: var(--space-3);
+  }
+
+  .rightBox {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .rightBoxContainer {
+    max-width: 500px;
+    padding: var(--space-4);
+  }
+
+  .rightBoxContainer::before,
+  .rightBoxContainer::after {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: var(--space-12) var(--space-4);
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .description {
+    font-size: var(--font-size-base);
+  }
+
+  .btn {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-3);
+  }
+
+  .rightBoxContainer {
+    max-width: 400px;
+    padding: var(--space-2);
+  }
+}

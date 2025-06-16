@@ -1,0 +1,49 @@
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 48px 24px; */
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  margin: 40px auto;
+  max-width: 1200px;
+  gap: 32px;
+  flex-direction: row;
+}
+
+.tile.right {
+  flex-direction: row-reverse;
+}
+
+.graphic {
+  flex: 0 0 35%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1c1c1c;
+}
+
+.para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
