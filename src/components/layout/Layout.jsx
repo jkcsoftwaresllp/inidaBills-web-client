@@ -8,7 +8,7 @@ import Features from '../../pages/features';
 import About from '../../pages/about';
 import Contact from '../../pages/contact';
 import FAQsPage from '../../pages/faqs';
-import Home from '../../pages/Home';
+import Home from '../../pages/home';
 import ScrollToTop from '../scrollToTop';
 
 
