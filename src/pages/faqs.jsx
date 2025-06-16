@@ -166,9 +166,28 @@ const FAQsPage = () => {
     <div className={styles.container}>
       <section className={styles.hero}>
         <h1>Frequently Asked Questions</h1>
-        <p>Find answers to common questions about IndiaBills</p>
+        <p>
+          Find answers to common questions about IndiaBills. Can't find what you're 
+          looking for? Contact our support team for personalized assistance.
+        </p>
       </section>
-      <FAQ faqs={faqs} />
+      
+      <div className={styles.faqWrapper}>
+        <FAQ faqs={faqs} />
+      </div>
+
+      <div className={styles.supportSection}>
+        <h2>Still have questions?</h2>
+        <p>Our support team is here to help you succeed with IndiaBills.</p>
+        <div className={styles.supportButtons}>
+          <a href="/contactus" className={styles.contactButton}>
+            Contact Support
+          </a>
+          <a href="tel:+917322005500" className={styles.phoneButton}>
+            Call +91 7322005500
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
