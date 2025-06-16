@@ -6,6 +6,7 @@ import Tile from '../components/containerTestimonials/Tile';
 import FeatureDetails from '../components/featureDetails/FeatureDetails';
 import Testimonials from '../components/containerTestimonials/Testimonials'
 import UserDetails from '../components/home/UserDetails';
+import styles from './features.module.css';
 
 const featuresData = [
   {
@@ -184,16 +185,25 @@ const Features = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
   const handleFeatureClick = (feature) => {
-    const fullFeatureData = featuresData.find(f => f.title === feature);
+    const fullFeatureData = featuresData.find((f) => f.title === feature);
     setSelectedFeature(fullFeatureData);
   };
 
   return (
-    <>
+    <div className={styles.container}>
+      <section className={styles.hero}>
+        <h1>Powerful Features for Modern Businesses</h1>
+        <p>
+          Discover comprehensive tools designed to streamline your operations, 
+          boost productivity, and drive growth. Every feature is crafted with 
+          Indian businesses in mind.
+        </p>
+      </section>
+
       <TilesContainer
         background={1}
-        tittle="Product Features"
-        description="Discover the powerful modules that make IndiaBills the perfect solution for your business needs."
+        tittle="Complete Business Solution"
+        description="From inventory management to customer support, we've got everything your business needs to succeed in today's competitive market."
       >
         {featuresData.map((feature) => (
           <div
@@ -201,10 +211,7 @@ const Features = () => {
             onClick={() => handleFeatureClick(feature.title)}
             style={{ cursor: 'pointer' }}
           >
-            <Tile
-              tittle={feature.title}
-              para={feature.shortDescription}
-            />
+            <Tile tittle={feature.title} para={feature.shortDescription} />
           </div>
         ))}
       </TilesContainer>
@@ -215,38 +222,47 @@ const Features = () => {
           onClose={() => setSelectedFeature(null)}
         />
       )}
+
       <TilesContainer
-        tittle={"What Our Clients Say"}
-        description={"Don't just take our word for it. Here's what businesses like yours have to say."}
+        tittle={'Success Stories'}
+        description={
+          "See how businesses across India are transforming their operations with IndiaBills."
+        }
         background={0}
       >
         <Testimonials
-          username={"Priya Mehta"}
-          bio={"Boutique Owner, Jaipur"}
-          review={"IndiaBills made billing so effortless. I can now focus more on customers than on paperwork. The UI is intuitive and saves me so much time."}
-          iconText={"PM"}
-          stars={"★★★★★"}
+          username={'Priya Mehta'}
+          bio={'Boutique Owner, Jaipur'}
+          review={
+            'IndiaBills made billing so effortless. I can now focus more on customers than on paperwork. The UI is intuitive and saves me so much time.'
+          }
+          iconText={'PM'}
+          stars={'★★★★★'}
         />
 
         <Testimonials
-          username={"Vikram Singh"}
-          bio={"Electronics Dealer, Hyderabad"}
-          review={"The automated tax calculations and real-time reports are incredibly helpful. I no longer need to hire someone just to manage GST filings."}
-          iconText={"VS"}
-          stars={"★★★★"}
+          username={'Vikram Singh'}
+          bio={'Electronics Dealer, Hyderabad'}
+          review={
+            'The automated tax calculations and real-time reports are incredibly helpful. I no longer need to hire someone just to manage GST filings.'
+          }
+          iconText={'VS'}
+          stars={'★★★★★'}
         />
 
         <Testimonials
-          username={"Farah Ali"}
-          bio={"Cafe Owner, Lucknow"}
-          review={"Excellent platform! Easy to use and very efficient. The support team walked me through the onboarding and solved all my doubts."}
-          iconText={"FA"}
-          stars={"★★★★★"}
+          username={'Farah Ali'}
+          bio={'Cafe Owner, Lucknow'}
+          review={
+            'Excellent platform! Easy to use and very efficient. The support team walked me through the onboarding and solved all my doubts.'
+          }
+          iconText={'FA'}
+          stars={'★★★★★'}
         />
       </TilesContainer>
 
       <UserDetails />
-    </>
+    </div>
   );
 };
 
