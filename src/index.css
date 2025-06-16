@@ -16,12 +16,12 @@ body {
 
 :root {
   /* Primary Brand Colors */
-  --primary-red: #ff0404;
-  --primary-red-dark: #e60303;
-  --primary-red-darker: #cc0202;
-  --primary-red-light: #ff3333;
-  --primary-red-lighter: #ff6666;
-  --primary-red-pale: #fff5f5;
+  --primary-red: #e63946;
+  --primary-red-dark: #c92c35;
+  --primary-red-darker: #991f1f;
+  --primary-red-light: #f98475;
+  --primary-red-lighter: #fcb3ad;
+  --primary-red-pale: #fceaea;
   
   /* Neutral Colors */
   --white: #ffffff;
