@@ -1,50 +1,82 @@
 .header {
   position: sticky;
   top: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  border-bottom: 1px solid #ddd;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.header:hover {
+  box-shadow: var(--shadow-md);
 }
 
 .logo {
-  font-weight: bold;
-  color: #d14a39;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  color: var(--primary-red);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logoImage {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(255, 4, 4, 0.1));
 }
 
 .nav {
   display: flex;
-  /* gap: 1rem; */
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+.nav a:hover {
+  transform: translateY(-1px);
 }
 
 .toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--gray-700);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
 }
 
-.navItem {
-  cursor: pointer;
-  color: black;
-  font-size: 1.2rem;
-  text-decoration: none;
+.toggle:hover {
+  background-color: var(--gray-100);
+  color: var(--primary-red);
 }
 
-.navItem:hover {
-  opacity: 0.8;
+.demoButtonWrapper {
+  display: flex;
+  align-items: center;
 }
 
-.logoImage {
-  height: 40px; /* Adjust as needed */
-  object-fit: contain;
-}
-
-/* @media (max-width: 768px) { */
 @media (max-width: 1054px) {
   .nav {
     flex-direction: column;
@@ -52,18 +84,29 @@
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 40%;
-    background: #1f2937;
-    padding: 4rem 2rem;
-    gap: 2rem;
+    width: 320px;
+    background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+    padding: var(--space-16) var(--space-8);
+    gap: var(--space-6);
     z-index: 1002;
-    transition: right 0.3s ease-in-out;
+    transition: right var(--transition-normal);
+    box-shadow: var(--shadow-2xl);
   }
 
   .nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    width: 100%;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition-fast);
+  }
+
+  .nav a:hover {
+    color: var(--primary-red-light);
+    transform: translateX(8px);
   }
 
   .open {
@@ -72,7 +115,7 @@
 
   .toggle {
     display: block;
-    color: #333;
+    z-index: 1003;
   }
 
   .overlay {
@@ -81,41 +124,43 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    pointer-events: none;
-  }
-
-  .navItem {
-    color: white;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
   }
 
   .demoButtonWrapper {
-    display: flex;
-    align-items: center;
     margin-left: auto;
+    margin-right: var(--space-4);
   }
 }
 
 @media (max-width: 400px) {
-  .header button:first-child {
-    padding: 0 10px;
-    font-size: 1rem;
+  .header {
+    padding: var(--space-3) var(--space-4);
   }
 
   .nav {
-    width: 70%;
+    width: 280px;
+    padding: var(--space-12) var(--space-6);
+  }
+
+  .logoImage {
+    height: 35px;
   }
 }
 
 @media (max-width: 320px) {
-  .header button:first-child {
-    padding: 5px 10px;
-    font-size: 0.8rem;
+  .header {
+    padding: var(--space-2) var(--space-3);
   }
 
   .logoImage {
-    height: 30px; /* Adjust as needed */
-    object-fit: contain;
+    height: 30px;
+  }
+
+  .nav {
+    width: 260px;
   }
 }
