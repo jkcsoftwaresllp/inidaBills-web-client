@@ -11,7 +11,7 @@ const DemoPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 5000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
