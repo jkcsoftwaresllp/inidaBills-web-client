@@ -11,6 +11,8 @@ import FAQsPage from '../../pages/faqs';
 import Home from '../../pages/home';
 import ScrollToTop from '../scrollToTop';
 import DemoPopup from '../demoPopup/DemoPopup';
+import Blogs from '../../pages/blogs';
+import BlogPost from '../../pages/blogPost';
 
 const Layout = () => {
   return (
@@ -28,6 +30,8 @@ const Layout = () => {
             <Route path="/aboutus" element={<About />} />
             <Route path="/contactus" element={<Contact />} />
             <Route path="/faqs" element={<FAQsPage />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />
