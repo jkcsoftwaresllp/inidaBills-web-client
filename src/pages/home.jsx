@@ -23,7 +23,7 @@ function Home() {
       <TilesContainer
         tittle={'Why IndiaBills?'}
         description={
-          "We're more than just a billing software. Here's what sets us apart."
+          "IndiaBills goes beyond traditional billing. It’s a comprehensive inventory and billing management software designed to simplify your daily operations. With intuitive features, GST compliance, and real-time tracking, IndiaBills helps you manage your business efficiently, saving time and effort so you can focus on growth. Here's what sets us apart."
         }
         background={0}
       >
@@ -47,27 +47,35 @@ function Home() {
 
       <FeatureTile
         title="Made for Indian Businesses"
-        para="Designed specifically with Indian tax laws, business practices, and requirements in mind."
+        para="Our platform is built specifically for Indian businesses, keeping in mind local tax regulations, compliance norms, and business workflows. Whether it's GST integration, e-invoicing, or managing TDS, every feature is tailored to match Indian accounting standards and practices. We understand the unique challenges faced by Indian enterprises—from small startups to large corporations—and have designed intuitive solutions to meet them efficiently. With support for regional languages and multi-location operations, our system ensures smooth, compliant, and scalable business management, helping you stay focused on growth while we handle the complexities of Indian business operations."
         graphic={<img src={IndianBusiness} alt="Business" width="200" />}
         graphicPosition="right"
+        readMoreText="Read More"
+        readMoreLink="#"
       />
       <FeatureTile
         title="Bank-Grade Security"
-        para="Your data is protected with enterprise-level encryption and regular security audits."
+        para="Your data is safeguarded with enterprise-level encryption protocols, ensuring the highest standards of protection similar to those used by leading banks. We implement end-to-end encryption, secure data storage, and industry-standard authentication methods to prevent unauthorized access. Regular security audits, compliance checks, and real-time threat monitoring further strengthen our defenses. With multi-layered security architecture and proactive risk management, your sensitive information remains safe and confidential at all times—so you can operate your business with complete peace of mind."
         graphic={<img src={BankGradeSecurity} alt="Security" width="200" />}
         graphicPosition="left"
+        readMoreText="Read More"
+        readMoreLink="#"
       />
       <FeatureTile
         title="Lightning Fast"
-        para="Optimized for speed, even with large datasets and multiple users."
+        para="Experience blazing-fast performance, even when handling large datasets or multiple users simultaneously. Our platform is engineered for speed and efficiency, with optimized backend processes and smart data handling that ensure quick load times and seamless navigation. Whether you're generating reports, managing inventory, or collaborating across teams, everything runs smoothly—without lag or delays. Built on modern architecture and scalable infrastructure, it delivers a responsive experience that keeps up with the pace of your business."
         graphic={<img src={LightningFast} alt="Fast" width="200" />}
         graphicPosition="right"
+        readMoreText="Read More"
+        readMoreLink="#"
       />
       <FeatureTile
         title="24/7 Support"
-        para="Our dedicated support team is always available to help you with any issues."
+        para="Our dedicated support team is available around the clock to assist you with any questions or issues you may encounter. Whether it's technical help, feature guidance, or account-related queries, we're here to ensure your business operations run smoothly without interruption. With multiple channels of support—including chat, email, and phone—you can reach us anytime, day or night. We prioritize quick response times and effective solutions, so you can focus on what matters most: growing your business."
         graphic={<img src={Support} alt="Support" width="200" />}
         graphicPosition="left"
+        readMoreText="Read More"
+        readMoreLink="#"
       />
 
       <TilesContainer
