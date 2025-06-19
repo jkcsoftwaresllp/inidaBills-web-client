@@ -13,6 +13,7 @@ const Header = () => {
     "Pricing",
     "About Us",
     "Contact Us",
+    "Blogs",
     "FAQs",
   ];
 

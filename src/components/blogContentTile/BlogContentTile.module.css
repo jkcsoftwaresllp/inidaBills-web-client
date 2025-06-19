@@ -1,0 +1,26 @@
+.blogContentTile {
+  line-height: 1.6;
+}
+
+.blogContentTile h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.blogContentTile h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.blogContentTile p {
+  margin: 0.75rem 0;
+}
+
+.blogContentTile ul, .blogContentTile ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blogContentTile li {
+  margin-bottom: 0.5rem;
+}

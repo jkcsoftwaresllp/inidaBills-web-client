@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './contact.module.css';
 import Tile from '../components/containerTestimonials/Tile';
+import CustomNotification from '../components/notification/CustomNotification';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,11 +13,31 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState({
+    isVisible: false,
+    message: '',
+    type: 'success'
+  });
 
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
+    }));
+  };
+
+  const showNotification = (message, type = 'success') => {
+    setNotification({
+      isVisible: true,
+      message,
+      type
+    });
+  };
+
+  const hideNotification = () => {
+    setNotification(prev => ({
+      ...prev,
+      isVisible: false
     }));
   };
 
@@ -37,7 +58,14 @@ const Contact = () => {
       });
 
       const result = await response.text();
-      alert('Message sent successfully! We\'ll get back to you soon.');
+      
+      // Show custom success notification
+      showNotification(
+        'Message sent successfully! We\'ll get back to you within 24 hours.',
+        'success'
+      );
+      
+      // Reset form
       setFormData({
         Name: '',
         Email: '',
@@ -46,7 +74,11 @@ const Contact = () => {
         Message: '',
       });
     } catch (error) {
-      alert('There was an error submitting the form. Please try again.');
+      // Show custom error notification
+      showNotification(
+        'There was an error submitting the form. Please try again or contact us directly.',
+        'error'
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -54,6 +86,14 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
+      <CustomNotification
+        message={notification.message}
+        type={notification.type}
+        isVisible={notification.isVisible}
+        onClose={hideNotification}
+        duration={5000}
+      />
+
       <section className={styles.hero}>
         <h1>Get in Touch</h1>
         <p>

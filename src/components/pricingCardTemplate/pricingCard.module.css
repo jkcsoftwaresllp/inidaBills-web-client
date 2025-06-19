@@ -78,10 +78,54 @@
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.8rem;
+  position: relative;
 }
 
 .featureText {
   flex: 1;
+}
+
+.infoButton {
+  position: relative;
+  cursor: pointer;
+  color: var(--primary-red);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  padding: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoButton:hover {
+  opacity: 1;
+  background-color: var(--primary-red-pale);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background: var(--gray-900);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border: 6px solid transparent;
+  border-top-color: var(--gray-900);
 }
 
 .button {
@@ -99,4 +143,16 @@
 
 .button:hover {
   background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .tooltip {
+    width: 200px;
+    right: -50px;
+  }
+  
+  .tooltip::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
