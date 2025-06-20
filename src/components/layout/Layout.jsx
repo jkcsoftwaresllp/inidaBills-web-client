@@ -13,6 +13,7 @@ import ScrollToTop from '../scrollToTop';
 import DemoPopup from '../demoPopup/DemoPopup';
 import Blogs from '../../pages/blogs';
 import BlogPost from '../../pages/blogPost';
+import FeaturePost from '../../pages/featurePost';
 
 const Layout = () => {
   return (
@@ -26,6 +27,7 @@ const Layout = () => {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/features" element={<Features />} />
+            <Route path="/feature/:slug" element={<FeaturePost />} />
             <Route path="/pricing" element={<Main />} />
             <Route path="/aboutus" element={<About />} />
             <Route path="/contactus" element={<Contact />} />
