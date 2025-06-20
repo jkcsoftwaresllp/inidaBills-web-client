@@ -1,9 +1,10 @@
 // src/pages/Features.jsx
 import React, { useState } from 'react';
 import Header from '../components/layout/Header';
+import { Link } from 'react-router-dom';
 import TilesContainer from '../components/containerTestimonials/TilesContainer';
 import Tile from '../components/containerTestimonials/Tile';
-import FeatureDetails from '../components/featureDetails/FeatureDetails';
+// import FeatureDetails from '../components/featureDetails/FeatureDetails';
 import Testimonials from '../components/containerTestimonials/Testimonials'
 import UserDetails from '../components/home/UserDetails';
 import styles from './features.module.css';
@@ -12,6 +13,7 @@ const featuresData = [
   {
     id: 1,
     title: "Real Time Stock Tracking",
+    slug: 'real-time-stock-tracking',
     shortDescription: "Monitor real-time stock trends for smarter decisions",
     detailedDescription: "Keep track of your inventory in real-time with our advanced stock tracking system. Monitor stock levels, get low stock alerts, and make data-driven decisions to optimize your inventory management.",
     businessTypes: [
@@ -25,6 +27,7 @@ const featuresData = [
   {
     id: 2,
     title: "GST Billing",
+    slug: 'gst-billing',
     shortDescription: "Effortless GST billing and inventory management",
     detailedDescription: "Generate GST-compliant invoices instantly with our automated billing system. Handle multiple tax rates, manage GSTIN details, and generate tax reports effortlessly.",
     businessTypes: [
@@ -38,6 +41,7 @@ const featuresData = [
   {
     id: 3,
     title: "Reports",
+    slug: 'advanced-reports',
     shortDescription: "Generate detailed reports for orders, sales, and more",
     detailedDescription: "Analyze your business performance with customizable reports for sales, orders, inventory and more.",
     businessTypes: ["All business types"],
@@ -46,6 +50,7 @@ const featuresData = [
   {
     id: 4,
     title: "Dedicated Customer Support",
+    slug: 'dedicated-customer-support',
     shortDescription: "Reliable customer support whenever you need it",
     detailedDescription: "Our dedicated support team is available to assist you with any queries or issues you face, ensuring smooth business operations.",
     businessTypes: ["All"],
@@ -54,6 +59,7 @@ const featuresData = [
   {
     id: 5,
     title: "Unlimited Warehouse",
+    slug: 'unlimited-warehouse',
     shortDescription: "Manage multiple warehouses with unlimited capacity",
     detailedDescription: "Track stock and movements across all your warehouses without limits.",
     businessTypes: ["Retail", "Wholesale", "Logistics"],
@@ -62,6 +68,7 @@ const featuresData = [
   {
     id: 6,
     title: "Expiry Alert",
+    slug: 'expiry-alert',
     shortDescription: "Get timely expiry alerts to avoid stock wastage",
     detailedDescription: "Prevent losses by receiving expiry alerts on perishable or time-sensitive inventory.",
     businessTypes: ["Pharmacies", "FMCG", "Grocery stores"],
@@ -70,6 +77,7 @@ const featuresData = [
   {
     id: 7,
     title: "Discount & Offers",
+    slug: 'discount-offers',
     shortDescription: "Easily apply discounts and manage special offers",
     detailedDescription: "Run promotional campaigns effortlessly by configuring discounts and limited-time offers.",
     businessTypes: ["Retail", "Online businesses"],
@@ -78,6 +86,7 @@ const featuresData = [
   {
     id: 8,
     title: "Centralized Dashboard",
+    slug: 'centralized-dashboard',
     shortDescription: "Access all your business data through a single dashboard",
     detailedDescription: "Monitor and manage your entire business from a unified dashboard. View key metrics, performance summaries, and actionable insights in one place.",
     businessTypes: ["All business types"],
@@ -86,6 +95,7 @@ const featuresData = [
   {
     id: 9,
     title: "User Access Management",
+    slug: 'user-access-management',
     shortDescription: "Control access with customizable roles and permissions",
     detailedDescription: "Define roles and assign specific permissions to team members to ensure data security and operational control.",
     businessTypes: ["Organizations with multiple users", "Retail chains", "Franchises"],
@@ -94,6 +104,7 @@ const featuresData = [
   {
     id: 10,
     title: "Expenses Tracking",
+    slug: 'expenses-tracking',
     shortDescription: "Track and manage business expenses",
     detailedDescription: "Record, categorize, and analyze your business expenses for better financial control and decision-making.",
     businessTypes: ["All businesses", "Finance teams"],
@@ -102,6 +113,7 @@ const featuresData = [
   {
     id: 11,
     title: "Order/Delivery Tracking",
+    slug: 'order-delivery-tracking',
     shortDescription: "Seamlessly track orders and deliveries in real-time",
     detailedDescription: "Stay on top of every order and its delivery status. Provide better customer service with accurate and timely tracking updates.",
     businessTypes: ["E-commerce", "Logistics", "Retail"],
@@ -110,6 +122,7 @@ const featuresData = [
   {
     id: 12,
     title: "Sharable Invoice",
+    slug: 'sharable-invoice',
     shortDescription: "Create invoices & share instantly with customers",
     detailedDescription: "Generate professional invoices and share them instantly via email, WhatsApp, or download links. Streamline your billing process and get paid faster.",
     businessTypes: ["Freelancers", "Service providers", "Retailers"],
@@ -118,6 +131,7 @@ const featuresData = [
   {
     id: 13,
     title: "Unlimited Teams",
+    slug: 'unlimited-teams',
     shortDescription: "Manage teams with flexible access controls",
     detailedDescription: "Create and manage multiple teams under one business account. Assign roles and monitor performance with ease.",
     businessTypes: ["Medium to large businesses", "Franchises", "Sales teams"],
@@ -126,6 +140,7 @@ const featuresData = [
   {
     id: 14,
     title: "Custom Business URL",
+    slug: 'custom-business-url',
     shortDescription: "Get a custom business URL for a personalized online presence",
     detailedDescription: "Enhance your brand with a custom business URL. Share your branded link with clients for invoices, catalogs, and communication.",
     businessTypes: ["All businesses", "Freelancers", "Agencies"],
@@ -134,6 +149,7 @@ const featuresData = [
   {
     id: 15,
     title: "Suppliers",
+    slug: 'suppliers',
     shortDescription: "Manage and track all your suppliers in one place",
     detailedDescription: "Keep a centralized record of all your suppliers. Track transactions, payments, and product flow from multiple vendors effortlessly.",
     businessTypes: ["Retailers", "Wholesalers", "Manufacturers"],
@@ -142,6 +158,7 @@ const featuresData = [
   {
     id: 16,
     title: "Credit Management",
+    slug: 'credit-management',
     shortDescription: "Efficiently manage customer credits and payment terms",
     detailedDescription: "Offer and track credit terms with customers, set credit limits, and receive timely alerts for pending payments. Improve cash flow and reduce defaults.",
     businessTypes: ["Retail stores", "Distributors", "B2B services"],
@@ -150,6 +167,7 @@ const featuresData = [
   {
     id: 17,
     title: "Security of Data",
+    slug: 'security-of-data',
     shortDescription: "Ensure the highest level of data security and privacy",
     detailedDescription: "Your business data is protected with enterprise-grade security protocols. We use encryption, secure access controls, and regular backups to keep your data safe.",
     businessTypes: ["All businesses", "Finance & Legal", "Healthcare"],
@@ -158,6 +176,7 @@ const featuresData = [
   {
     id: 18,
     title: "Sales Summary",
+    slug: 'sales-summary',
     shortDescription: "Get a sales summary for better business insights",
     detailedDescription: "Access detailed sales summaries with performance trends, top-selling products, and revenue breakdowns to make informed business decisions.",
     businessTypes: ["Retail", "Wholesale", "E-commerce"],
@@ -166,6 +185,7 @@ const featuresData = [
   {
     id: 19,
     title: "Custom Orders with App",
+    slug: 'custom-orders-with-app',
     shortDescription: "Create and manage custom orders easily through the app",
     detailedDescription: "Allow your customers or staff to create and manage custom product orders directly from the mobile app, ensuring flexibility and quick processing.",
     businessTypes: ["Custom manufacturers", "Retailers", "On-demand services"],
@@ -174,6 +194,7 @@ const featuresData = [
   {
     id: 20,
     title: "Individual Performance",
+    slug: 'individual-performance',
     shortDescription: "Effortlessly create and manage custom orders through the app",
     detailedDescription: "Track employee productivity and sales contributions with individual performance analytics to recognize top performers and optimize your workforce.",
     businessTypes: ["Sales teams", "Retail stores", "Service providers"],
@@ -182,13 +203,6 @@ const featuresData = [
 ];
 
 const Features = () => {
-  const [selectedFeature, setSelectedFeature] = useState(null);
-
-  const handleFeatureClick = (feature) => {
-    const fullFeatureData = featuresData.find((f) => f.title === feature);
-    setSelectedFeature(fullFeatureData);
-  };
-
   return (
     <div className={styles.container}>
       <section className={styles.hero}>
@@ -203,25 +217,20 @@ const Features = () => {
       <TilesContainer
         background={1}
         tittle="Complete Business Solution"
-        description="From inventory management to customer support, we've got everything your business needs to succeed in today's competitive market."
+        description="From inventory management to customer support, we've got everything your business needs to succeed in today's competitive market. Click on any feature to learn more about how it can transform your business operations."
       >
         {featuresData.map((feature) => (
-          <div
+          <Link
             key={feature.id}
-            onClick={() => handleFeatureClick(feature.title)}
-            style={{ cursor: 'pointer' }}
+            to={`/feature/${feature.slug}`}
+            style={{ textDecoration: 'none', color: 'inherit' }}
           >
-            <Tile tittle={feature.title} para={feature.shortDescription} />
-          </div>
+            <div style={{ cursor: 'pointer' }}>
+              <Tile tittle={feature.title} para={feature.shortDescription} />
+            </div>
+          </Link>
         ))}
       </TilesContainer>
-
-      {selectedFeature && (
-        <FeatureDetails
-          feature={selectedFeature}
-          onClose={() => setSelectedFeature(null)}
-        />
-      )}
 
       <TilesContainer
         tittle={'Success Stories'}
