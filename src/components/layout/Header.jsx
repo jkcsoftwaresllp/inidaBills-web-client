@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import ButtonNav from "../buttons/ButtonNav";
 import ButtonWithBG from "../buttons/ButtonWithBG";
@@ -22,6 +22,19 @@ const Header = () => {
     console.log(`Navigated to ${label}`);
     setIsOpen(false); // close mobile nav on click
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
 
   return (
     <>
