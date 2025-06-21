@@ -205,6 +205,12 @@ const featuresData = [
 const Features = () => {
   return (
     <div className={styles.container}>
+      {/* SEO Meta Tags for Features Page */}
+      <div style={{ display: 'none' }}>
+        <h1>IndiaBills Features - Complete Billing & Inventory Management Software</h1>
+        <p>Discover powerful features of IndiaBills billing software: GST compliance, real-time stock tracking, automated invoicing, advanced reports, and 24/7 support for Indian businesses.</p>
+      </div>
+      
       <section className={styles.hero}>
         <h1>Powerful Features for Modern Businesses</h1>
         <p>
