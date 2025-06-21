@@ -8,8 +8,11 @@
   position: relative;
   overflow: hidden;
   height: 100%;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
 .box::before {
@@ -34,6 +37,18 @@
   transform: scaleX(1);
 }
 
+/* Remove focus outline and active states */
+.box:focus {
+  outline: none;
+  border-color: var(--gray-100);
+}
+
+.box:active {
+  outline: none;
+  border-color: var(--gray-100);
+  transform: translateY(-4px);
+}
+
 .tittle {
   font-size: var(--font-size-2xl);
   font-weight: 700;
@@ -41,6 +56,7 @@
   line-height: 1.3;
   color: var(--gray-900);
   letter-spacing: -0.01em;
+  flex-shrink: 0;
 }
 
 .para {
@@ -49,29 +65,20 @@
   line-height: 1.6;
   flex-grow: 1;
   font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 /* Hover effects for interactive tiles */
-.box[style*="cursor: pointer"] {
-  cursor: pointer;
-}
-
-.box[style*="cursor: pointer"]:hover {
-  background: linear-gradient(135deg, var(--white) 0%, var(--primary-red-pale) 100%);
-}
-
-.box[style*="cursor: pointer"]:hover .tittle {
+.box:hover .tittle {
   color: var(--primary-red);
-}
-
-.box[style*="cursor: pointer"]:active {
-  transform: translateY(-4px);
 }
 
 @media (max-width: 768px) {
   .box {
     padding: var(--space-6);
     border-radius: var(--radius-lg);
+    min-height: 180px;
   }
 
   .tittle {
@@ -87,6 +94,7 @@
 @media (max-width: 480px) {
   .box {
     padding: var(--space-5);
+    min-height: 160px;
   }
 
   .tittle {
