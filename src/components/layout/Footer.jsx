@@ -11,7 +11,7 @@ const Footer = () => {
           <h2>IndiaBills</h2>
           <p>Simplifying billing for Indian businesses since 2024.</p>
           <div className={styles.socialLinks}>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
+            <a href="https://x.com/jkcsoftwares" target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
             <a href="https://www.facebook.com/jkcsoftwares/" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
             <a href="https://in.linkedin.com/company/jkcsoftwares" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
             <a href="https://www.instagram.com/jkcsoftwares/" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
@@ -25,6 +25,7 @@ const Footer = () => {
             <Link to="/pricing">Pricing</Link>
             <Link to="/aboutus">About</Link>
             <Link to="/contactus">Contact</Link>
+            <Link to="/blogs">Blogs</Link>
           </nav>
         </div>
 
