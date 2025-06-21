@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://indiabills.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow important pages
+Allow: /home
+Allow: /features
+Allow: /pricing
+Allow: /blogs
+Allow: /feature/
+Allow: /blog/
+Allow: /aboutus
+Allow: /contactus
+Allow: /faqs
