@@ -86,11 +86,12 @@
     height: 100vh;
     width: 320px;
     background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
-    padding: var(--space-16) var(--space-8);
+    padding: var(--space-8) var(--space-8);
     gap: var(--space-6);
     z-index: 1004; 
     transition: right var(--transition-normal);
     box-shadow: var(--shadow-2xl);
+    justify-content: space-around;
   }
 
   .nav a {
@@ -141,7 +142,7 @@
 
   .nav {
     width: 280px;
-    padding: var(--space-12) var(--space-6);
+    padding: var(--space-6) var(--space-6);
   }
 
   .logoImage {
