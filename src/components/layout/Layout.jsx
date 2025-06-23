@@ -14,6 +14,10 @@ import DemoPopup from '../demoPopup/DemoPopup';
 import Blogs from '../../pages/blogs';
 import BlogPost from '../../pages/blogPost';
 import FeaturePost from '../../pages/featurePost';
+import Login from '../../pages/login';
+import Register from '../../pages/register';
+import DemoRequest from '../../pages/demoRequest';
+import Dashboard from '../../pages/dashboard';
 
 const Layout = () => {
   return (
@@ -34,6 +38,10 @@ const Layout = () => {
             <Route path="/faqs" element={<FAQsPage />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/demo-request" element={<DemoRequest />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />
