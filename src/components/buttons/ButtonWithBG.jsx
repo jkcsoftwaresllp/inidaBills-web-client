@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './styles/ButtonWithBG.module.css';
 
 /**
@@ -9,8 +10,19 @@ import styles from './styles/ButtonWithBG.module.css';
  * @param {string} rounded - Tailwind border radius type (e.g., 'full', 'lg').
  * @param {number} border - Pass 1 for border white otherwise don't pass border
  * @param {function} onclick - Callback function triggered when the button is clicked.
+ * @param {string} redirectTo - Optional route to redirect to when clicked.
  */
-function ButtonWithBG({ label, background, rounded, onclick , border }) { //Pass background as 1 or 0 and rounded as "full" or "lg"
+function ButtonWithBG({ label, background, rounded, onclick, border, redirectTo }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (redirectTo) {
+      navigate(redirectTo);
+    } else if (onclick) {
+      onclick();
+    }
+  };
+
   return (
     <div>
       <button
@@ -20,7 +32,7 @@ function ButtonWithBG({ label, background, rounded, onclick , border }) { //Pass
           ${border && styles.border}
           ${styles[`rounded${rounded}`]}
         `}
-        onClick={onclick}
+        onClick={handleClick}
       >
         {label}
       </button>
