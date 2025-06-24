@@ -25,16 +25,16 @@ function Header() {
         </h4>
         <div className={styles.btn}>
           <ButtonWithBG 
-            label="Book a Demo" 
+            label="Start Demo" 
             background={1} 
             rounded="full" 
-            redirectTo="/demo-request"
+            redirectTo="/login"
           />
           <ButtonWithBG 
-            label="Try Free" 
+            label="Learn More" 
             background={0} 
             rounded="full" 
-            redirectTo="/register"
+            redirectTo="/features"
           />
         </div>
       </div>

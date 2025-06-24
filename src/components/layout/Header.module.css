@@ -55,6 +55,10 @@
   transform: translateY(-1px);
 }
 
+.mobileAuthLink {
+  display: none;
+}
+
 .toggle {
   display: none;
   font-size: var(--font-size-2xl);
@@ -85,13 +89,19 @@
     right: -100%;
     height: 100vh;
     width: 320px;
-    background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--gray-900) 0%,
+      var(--gray-800) 100%
+    );
     padding: var(--space-8) var(--space-8);
     gap: var(--space-6);
-    z-index: 1004; 
+    z-index: 1004;
     transition: right var(--transition-normal);
     box-shadow: var(--shadow-2xl);
     justify-content: space-around;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav a {
@@ -110,13 +120,17 @@
     transform: translateX(8px);
   }
 
+  .mobileAuthLink {
+    display: block;
+  }
+
   .open {
     right: 0;
   }
 
   .toggle {
     display: block;
-    z-index: 1003; 
+    z-index: 1003;
   }
 
   .overlay {
@@ -126,7 +140,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1000; 
+    z-index: 1000;
   }
 
   .demoButtonWrapper {
@@ -143,6 +157,8 @@
   .nav {
     width: 280px;
     padding: var(--space-6) var(--space-6);
+    overflow-y: auto; /* allow scroll within sidebar */
+    -webkit-overflow-scrolling: touch;
   }
 
   .logoImage {
@@ -161,5 +177,7 @@
 
   .nav {
     width: 260px;
+    overflow-y: auto; /* allow scroll within sidebar */
+    -webkit-overflow-scrolling: touch;
   }
 }

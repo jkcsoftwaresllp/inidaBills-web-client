@@ -26,11 +26,11 @@ function TrustedCompaniesSection() {
         </div>
         <div className={styles.btn}>
           <ButtonWithBG
-            label={'Book a Demo'}
+            label={'Start Demo'}
             background={0}
             rounded={'full'}
             border={1}
-            redirectTo="/demo-request"
+            redirectTo="/login"
           />
         </div>
       </div>

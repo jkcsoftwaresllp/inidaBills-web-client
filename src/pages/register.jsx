@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styles from './register.module.css';
 import CustomNotification from '../components/notification/CustomNotification';
 
 const Register = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [notification, setNotification] = useState({
     isVisible: false,
@@ -18,6 +19,17 @@ const Register = () => {
     full_name: '',
     phone: '',
   });
+
+  useEffect(() => {
+    // Check if user is already logged in
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      // If coming from a demo request, go to demo request page
+      // Otherwise go to dashboard
+      const from = location.state?.from || '/dashboard';
+      navigate(from);
+    }
+  }, [navigate, location]);
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -60,8 +72,13 @@ const Register = () => {
         localStorage.setItem('authToken', result.token);
         localStorage.setItem('user', JSON.stringify(result.user));
         
-        showNotification('Account created successfully! Redirecting...', 'success');
-        setTimeout(() => navigate('/dashboard'), 2000);
+        showNotification('Account created successfully! Redirecting to demo request...', 'success');
+        
+        // Trigger storage event for header to update
+        window.dispatchEvent(new Event('storage'));
+        
+        // Redirect to demo request page after successful registration
+        setTimeout(() => navigate('/demo-request'), 1500);
       } else {
         showNotification(result.error || 'Registration failed', 'error');
       }

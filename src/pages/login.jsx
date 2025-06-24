@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styles from './login.module.css';
 import CustomNotification from '../components/notification/CustomNotification';
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [notification, setNotification] = useState({
     isVisible: false,
@@ -16,6 +17,17 @@ const Login = () => {
     email: '',
     password: '',
   });
+
+  useEffect(() => {
+    // Check if user is already logged in
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      // If coming from a demo request, go to demo request page
+      // Otherwise go to dashboard
+      const from = location.state?.from || '/dashboard';
+      navigate(from);
+    }
+  }, [navigate, location]);
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -59,7 +71,12 @@ const Login = () => {
         localStorage.setItem('user', JSON.stringify(result.user));
         
         showNotification('Login successful! Redirecting...', 'success');
-        setTimeout(() => navigate('/dashboard'), 2000);
+        
+        // Trigger storage event for header to update
+        window.dispatchEvent(new Event('storage'));
+        
+        // Redirect to demo request page after successful login
+        setTimeout(() => navigate('/demo-request'), 1500);
       } else {
         showNotification(result.error || 'Login failed', 'error');
       }
@@ -84,7 +101,7 @@ const Login = () => {
       <div className={styles.loginCard}>
         <div className={styles.header}>
           <h1>Welcome Back</h1>
-          <p>Sign in to access your IndiaBills demo dashboard</p>
+          <p>Sign in to access your IndiaBills demo</p>
         </div>
 
         <form onSubmit={handleSubmit} className={styles.form}>
@@ -128,12 +145,6 @@ const Login = () => {
             Don't have an account?{' '}
             <Link to="/register" className={styles.link}>
               Create one here
-            </Link>
-          </p>
-          <p>
-            Want to request a demo?{' '}
-            <Link to="/demo-request" className={styles.link}>
-              Get started
             </Link>
           </p>
         </div>

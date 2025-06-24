@@ -17,7 +17,15 @@ function ButtonWithBG({ label, background, rounded, onclick, border, redirectTo 
 
   const handleClick = () => {
     if (redirectTo) {
-      navigate(redirectTo);
+      // Check if user is logged in for demo-related redirects
+      const token = localStorage.getItem('authToken');
+      
+      if ((redirectTo === '/demo-request' || label.toLowerCase().includes('demo')) && !token) {
+        // If trying to access demo but not logged in, redirect to login
+        navigate('/login');
+      } else {
+        navigate(redirectTo);
+      }
     } else if (onclick) {
       onclick();
     }
