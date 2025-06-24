@@ -16,7 +16,6 @@ const Header = () => {
     'Contact Us',
     'Blogs',
     'FAQs',
-    'Login',
   ];
 
   const handleNavClick = (label) => {
@@ -29,6 +28,14 @@ const Header = () => {
     const token = localStorage.getItem('authToken');
     setIsLoggedIn(!!token);
 
+    // Listen for storage changes to update login status
+    const handleStorageChange = () => {
+      const token = localStorage.getItem('authToken');
+      setIsLoggedIn(!!token);
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
     if (isOpen) {
       document.body.classList.add('no-scroll');
     } else {
@@ -37,6 +44,7 @@ const Header = () => {
 
     return () => {
       document.body.classList.remove('no-scroll');
+      window.removeEventListener('storage', handleStorageChange);
     };
   }, [isOpen]);
 
@@ -73,6 +81,14 @@ const Header = () => {
               </Link>
             );
           })}
+          
+          {!isLoggedIn && (
+            <>
+              <Link to ="/login" onClick={() => handleNavClick('Login')}>
+                 <ButtonNav label="Login" underline={1} />
+              </Link>
+            </>
+          )}
         </nav>
 
         <div className={styles.demoButtonWrapper}>
@@ -88,7 +104,7 @@ const Header = () => {
               label="Start Demo"
               background={1}
               rounded="full"
-              redirectTo="/demo-request"
+              redirectTo="/login"
             />
           )}
         </div>
