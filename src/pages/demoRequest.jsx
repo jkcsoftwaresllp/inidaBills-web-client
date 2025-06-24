@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './demoRequest.module.css';
 import CustomNotification from '../components/notification/CustomNotification';
@@ -30,6 +30,15 @@ const DemoRequest = () => {
     jobTitle: '',
     department: '',
   });
+
+  useEffect(() => {
+    // Check if user is logged in
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+      navigate('/login');
+      return;
+    }
+  }, [navigate]);
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -67,22 +76,22 @@ const DemoRequest = () => {
 
       const requestBody = {
         organization: {
-          name: formData.organizationName,
-          business_name: formData.businessName,
-          email: formData.organizationEmail,
-          phone: formData.organizationPhone,
-          address_line: formData.addressLine,
-          city: formData.city,
-          state: formData.state,
-          pin_code: formData.pinCode,
+          name: formData.organizationName || undefined,
+          business_name: formData.businessName || undefined,
+          email: formData.organizationEmail || undefined,
+          phone: formData.organizationPhone || undefined,
+          address_line: formData.addressLine || undefined,
+          city: formData.city || undefined,
+          state: formData.state || undefined,
+          pin_code: formData.pinCode || undefined,
           timezone: 'Asia/Kolkata'
         },
         user: {
-          email: formData.userEmail,
-          full_name: formData.userFullName,
-          phone: formData.userPhone,
-          job_title: formData.jobTitle,
-          department: formData.department,
+          email: formData.userEmail || undefined,
+          full_name: formData.userFullName || undefined,
+          phone: formData.userPhone || undefined,
+          job_title: formData.jobTitle || undefined,
+          department: formData.department || undefined,
         }
       };
 
