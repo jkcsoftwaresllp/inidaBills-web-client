@@ -3,64 +3,64 @@ const GSTBilling = () => ({
   shortDescription: 'Effortless GST billing and inventory management',
   category: 'Tax Compliance',
   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Simplify your GST compliance with our comprehensive billing system designed specifically for Indian businesses. Generate GST-compliant invoices, manage tax calculations, and streamline your filing process with ease.',
+  detailedDescription: 'GST Billing by IndiaBills makes tax calculations automatic and generates clean, compliant invoices. It simplifies GST filing and keeps your business tax-ready at all times.',
   
   whatMakesItDifferent: [
-    'Automatic GST calculation based on HSN/SAC codes',
-    'Built-in compliance with latest GST rules and rates',
-    'E-invoicing integration for businesses above ₹5 crores turnover',
-    'Automated GSTR-1, GSTR-3B return preparation',
-    'Real-time GST rate updates and notifications',
-    'Reverse charge mechanism handling for applicable transactions'
+    'Automatic GST calculation',
+    'Handles mixed GST rates',
+    'HSN/GSTIN included',
+    'Combines tax + discounts correctly',
+    'Prepares GST return reports',
+    'Instant digital sharing'
   ],
 
   idealFor: [
     {
-      businessType: 'Small Businesses',
-      description: 'Perfect for small businesses new to GST compliance. Simplifies complex tax calculations and ensures accurate filing.',
-      benefits: ['Automated tax calculations', 'Error-free GST returns', 'Compliance assurance', 'Time savings on paperwork']
+      businessType: 'Electronics Stores',
+      description: 'Different tax rates? No problem for billing.',
+      benefits: ['Mixed-rate support', 'Accurate invoices', 'Faster billing', 'Ready for GST return']
+    },
+    {
+      businessType: 'Clothing Shops',
+      description: 'Easy GST for fashion retailers',
+      benefits: ['Mixed-tax item billing', 'Clean tax breakdown', 'Simple filing', 'Customer-friendly bills']
+    },
+    {
+      businessType: 'Wholesalers',
+      description: 'Bulk GST billing made easy.',
+      benefits: ['Quick bulk invoice creation', 'Handles multi-rate goods', 'Auto GST reports', 'Saves time']
     },
     {
       businessType: 'Service Providers',
-      description: 'Ideal for consultants, agencies, and service-based businesses dealing with SAC codes and service tax complexities.',
-      benefits: ['SAC code management', 'Service tax calculations', 'Professional invoice templates', 'Client payment tracking']
-    },
-    {
-      businessType: 'Retailers',
-      description: 'Essential for retail businesses managing multiple product categories with different GST rates and HSN codes.',
-      benefits: ['Multi-rate GST handling', 'HSN code automation', 'Quick billing process', 'Inventory-tax integration']
-    },
-    {
-      businessType: 'B2B Companies',
-      description: 'Critical for B2B businesses requiring detailed GST documentation and compliance for input tax credit claims.',
-      benefits: ['Detailed GST documentation', 'ITC tracking', 'Vendor GST verification', 'Compliance reporting']
+      description: 'Combines goods and service billing seamlessly.',
+      benefits: ['Single invoice', 'Correct tax split', 'Easy records', 'GST-ready format']
     }
   ],
 
   keyFeatures: [
     {
-      feature: 'Automatic Tax Calculation',
-      description: 'Intelligent GST calculation based on product HSN codes, customer location, and applicable tax rates.'
+      feature: 'Auto tax calculations',
+      description: 'No need for manual entry.'
     },
     {
-      feature: 'GST-Compliant Invoices',
-      description: 'Generate invoices that meet all GST requirements including mandatory fields and proper formatting.'
+      feature: 'HSN/GSTIN compliance',
+      description: 'Bills meet legal requirements.'
     },
     {
-      feature: 'E-Invoicing Support',
-      description: 'Seamless e-invoicing integration for businesses with turnover above ₹5 crores with IRN generation.'
+      feature: 'Mixed rate support',
+      description: 'One bill can cover all rates.'
     },
     {
-      feature: 'Return Filing Assistance',
-      description: 'Automated preparation of GSTR-1, GSTR-3B, and other returns with data validation.'
+      feature: 'Combines discount/tax properly',
+      description: 'Always correct totals.'
     },
     {
-      feature: 'HSN/SAC Management',
-      description: 'Comprehensive database of HSN and SAC codes with automatic rate assignment.'
+      feature: 'Creates GST return reports',
+      description: 'Filing becomes easier.'
     },
     {
-      feature: 'Compliance Monitoring',
-      description: 'Real-time compliance checks and alerts for any GST-related issues or updates.'
+      feature: 'Shares bills online',
+      description: 'Email/WhatsApp options built-in.'
     }
   ],
 
@@ -83,22 +83,22 @@ const GSTBilling = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Multi-State Business Operations',
-      description: 'A textile distributor operating across multiple states uses automated IGST/CGST/SGST calculations for different customer locations.',
-      result: '90% reduction in tax calculation errors and 100% compliance with inter-state tax rules'
-    },
-    {
-      scenario: 'Service Business Compliance',
-      description: 'A digital marketing agency automates SAC code assignment and service tax calculations for diverse client projects.',
-      result: 'Reduced GST filing time from 8 hours to 30 minutes per month'
-    },
-    {
-      scenario: 'E-Invoicing Implementation',
-      description: 'A pharmaceutical distributor seamlessly implements e-invoicing with automatic IRN generation for all B2B transactions.',
-      result: '100% e-invoicing compliance achieved within 2 weeks of implementation'
-    }
-  ],
+  {
+    scenario: 'Error-Free Retail Billing',
+    description: 'An electronics store automates billing to ensure accurate invoices at checkout, reducing manual errors and speeding up the customer billing process.',
+    result: 'Faster checkout and improved customer satisfaction with accurate invoicing'
+  },
+  {
+    scenario: 'High-Volume Invoicing for Wholesalers',
+    description: 'A wholesale distributor streamlines bulk order processing by quickly generating multiple invoices with minimal manual effort.',
+    result: 'Significant time savings and faster order-to-invoice cycle for large customer orders'
+  },
+  {
+    scenario: 'Combined Billing for Products and Services',
+    description: 'A service-based company simplifies billing by seamlessly combining charges for both products sold and services rendered into a single invoice.',
+    result: 'Simplified billing process and reduced confusion for customers dealing with mixed charges'
+  }
+],
 
   implementation: {
     setupTime: '1-3 hours',

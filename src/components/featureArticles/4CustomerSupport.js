@@ -3,66 +3,66 @@ const CustomerSupport = () => ({
   shortDescription: 'Reliable customer support whenever you need it',
   category: 'Support & Service',
   image: 'https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Experience unparalleled customer support with our dedicated team of experts. Get help when you need it through multiple channels, comprehensive resources, and personalized assistance to ensure your business runs smoothly.',
+  detailedDescription: 'IndiaBills provides Dedicated Customer Support to ensure that businesses get timely help whenever needed. Our team is always ready to assist so you can focus on growing your business without technical worries.',
   
   whatMakesItDifferent: [
-    '24/7 availability through multiple support channels',
-    'Dedicated account managers for enterprise clients',
-    'Multilingual support in Hindi, English, and regional languages',
-    'Video call support for complex technical issues',
-    'Proactive monitoring and issue prevention',
-    'Comprehensive knowledge base and video tutorials'
+    '24/7 availability',
+    'Multiple channels',
+    'Quick resolutions',
+    'Specialized agents',
+    'Proactive help',
+    'Easy documentation'
   ],
 
   idealFor: [
     {
-      businessType: 'All Business Types',
-      description: 'Every business needs reliable support to ensure smooth operations and quick resolution of any issues that may arise.',
-      benefits: ['Minimal downtime', 'Quick issue resolution', 'Expert guidance', 'Peace of mind']
+      businessType: 'Retail Shops',
+      description: 'Helps with quick setup and problem-solving.',
+      benefits: ['Fast issue resolution', 'Easy contact options', 'Reduces downtime', 'Boosts confidence']
     },
     {
-      businessType: 'New Technology Adopters',
-      description: 'Perfect for businesses new to digital billing systems who need extra guidance and support during the transition.',
-      benefits: ['Smooth onboarding', 'Comprehensive training', 'Confidence building', 'Reduced learning curve']
+      businessType: 'Wholesalers',
+      description: 'Handles large system queries efficiently.',
+      benefits: ['Priority support', 'System guidance', 'Prevents order delays', 'Saves time']
     },
     {
-      businessType: 'Growing Businesses',
-      description: 'Ideal for rapidly growing businesses that need scalable support as they expand their operations.',
-      benefits: ['Scalable support solutions', 'Growth guidance', 'System optimization', 'Strategic advice']
+      businessType: 'Pharmacies',
+      description: 'Keeps critical systems running smoothly.',
+      benefits: ['24/7 support', 'Compliance assistance', 'Quick fixes', 'Secure guidance']
     },
     {
-      businessType: 'Mission-Critical Operations',
-      description: 'Essential for businesses where system downtime can significantly impact operations and revenue.',
-      benefits: ['Priority support', 'Immediate response', 'Preventive maintenance', 'Business continuity']
+      businessType: 'Supermarkets',
+      description: 'Assists with big data and transactions.',
+      benefits: ['Supports complex queries', 'Helps with reports', 'Speeds up troubleshooting', 'Reliable contact']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: '24/7 Multi-Channel Support',
-      description: 'Round-the-clock support through phone, email, chat, and video calls in multiple languages.'
-    },
-    {
-      feature: 'Dedicated Account Management',
-      description: 'Personal account managers for enterprise clients providing proactive support and strategic guidance.'
-    },
-    {
-      feature: 'Comprehensive Knowledge Base',
-      description: 'Extensive library of articles, tutorials, and FAQs covering all aspects of the system.'
-    },
-    {
-      feature: 'Video Tutorial Library',
-      description: 'Step-by-step video guides for all features and common use cases in multiple languages.'
-    },
-    {
-      feature: 'Remote Assistance',
-      description: 'Screen sharing and remote desktop support for complex technical issues and training.'
-    },
-    {
-      feature: 'Proactive Monitoring',
-      description: 'System health monitoring with proactive alerts and preventive maintenance.'
-    }
-  ],
+  {
+    feature: '24/7 Customer Support',
+    description: 'Always-on assistance with round-the-clock availability to address customer queries and issues anytime.'
+  },
+  {
+    feature: 'Industry-Trained Support Team',
+    description: 'Expert agents with deep industry knowledge to provide accurate and relevant solutions quickly.'
+  },
+  {
+    feature: 'Multi-Channel Support Options',
+    description: 'Accessible support through chat, email, and phone to suit different customer preferences.'
+  },
+  {
+    feature: 'Self-Service Knowledge Base',
+    description: 'Comprehensive collection of guides, FAQs, and troubleshooting articles for quick self-help.'
+  },
+  {
+    feature: 'Proactive Issue Alerts',
+    description: 'Automated notifications that alert users about potential issues before they escalate.'
+  },
+  {
+    feature: 'Efficient Ticketing System',
+    description: 'Track support requests easily with a streamlined ticket system that ensures timely updates and resolutions.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const CustomerSupport = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Emergency System Recovery',
-      description: 'A manufacturing company experiences a critical system issue during peak production. Our support team provides immediate remote assistance to restore operations.',
-      result: 'System restored within 15 minutes, preventing potential loss of ₹2 lakhs in production delays'
-    },
-    {
-      scenario: 'New User Onboarding',
-      description: 'A traditional retail business transitioning to digital billing receives comprehensive training and ongoing support for smooth adoption.',
-      result: 'Complete system adoption achieved in 3 days instead of the typical 2-3 weeks'
-    },
-    {
-      scenario: 'Scaling Support',
-      description: 'A growing e-commerce business receives strategic guidance on system optimization as they expand from 100 to 1000 daily orders.',
-      result: 'Seamless scaling with 99.9% system uptime during 10x growth period'
-    }
-  ],
+  {
+    scenario: 'Quick Resolution of Billing Issues',
+    description: 'A retailer faces a billing system error during peak hours. The support team quickly troubleshoots and resolves the issue, preventing checkout delays.',
+    result: 'Issue resolved within minutes, helping avoid lost sales and maintain customer trust'
+  },
+  {
+    scenario: 'Urgent Stock Query Handling',
+    description: 'A wholesaler needs immediate stock availability information for a large order. The support team provides real-time data and guidance to fulfill the order on time.',
+    result: 'Order processed and shipped on schedule, securing a key customer relationship'
+  },
+  {
+    scenario: 'GST Filing Assistance for Compliance',
+    description: 'A pharmacy seeks help with GST filing. The support team provides step-by-step guidance to ensure accurate reporting and timely submission.',
+    result: 'Avoided late filing penalties and ensured smooth tax compliance'
+  }
+],
 
   implementation: {
     setupTime: 'Immediate',

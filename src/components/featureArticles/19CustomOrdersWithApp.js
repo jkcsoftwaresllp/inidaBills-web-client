@@ -3,66 +3,66 @@ const CustomOrdersWithApp = () => ({
   shortDescription: 'Create and manage custom orders easily through the app',
   category: 'Sales & Order Management',
   image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Allow your customers or staff to create and manage custom product orders directly from the mobile app. Whether it’s a made-to-order product, personalized configuration, or special delivery instructions, this feature ensures flexibility, efficiency, and better customer satisfaction.',
+  detailedDescription: 'IndiaBills lets customers place custom orders via app, so you can handle special requests with ease.',
 
   whatMakesItDifferent: [
-    'Create orders with custom notes, specifications, or attachments',
-    'Mobile-first interface for on-the-go order placement',
-    'Track status updates for each custom order in real-time',
-    'Supports approvals or internal reviews before fulfillment',
-    'Syncs seamlessly with inventory and billing modules',
-    'Notifies relevant staff upon order creation or changes'
+    'Mobile-friendly',
+    'Easy custom notes',
+    'Track custom orders',
+    'Link to stock',
+    'Alerts for custom items',
+    'Report on custom sales'
   ],
 
   idealFor: [
     {
-      businessType: 'Custom Manufacturers',
-      description: 'Perfect for businesses offering personalized or made-to-order products.',
-      benefits: ['Receive clear customization details', 'Avoid manual miscommunication', 'Speed up order processing', 'Track fulfillment timelines easily']
-    },
-    {
       businessType: 'Retailers',
-      description: 'Useful for retailers offering product bundles, personalization, or optional add-ons.',
-      benefits: ['Handle product customizations at the POS or via app', 'Keep detailed order records', 'Improve customer satisfaction with tailored options']
+      description: 'Take unique requests.',
+      benefits: ['Custom notes', 'Smart tracking', 'Better service', 'Builds loyalty']
     },
     {
-      businessType: 'On-demand Services',
-      description: 'Great for services like printing, repairs, tailoring, or food customization.',
-      benefits: ['Capture client requirements directly from mobile', 'Enable staff notifications and confirmations', 'Ensure smooth end-to-end tracking of service orders']
+      businessType: 'Wholesalers',
+      description: 'Handle custom bulk.',
+      benefits: ['Big custom orders', 'Smart processing', 'Track status', 'Clear logs']
     },
     {
-      businessType: 'Field Sales Teams',
-      description: 'Allows field agents to place customer-specific orders during visits.',
-      benefits: ['Enable real-time order booking', 'Add custom delivery or packaging notes', 'Instant confirmation to backend teams']
+      businessType: 'Supermarkets',
+      description: 'Serve big clients.',
+      benefits: ['Smart custom orders', 'Better service', 'Prevent errors', 'Track requests']
+    },
+    {
+      businessType: 'Service Firms',
+      description: 'Tailor services easily.',
+      benefits: ['Note requests', 'Track work', 'Better delivery', 'Build trust']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Custom Order Form',
-      description: 'Capture product details, quantity, notes, and optional file uploads for personalization.'
-    },
-    {
-      feature: 'Mobile App Integration',
-      description: 'Place and manage orders from any smartphone with an intuitive interface.'
-    },
-    {
-      feature: 'Real-Time Status Tracking',
-      description: 'Track the progress of each custom order from approval to delivery.'
-    },
-    {
-      feature: 'Notifications & Alerts',
-      description: 'Notify staff or departments when a new custom order is placed or updated.'
-    },
-    {
-      feature: 'Approval Workflow (Optional)',
-      description: 'Add internal review steps before processing complex or high-value custom orders.'
-    },
-    {
-      feature: 'History & Reorder Support',
-      description: 'View past custom orders and reorder with a single tap.'
-    }
-  ],
+  {
+    feature: 'App-Based Custom Order Management',
+    description: 'Allow users to place and track custom orders easily through a mobile-friendly app interface.'
+  },
+  {
+    feature: 'Custom Notes & Instructions',
+    description: 'Add detailed notes, customer preferences, or special instructions for each order.'
+  },
+  {
+    feature: 'Live Order Status Tracking',
+    description: 'Monitor the progress of every custom job from creation to delivery with real-time updates.'
+  },
+  {
+    feature: 'Automated Alerts & Reminders',
+    description: 'Get notified of pending actions, approvals, or delivery deadlines to avoid delays.'
+  },
+  {
+    feature: 'Linked Inventory Management',
+    description: 'Ensure the right stock levels are maintained for items used in custom jobs by auto-linking to inventory.'
+  },
+  {
+    feature: 'Custom Order Reporting',
+    description: 'Generate reports on custom orders to analyze trends, popular request types, and fulfillment times.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const CustomOrdersWithApp = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Tailoring Store Receives Mobile Orders',
-      description: 'Customers place stitching orders with measurements and fabric preferences via the app.',
-      result: 'Reduces in-store footfall by 35% while improving accuracy of custom orders'
-    },
-    {
-      scenario: 'Furniture Manufacturer Accepts Personalized Requests',
-      description: 'A manufacturer receives requests for customized designs and finishes via sales reps on the app.',
-      result: 'Streamlines custom production workflow and shortens turnaround time'
-    },
-    {
-      scenario: 'Field Sales Agent Places On-the-Spot Orders',
-      description: 'An FMCG sales agent books personalized product packages based on retailer needs.',
-      result: 'Improves response time and increases conversions during in-person visits'
-    }
-  ],
+  {
+    scenario: 'Retailer Handles Special Customer Orders',
+    description: 'A retail store takes custom product requests from walk-in customers and processes them quickly through the app.',
+    result: 'Delivers faster service and improves customer satisfaction with timely fulfillment'
+  },
+  {
+    scenario: 'Wholesaler Manages Bulk Custom Orders',
+    description: 'A wholesaler uses the custom order system to track large-volume, client-specific requests without errors.',
+    result: 'Reduces manual mistakes and speeds up processing for bulk clients'
+  },
+  {
+    scenario: 'Supermarket Fulfills Large Client Requests',
+    description: 'A supermarket processes bulk custom orders for corporate and institutional buyers using detailed order notes and linked stock tracking.',
+    result: 'Builds long-term loyalty and increases repeat business from big customers'
+  }
+],
 
   implementation: {
     setupTime: '1–2 hours',

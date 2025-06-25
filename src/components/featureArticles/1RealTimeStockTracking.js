@@ -3,64 +3,64 @@ const RealTimeStockTracking = () => ({
   shortDescription: 'Monitor real-time stock trends for smarter decisions',
   category: 'Inventory Management',
   image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Transform your inventory management with our cutting-edge real-time stock tracking system. Monitor every item, track movements instantly, and make data-driven decisions that optimize your business operations.',
+  detailedDescription: 'Real-Time Stock Tracking in IndiaBills helps businesses monitor their inventory instantly as sales and purchases happen. This feature ensures you always know the exact status of your stock, avoiding shortages and overstock.',
   
   whatMakesItDifferent: [
-    'Live inventory updates across all channels simultaneously',
-    'AI-powered stock level predictions and recommendations',
-    'Automated low stock alerts with customizable thresholds',
-    'Multi-location inventory synchronization in real-time',
-    'Integration with barcode scanners and mobile devices',
-    'Historical trend analysis for better forecasting'
+    'Instant updates on stock changes',
+    'Multi-location tracking',
+    'Low-stock and expiry alerts',
+    'Offline mode with auto-sync',
+    'Live stock valuation',
+    'Error reduction'
   ],
 
   idealFor: [
     {
       businessType: 'Retail Stores',
-      description: 'Perfect for retail businesses managing multiple product lines with varying demand patterns. Helps prevent stockouts during peak seasons and reduces overstock situations.',
-      benefits: ['Prevent lost sales due to stockouts', 'Optimize shelf space utilization', 'Reduce carrying costs', 'Improve customer satisfaction']
+      description: 'Keeps products always in stock, so customers find what they want.',
+      benefits: ['Prevents stockouts', 'Highlights fast-moving items', 'Helps plan purchases smartly', 'Makes inventory reporting easy']
     },
     {
       businessType: 'Wholesale Distributors',
-      description: 'Essential for wholesalers handling large volumes and multiple suppliers. Enables efficient distribution and supplier management.',
-      benefits: ['Track bulk inventory movements', 'Manage supplier relationships', 'Optimize warehouse space', 'Reduce fulfillment errors']
+      description: 'Handles large volumes and multiple locations efficiently.',
+      benefits: ['Manages stock in different warehouses', 'Faster order processing', 'Reduces risk of overstock', 'Improves supplier coordination']
     },
     {
-      businessType: 'E-commerce Platforms',
-      description: 'Critical for online businesses to maintain accurate product availability and prevent overselling across multiple channels.',
-      benefits: ['Sync inventory across platforms', 'Prevent overselling', 'Automate listing updates', 'Improve order fulfillment']
+      businessType: 'Pharmacies',
+      description: 'Tracks sensitive stock like medicines with expiry dates.',
+      benefits: ['Expiry warnings', 'Better compliance', 'Reduces waste', 'Tracks demand trends']
     },
     {
-      businessType: 'Manufacturing Units',
-      description: 'Helps manufacturers track raw materials, work-in-progress, and finished goods throughout the production cycle.',
-      benefits: ['Monitor production materials', 'Track WIP inventory', 'Optimize production planning', 'Reduce waste and inefficiencies']
+      businessType: 'Supermarkets',
+      description: 'Maintains a balanced stock on shelves at all times.',
+      benefits: ['Optimizes stock levels', 'Avoids over-purchasing', 'Easy category tracking', 'Simplifies reordering']
     }
   ],
 
   keyFeatures: [
     {
-      feature: 'Live Dashboard',
-      description: 'Real-time inventory overview with visual indicators for stock levels, movements, and alerts.'
+      feature: 'Auto stock updates',
+      description: 'No manual effort required to adjust inventory.'
     },
     {
-      feature: 'Automated Alerts',
-      description: 'Customizable notifications for low stock, overstock, and reorder points via email, SMS, or in-app notifications.'
+      feature: 'Multi-location visibility',
+      description: 'See stock across all sites at once.'
     },
     {
-      feature: 'Multi-Location Tracking',
-      description: 'Track inventory across multiple warehouses, stores, or locations with centralized control.'
+      feature: 'Low-stock warnings',
+      description: 'Alerts you to reorder before running out.'
     },
     {
-      feature: 'Barcode Integration',
-      description: 'Seamless integration with barcode scanners for quick and accurate stock updates.'
+      feature: 'Expiry tracking',
+      description: 'Keeps tabs on expiry dates for sensitive items.'
     },
     {
-      feature: 'Movement History',
-      description: 'Complete audit trail of all inventory movements with timestamps and user tracking.'
+      feature: 'Stock movement reports',
+      description: 'See what comes in and goes out clearly.'
     },
     {
-      feature: 'Predictive Analytics',
-      description: 'AI-powered insights to predict future stock needs based on historical data and trends.'
+      feature: 'Live valuation',
+      description: 'Always know what your stock is worth in real-time.'
     }
   ],
 
@@ -83,22 +83,22 @@ const RealTimeStockTracking = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Seasonal Demand Management',
-      description: 'A fashion retailer uses real-time tracking to monitor seasonal clothing inventory, automatically adjusting stock levels based on weather patterns and sales trends.',
-      result: '40% reduction in end-of-season clearance inventory'
-    },
-    {
-      scenario: 'Multi-Channel Synchronization',
-      description: 'An electronics distributor synchronizes inventory across online marketplace, physical stores, and B2B sales channels in real-time.',
-      result: '95% reduction in overselling incidents and improved customer satisfaction'
-    },
-    {
-      scenario: 'Just-in-Time Manufacturing',
-      description: 'A furniture manufacturer tracks raw materials and components to optimize production scheduling and reduce storage costs.',
-      result: '30% reduction in inventory holding costs while maintaining production efficiency'
-    }
-  ],
+  {
+    scenario: 'Bestseller Stock Replenishment',
+    description: 'A gadget store uses automated reorder alerts to keep hot-selling items always in stock, ensuring availability during peak demand.',
+    result: 'Significant reduction in lost sales due to stockouts on bestsellers'
+  },
+  {
+    scenario: 'Expiry-Based Inventory Clearance',
+    description: 'A pharmacy tracks expiry dates in real-time and runs timely discount campaigns to clear near-expiry products before waste occurs.',
+    result: 'Minimized inventory losses from expired stock while boosting short-term sales'
+  },
+  {
+    scenario: 'High-Volume Order Fulfillment',
+    description: 'A wholesaler leverages accurate, real-time stock data to speed up packing and streamline the fulfillment of large bulk orders.',
+    result: 'Faster order processing with improved accuracy for high-volume shipments'
+  }
+],
 
   implementation: {
     setupTime: '2-4 hours',

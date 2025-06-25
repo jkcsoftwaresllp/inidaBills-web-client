@@ -3,66 +3,66 @@ const CreditManagement = () => ({
   shortDescription: 'Efficiently manage customer credits and payment terms',
   category: 'Payments & Finance',
   image: 'https://images.unsplash.com/photo-1605902711665-6f8fdf05f7b3?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Offer and track credit terms with customers, set credit limits, and receive timely alerts for pending payments. Improve cash flow, reduce defaults, and maintain better financial discipline across your business network.',
+  detailedDescription: 'IndiaBills’ Credit Management helps you track customer credit, outstanding amounts, and payment deadlines to ensure smooth cash flow.',
 
   whatMakesItDifferent: [
-    'Set customer-specific credit limits and durations',
-    'Track outstanding balances and overdue invoices in real-time',
-    'Automated alerts for due and overdue payments',
-    'Detailed credit reports with payment history and risk indicators',
-    'Integrated with billing, ledger, and accounts modules',
-    'Supports partial payments and credit rollovers'
+    'Customer credit records',
+    'Auto reminders',
+    'Credit limits',
+    'Aging reports',
+    'Payment status tracking',
+    'Linked to invoices'
   ],
 
   idealFor: [
     {
-      businessType: 'Retail Stores',
-      description: 'Perfect for retail businesses offering deferred payments to repeat customers.',
-      benefits: ['Track credit customers accurately', 'Avoid confusion on pending dues', 'Set credit periods based on trust', 'Improve cash flow transparency']
-    },
-    {
-      businessType: 'Distributors',
-      description: 'Essential for managing large B2B client accounts with variable credit terms.',
-      benefits: ['Set and enforce credit limits', 'Monitor total exposure per client', 'Avoid over-crediting and defaults', 'Automate follow-ups and reminders']
-    },
-    {
-      businessType: 'B2B Services',
-      description: 'Helps service providers maintain proper credit records and receivables.',
-      benefits: ['Track contract-based billing', 'Send automated due alerts', 'Allow controlled flexibility in payment cycles', 'Improve financial forecasting']
-    },
-    {
       businessType: 'Wholesalers',
-      description: 'Useful for bulk sellers offering net-30/60 payment terms.',
-      benefits: ['Prevent missed collections', 'Get alerted on high-risk clients', 'Enable partial settlements', 'Boost long-term client trust']
+      description: 'Manage large customer credits.',
+      benefits: ['Credit limits', 'Track dues', 'Safer deals', 'Payment follow-up']
+    },
+    {
+      businessType: 'Retail Stores',
+      description: 'Handle local customer credit easily.',
+      benefits: ['Small dues tracked', 'Easy reminders', 'Faster recovery', 'Build loyalty']
+    },
+    {
+      businessType: 'Pharmacies',
+      description: 'Manage credit for clinics.',
+      benefits: ['Safer credit', 'Tracks all dues', 'Clear reminders', 'Easier audits']
+    },
+    {
+      businessType: 'Supermarkets',
+      description: 'Track B2B and B2C credits.',
+      benefits: ['Large credit log', 'Auto reminders', 'Track payments', 'Safe limit setting']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Customer Credit Limits',
-      description: 'Define how much credit a customer can utilize and track usage live.'
-    },
-    {
-      feature: 'Due & Overdue Alerts',
-      description: 'Receive reminders when customer payments are nearing or crossing their due dates.'
-    },
-    {
-      feature: 'Outstanding Balance Tracking',
-      description: 'Know exactly how much is owed by each credit customer at any point in time.'
-    },
-    {
-      feature: 'Credit History Logs',
-      description: 'Full log of credit usage, payments made, and overdue instances per customer.'
-    },
-    {
-      feature: 'Partial Payment Handling',
-      description: 'Accept and record partial payments against open invoices.'
-    },
-    {
-      feature: 'Aging Reports',
-      description: 'Breakdown of receivables by 0-30, 31-60, 61-90, and 90+ days for analysis.'
-    }
-  ],
+  {
+    feature: 'Customer Credit Limits',
+    description: 'Set credit limits for each customer to prevent over-credit and manage financial risk effectively.'
+  },
+  {
+    feature: 'Automated Payment Reminders',
+    description: 'Send auto-reminders to customers before and after due dates to ensure timely collections.'
+  },
+  {
+    feature: 'Accounts Receivable Aging Report',
+    description: 'Easily track overdue payments with aging breakdowns like 0-30, 31-60, 61-90, and 90+ days.'
+  },
+  {
+    feature: 'Linked Invoice View',
+    description: 'Access all pending and paid invoices for any customer with a single click.'
+  },
+  {
+    feature: 'Payment Status Logs',
+    description: 'Maintain a complete log of each customer’s payment history, outstanding balance, and credit usage.'
+  },
+  {
+    feature: 'Downloadable Receivables Reports',
+    description: 'Export detailed customer-wise receivables reports for sharing or external analysis.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const CreditManagement = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Retailer Manages Regular Credit Customers',
-      description: 'A hardware shop provides 30-day credit to loyal contractors and uses this feature to track dues.',
-      result: 'Reduces overdue collections by 70% and strengthens long-term business relationships'
-    },
-    {
-      scenario: 'Distributor Manages High-Volume Clients',
-      description: 'A food distributor sets credit caps and automates alerts for their B2B clients.',
-      result: 'Avoids overexposure and improves payment discipline without manual follow-ups'
-    },
-    {
-      scenario: 'Service Provider Tracks Project Payments',
-      description: 'A consultancy firm tracks phased project payments against credit timelines.',
-      result: 'Ensures payment consistency while preserving client goodwill'
-    }
-  ],
+  {
+    scenario: 'Wholesale Recovery Acceleration',
+    description: 'A wholesaler implements credit limits and automated reminders to improve payment collections from bulk buyers.',
+    result: 'Achieved faster payments and reduced overdue receivables by 60%'
+  },
+  {
+    scenario: 'Retailer Reduces Overdue Amounts',
+    description: 'A retail business activates automated customer reminders for all pending dues.',
+    result: 'Significantly lowered overdue amounts and improved cash flow stability'
+  },
+  {
+    scenario: 'Pharmacy Conducts Credit Risk Audits',
+    description: 'A pharmacy reviews aging reports and payment logs to identify risky credit accounts.',
+    result: 'Quickly flagged high-risk customers and minimized future bad debts'
+  }
+],
 
   implementation: {
     setupTime: '1–2 hours',

@@ -3,66 +3,66 @@ const SecurityOfData = () => ({
   shortDescription: 'Ensure the highest level of data security and privacy',
   category: 'Data Protection & Compliance',
   image: 'https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Your business data is protected with enterprise-grade security protocols. We use encryption, secure access controls, and regular backups to ensure your data stays private, accurate, and available at all times. Whether you are in retail, healthcare, or finance, your trust is our top priority.',
+  detailedDescription: 'IndiaBills ensures that your business data is fully protected with strong security measures, so your records stay safe.',
 
   whatMakesItDifferent: [
-    'End-to-end encryption for data in transit and at rest',
-    'Role-based access controls to limit unauthorized entry',
-    'Daily automated backups with restore support',
-    'Compliance with major industry data protection standards',
-    'Activity logs for all critical operations and data access',
-    'Built-in protection against data tampering and breaches'
+    'Encryption',
+    'User access control',
+    'Secure backups',
+    'Cloud safety',
+    'Auto-logout',
+    'Audit trails'
   ],
 
   idealFor: [
     {
-      businessType: 'All Businesses',
-      description: 'Every business requires robust protection to ensure continuity and data privacy.',
-      benefits: ['Secure customer and transaction data', 'Maintain peace of mind during digital operations', 'Ensure compliance with legal norms', 'Prevent data misuse or leaks']
+      businessType: 'Retail Stores',
+      description: 'Protect customer info.',
+      benefits: ['Data safety', 'Prevent misuse', 'Secure backups', 'Track actions']
     },
     {
-      businessType: 'Finance & Legal',
-      description: 'These sectors handle highly sensitive and confidential records.',
-      benefits: ['Meet regulatory compliance (e.g. GST, IT Act)', 'Ensure confidentiality of financial and legal documents', 'Restrict access based on legal roles', 'Enable audit-ready logs']
+      businessType: 'Wholesalers',
+      description: 'Keep records safe.',
+      benefits: ['Safer orders', 'Protect supplier data', 'User controls', 'Audit-ready']
     },
     {
-      businessType: 'Healthcare',
-      description: 'Security is vital when dealing with patient and treatment data.',
-      benefits: ['Protect patient records', 'Control access to sensitive information', 'Ensure HIPAA-equivalent safety in Indian context', 'Enable secure sharing with stakeholders']
+      businessType: 'Pharmacies',
+      description: 'Secure sensitive info.',
+      benefits: ['Protect patient data', 'Safer stock logs', 'Audit help', 'Data backup']
     },
     {
-      businessType: 'E-commerce Platforms',
-      description: 'Trust and data safety are essential in online transactions and storage.',
-      benefits: ['Secure customer addresses and payment info', 'Protect seller-vendor information', 'Enable GDPR/IT compliance', 'Mitigate risks of fraud and chargebacks']
+      businessType: 'Supermarkets',
+      description: 'Secure large data.',
+      benefits: ['Protect transactions', 'Safer records', 'Prevent errors', 'Secure sharing']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Data Encryption',
-      description: 'All sensitive data is encrypted using industry-standard AES-256 encryption.'
-    },
-    {
-      feature: 'Role-Based Access Control (RBAC)',
-      description: 'Assign access permissions based on user roles to avoid unauthorized exposure.'
-    },
-    {
-      feature: 'Daily Backups',
-      description: 'Automated daily backups with rollback capabilities for up to 30 days.'
-    },
-    {
-      feature: 'Audit Logs',
-      description: 'Track and review every data access or change, with user and timestamp metadata.'
-    },
-    {
-      feature: 'Two-Factor Authentication (2FA)',
-      description: 'Add an extra layer of security for user logins using OTPs or authenticator apps.'
-    },
-    {
-      feature: 'Compliance-Ready Infrastructure',
-      description: 'Built to align with ISO 27001, GDPR principles, and Indian IT regulations.'
-    }
-  ],
+  {
+    feature: 'End-to-End Data Encryption',
+    description: 'All sensitive business and customer data is protected using AES-256 level encryption both at rest and in transit.'
+  },
+  {
+    feature: 'User Access Controls',
+    description: 'Define role-based permissions to ensure only authorized users can view or modify sensitive information.'
+  },
+  {
+    feature: 'Automated Data Backups',
+    description: 'Daily cloud backups ensure your data is safe, recoverable, and protected from accidental loss.'
+  },
+  {
+    feature: 'Cloud Infrastructure Security',
+    description: 'Hosted on secure, industry-certified cloud platforms with continuous monitoring and protection against cyber threats.'
+  },
+  {
+    feature: 'Auto Logout for Idle Sessions',
+    description: 'Prevent unauthorized system access by automatically logging out inactive users after a defined period.'
+  },
+  {
+    feature: 'Full Audit Trails',
+    description: 'Monitor who made what change and when with detailed user activity logs for complete accountability.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const SecurityOfData = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Legal Firm Secures Client Files',
-      description: 'A legal consultancy uses access restrictions and encryption to manage confidential client data.',
-      result: 'Zero incidents of data leaks or misuse over 2+ years'
-    },
-    {
-      scenario: 'Retail Chain Implements Role-Based Control',
-      description: 'A retailer restricts sensitive billing and reporting data to authorized managers only.',
-      result: 'Improved control and traceability over internal operations'
-    },
-    {
-      scenario: 'Healthcare Clinic Protects Patient Records',
-      description: 'A multi-branch clinic protects sensitive medical records using encryption and audit logs.',
-      result: 'Ensures compliance with digital health standards and builds patient trust'
-    }
-  ],
+  {
+    scenario: 'Retailer Safeguards Customer Data',
+    description: 'A retail business implements encryption and role-based access to protect customer billing and contact information.',
+    result: 'Achieved zero data breaches while maintaining customer trust'
+  },
+  {
+    scenario: 'Wholesaler Secures Order Information',
+    description: 'A wholesale distributor applies user access controls and automated backups to protect sensitive order and payment data.',
+    result: 'Maintained 100% data integrity with zero loss during system upgrades and audits'
+  },
+  {
+    scenario: 'Pharmacy Protects Medical Records',
+    description: 'A pharmacy uses encryption and audit logs to safeguard patient prescription histories and billing details.',
+    result: 'Prevented data leaks and ensured full compliance with healthcare data protection norms'
+  }
+],
 
   implementation: {
     setupTime: 'Instant (pre-configured)',

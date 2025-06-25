@@ -3,61 +3,66 @@ const ExpiryAlert = () => ({
   shortDescription: 'Get timely expiry alerts to avoid stock wastage',
   category: 'Inventory Management',
   image: 'https://images.unsplash.com/photo-1588776814546-ec7d3c02f71f?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Prevent losses by receiving expiry alerts on perishable or time-sensitive inventory. Our system helps businesses manage shelf life effectively by identifying at-risk items before they go bad, reducing wastage and improving profitability.',
+  detailedDescription: 'Expiry Alert in IndiaBills warns you when stock is close to expiry so you can act before loss happens.',
 
   whatMakesItDifferent: [
-    'Automated tracking of expiry dates for all relevant stock',
-    'Custom alert thresholds based on product category or shelf life',
-    'Daily and weekly digest reports on expiring items',
-    'Visual alerts on dashboards and mobile apps',
-    'Batch-level tracking for enhanced precision',
-    'Integration with POS and inventory systems for seamless updates'
+    'Automated alerts',
+    'Item-level tracking',
+    'Custom alert timing',
+    'Clear reports',
+    'Batch management',
+    'Helps with discounts'
   ],
 
   idealFor: [
     {
       businessType: 'Pharmacies',
-      description: 'Essential for managing medicine stock with strict expiry controls and compliance needs.',
-      benefits: ['Avoid regulatory issues', 'Minimize expired drug wastage', 'Ensure patient safety', 'Simplify stock rotation']
+      description: 'Prevents selling expired medicines.',
+      benefits: ['Safer sales', 'Reduces loss', 'Maintains compliance', 'Easier audits']
     },
     {
-      businessType: 'FMCG',
-      description: 'Perfect for businesses dealing in fast-moving consumer goods with limited shelf life.',
-      benefits: ['Track short-life inventory in real time', 'Clear near-expiry stock via promotions', 'Reduce stock losses', 'Optimize procurement planning']
+      businessType: 'Supermarkets',
+      description: 'Handles perishable goods smartly.',
+      benefits: ['Fresh stock', 'Faster clearance', 'Reduces waste', 'Customer safety']
     },
     {
-      businessType: 'Grocery Stores',
-      description: 'Ideal for tracking perishable items like dairy, bakery, or fresh produce.',
-      benefits: ['Improve freshness levels', 'Reduce spoilage', 'Enhance customer trust', 'Boost stock visibility by batch']
+      businessType: 'Wholesalers',
+      description: 'Alerts for bulk expiry.',
+      benefits: ['Clears stock early', 'Helps with bulk discounts', 'Protects profit', 'Avoids write-offs']
+    },
+    {
+      businessType: 'Food Retailers',
+      description: 'Keeps food fresh and safe.',
+      benefits: ['Safer sales', 'Helps plan clearance', 'Reduces spoilage', 'Boosts trust']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Expiry Date Monitoring',
-      description: 'Track expiry dates at product or batch level with real-time alerts.'
-    },
-    {
-      feature: 'Smart Alerts',
-      description: 'Get notifications before items near expiry, configurable by days or stock type.'
-    },
-    {
-      feature: 'Batch & Lot Management',
-      description: 'Traceability and expiry tracking down to batch or lot level.'
-    },
-    {
-      feature: 'Dashboard Indicators',
-      description: 'Color-coded alerts on the dashboard for quick identification of urgent items.'
-    },
-    {
-      feature: 'Expiry Reports',
-      description: 'Generate reports of upcoming and past expiry items to take immediate action.'
-    },
-    {
-      feature: 'POS Integration',
-      description: 'Seamlessly update stock expiry data through sales and returns at the point of sale.'
-    }
-  ],
+  {
+    feature: 'Customizable Expiry Alerts',
+    description: 'Set personalized alert timings to get notified well in advance before products reach their expiry date.'
+  },
+  {
+    feature: 'Batch-Wise Expiry Tracking',
+    description: 'Monitor and manage expiry dates at the batch level for accurate stock control and traceability.'
+  },
+  {
+    feature: 'Comprehensive Expiry Reports',
+    description: 'Access detailed reports showing all products approaching expiry for proactive decision-making.'
+  },
+  {
+    feature: 'Low Stock and Expiry Combined View',
+    description: 'View low-stock and near-expiry items together for smarter and more efficient reordering decisions.'
+  },
+  {
+    feature: 'Discount Planning for Expiring Stock',
+    description: 'Identify expiring items in advance and plan targeted discount strategies to clear stock before expiry.'
+  },
+  {
+    feature: 'Expiry-Safe Sales Control',
+    description: 'Automatically block or flag sales of expired products at the point of sale to ensure customer safety and compliance.'
+  }
+],
 
   screenshots: [
     {
@@ -78,22 +83,22 @@ const ExpiryAlert = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Medicine Rotation',
-      description: 'A pharmacy automates expiry tracking to rotate older stock first and avoid loss.',
-      result: '90% reduction in expired medicine write-offs'
-    },
-    {
-      scenario: 'Dairy Product Monitoring',
-      description: 'A grocery store uses expiry alerts to clear near-expiry dairy products via discounts.',
-      result: '40% drop in spoilage losses while maintaining product freshness'
-    },
-    {
-      scenario: 'FMCG Shelf Optimization',
-      description: 'An FMCG distributor improves stock allocation using expiry data analytics.',
-      result: '25% more efficient stock movement and shelf usage'
-    }
-  ],
+  {
+    scenario: 'Clearing Near-Expiry Medicines',
+    description: 'A pharmacy runs timely discount campaigns on near-expiry medicines based on automated expiry reports.',
+    result: 'Significant cost savings by reducing expired stock write-offs'
+  },
+  {
+    scenario: 'Reducing Waste in Supermarkets',
+    description: 'A supermarket uses real-time expiry tracking and targeted discounts to quickly move perishable items before spoilage.',
+    result: 'Lowered waste levels and improved inventory turnover for short-shelf-life products'
+  },
+  {
+    scenario: 'Planned Bulk Discounting for Wholesalers',
+    description: 'A wholesaler monitors batch expiry data to schedule bulk discount offers proactively and protect margins.',
+    result: 'Minimized margin loss by selling near-expiry stock at planned discount intervals'
+  }
+],
 
   implementation: {
     setupTime: '1-2 hours',

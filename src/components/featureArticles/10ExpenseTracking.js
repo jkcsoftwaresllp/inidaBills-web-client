@@ -3,71 +3,66 @@ const ExpensesTracking = () => ({
   shortDescription: 'Track and manage business expenses',
   category: 'Finance & Accounting',
   image: 'https://images.unsplash.com/photo-1611974789856-9f9536d4f63c?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Record, categorize, and analyze your business expenses for better financial control and decision-making. Stay on top of your cash flow, identify cost-saving opportunities, and streamline expense approvals and reporting with ease.',
+  detailedDescription: 'IndiaBills’ Expense Tracking helps you monitor, record, and control all your business spending in one place, making cost management easy and effective.',
 
   whatMakesItDifferent: [
-    'Real-time expense logging across departments or branches',
-    'Custom expense categories and payment methods',
-    'Mobile-friendly expense entry for field staff',
-    'Automatic tax and GST breakdowns on entries',
-    'Built-in approval workflows for team-based spending',
-    'Visual dashboards and exportable reports for analysis'
+    'All expense types supported',
+    'Link to invoices',
+    'Category-wise tracking',
+    'Live reports',
+    'Alerts for overspending',
+    'Export-ready'
   ],
 
   idealFor: [
     {
-      businessType: 'All businesses',
-      description: 'Every business needs clear oversight on where money is being spent and how it affects profit margins.',
-      benefits: ['Control unnecessary spending', 'Track expenses by category, project, or team', 'Stay tax-compliant with easy audit trails', 'Enable transparency in financial operations']
+      businessType: 'Retail Stores',
+      description: 'Keeps track of shop expenses daily.',
+      benefits: ['Records small and large costs', 'Links bills to spend', 'Controls overspending', 'Ready reports']
     },
     {
-      businessType: 'Finance Teams',
-      description: 'Designed for accountants and financial controllers to manage organizational spending efficiently.',
-      benefits: ['Consolidate receipts and payments', 'Reconcile expenses with accounts', 'Generate monthly and quarterly reports', 'Monitor budget adherence in real time']
+      businessType: 'Wholesalers',
+      description: 'Manages bulk costs.',
+      benefits: ['Bulk purchase tracking', 'Easy supplier payment logs', 'Budget help', 'Clear records']
     },
     {
-      businessType: 'Startups',
-      description: 'Helps small teams stay lean and informed about every penny spent in early-stage operations.',
-      benefits: ['Track recurring vs. one-time expenses', 'Generate investor-friendly reports', 'Prevent budget overruns', 'Enable early financial discipline']
+      businessType: 'Pharmacies',
+      description: 'Monitors medical supply costs.',
+      benefits: ['Tracks supplier payments', 'Links to stock', 'Prevents waste', 'Aids in audits']
     },
     {
-      businessType: 'Field Service Businesses',
-      description: 'Great for teams with travel, logistics, or site-based operations requiring frequent expense logging.',
-      benefits: ['Mobile entry of fuel, food, or lodging bills', 'GPS tagging for location-based expense logging', 'Reduce reimbursement disputes', 'Faster approvals and settlements']
+      businessType: 'Supermarkets',
+      description: 'Controls high-volume spending.',
+      benefits: ['Monitors daily outflow', 'Breaks down costs', 'Prevents leaks', 'Aids planning']
     },
-    {
-      businessType: 'Retail & Hospitality',
-      description: 'Track daily operational costs like utilities, supplies, repairs, and marketing easily.',
-      benefits: ['Monitor overheads at store-level', 'Track vendor payments', 'Prevent misuse of petty cash', 'Simplify financial reporting for auditors']
-    }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Real-Time Expense Logging',
-      description: 'Enter expenses from desktop or mobile, categorize instantly, and track in real time.'
-    },
-    {
-      feature: 'Category-Based Reporting',
-      description: 'Group expenses by purpose—travel, utilities, marketing, etc.—for granular control.'
-    },
-    {
-      feature: 'Approval Workflows',
-      description: 'Set multi-level approval flows to ensure every expense is authorized properly.'
-    },
-    {
-      feature: 'GST & Tax Breakdown',
-      description: 'Automatically split tax components on expenses for audit-ready accounting.'
-    },
-    {
-      feature: 'Attachment Support',
-      description: 'Upload bills, receipts, or proofs along with expense entries for verification.'
-    },
-    {
-      feature: 'Export & Sync',
-      description: 'Export reports in Excel, PDF, or sync with accounting tools for seamless reconciliation.'
-    }
-  ],
+  {
+    feature: 'Comprehensive Expense Logging',
+    description: 'Log all types of business expenses—big or small—ensuring nothing gets missed in financial tracking.'
+  },
+  {
+    feature: 'Invoice Linking for Traceability',
+    description: 'Easily link expenses to related invoices or purchase orders for full transaction traceability.'
+  },
+  {
+    feature: 'Budget Overspend Alerts',
+    description: 'Receive real-time alerts when expenses approach or exceed predefined budget limits.'
+  },
+  {
+    feature: 'Live Expense Reports',
+    description: 'Access up-to-the-minute reports for real-time visibility into business spending patterns.'
+  },
+  {
+    feature: 'Downloadable and Shareable Reports',
+    description: 'Export expense reports in Excel, CSV, or PDF formats for easy sharing with finance teams or auditors.'
+  },
+  {
+    feature: 'Category-Wise Expense Tracking',
+    description: 'Organize expenses by category—like travel, utilities, or marketing—for smarter cost control and budgeting.'
+  }
+],
 
   screenshots: [
     {
@@ -88,22 +83,22 @@ const ExpensesTracking = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Team Travel Expenses',
-      description: 'A sales team uses mobile entry to log food and travel expenses while on the road.',
-      result: 'Reimbursement time reduced by 50% with cleaner records and faster approvals'
-    },
-    {
-      scenario: 'Startup Financial Discipline',
-      description: 'A small tech startup monitors burn rate by logging all operational expenses.',
-      result: 'Improved investor confidence and optimized monthly spending'
-    },
-    {
-      scenario: 'Retail Expense Management',
-      description: 'A retail chain tracks daily store-level expenses centrally.',
-      result: '25% cut in unnecessary spending and better budget compliance'
-    }
-  ],
+  {
+    scenario: 'Reducing Unnecessary Costs in Retail',
+    description: 'A retailer uses detailed expense tracking to quickly identify and eliminate avoidable operational costs.',
+    result: 'Faster cost control and significant reduction in wasteful spending'
+  },
+  {
+    scenario: 'Improving Supplier Payment Accuracy for Wholesalers',
+    description: 'A wholesaler tracks supplier invoices and payments through an integrated system to minimize manual errors and missed payments.',
+    result: 'Fewer payment mistakes and stronger supplier relationships'
+  },
+  {
+    scenario: 'Budget Planning for Supermarkets',
+    description: 'A supermarket uses historical expense reports and live data to forecast budgets for upcoming months.',
+    result: 'More accurate budget forecasts and better financial planning'
+  }
+],
 
   implementation: {
     setupTime: '1–2 hours',
