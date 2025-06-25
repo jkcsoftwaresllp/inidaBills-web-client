@@ -3,66 +3,66 @@ const SharableInvoice = () => ({
   shortDescription: 'Create invoices & share instantly with customers',
   category: 'Billing & Payments',
   image: 'https://images.unsplash.com/photo-1581092588429-8b6b9c03a0ba?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Generate professional invoices and share them instantly via email, WhatsApp, or downloadable links. Streamline your billing process, reduce delays, and improve your payment turnaround with modern, mobile-friendly invoicing.',
+  detailedDescription: 'IndiaBills lets you generate and share invoices instantly through email, WhatsApp, or print, saving time and improving service.',
 
   whatMakesItDifferent: [
-    'One-click sharing via email, WhatsApp, or direct link',
-    'Customizable invoice templates with branding support',
-    'Mobile-friendly invoice previews for customer convenience',
-    'Auto-generated PDFs for record-keeping and sharing',
-    'Real-time invoice view status tracking',
-    'Supports multiple tax formats, payment terms, and currency types'
+    'Instant sharing',
+    'Multi-channel',
+    'GST-ready format',
+    'Mobile-friendly',
+    'Custom message',
+    'Secure link'
   ],
 
   idealFor: [
     {
-      businessType: 'Freelancers',
-      description: 'Ideal for individuals who need to send polished, professional invoices quickly to clients.',
-      benefits: ['Impress clients with well-formatted invoices', 'Get paid faster with instant delivery', 'Track when invoices are opened', 'Stay organized without manual paperwork']
+      businessType: 'Retail Shops',
+      description: 'Quick invoicing on the go.',
+      benefits: ['Faster checkout', 'Customer delight', 'Easy record', 'Saves paper']
+    },
+    {
+      businessType: 'Wholesalers',
+      description: 'Handles bulk invoices easily.',
+      benefits: ['Bulk send', 'Clear records', 'Quick share', 'Saves time']
+    },
+    {
+      businessType: 'Pharmacies',
+      description: 'Safe, compliant bills.',
+      benefits: ['Easy GST bills', 'Quick share', 'Clear records', 'Builds trust']
     },
     {
       businessType: 'Service Providers',
-      description: 'Useful for consultants, repair businesses, or agencies needing fast invoicing.',
-      benefits: ['Generate and send bills on-site or remotely', 'Include service descriptions and taxes', 'Reduce back-office workload', 'Enable quicker client follow-ups']
-    },
-    {
-      businessType: 'Retailers',
-      description: 'Retail shops can use sharable invoices for walk-in or remote orders with digital billing.',
-      benefits: ['Reduce paper usage and printing costs', 'Offer instant bills for home delivery orders', 'Maintain digital records for compliance', 'Boost customer convenience']
-    },
-    {
-      businessType: 'Online Sellers',
-      description: 'Helps sellers on marketplaces or social platforms share branded invoices instantly.',
-      benefits: ['Maintain professional image', 'Simplify dispute resolution', 'Enable payment reminders via link', 'Track partial or full payments']
+      description: 'Fast digital billing.',
+      benefits: ['Instant invoices', 'Easy GST', 'Clear tax info', 'Quick client sends']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Instant Invoice Sharing',
-      description: 'Send invoices through WhatsApp, email, or link in one click—no downloads needed.'
-    },
-    {
-      feature: 'Custom Branding',
-      description: 'Add logo, business name, and color schemes to match your brand identity.'
-    },
-    {
-      feature: 'Multi-Device Support',
-      description: 'View and share invoices from any device, desktop or mobile.'
-    },
-    {
-      feature: 'PDF Generation & Download',
-      description: 'Auto-generate downloadable PDF invoices with embedded tax and payment details.'
-    },
-    {
-      feature: 'Invoice View Tracking',
-      description: 'Know exactly when the customer has viewed the invoice.'
-    },
-    {
-      feature: 'Tax & Discount Support',
-      description: 'Apply GST, VAT, discounts, or rounding with easy toggles.'
-    }
-  ],
+  {
+    feature: 'Multi-Channel Invoice Sharing',
+    description: 'Easily send invoices via Email, WhatsApp, or secure shareable links—whichever suits your customer best.'
+  },
+  {
+    feature: 'GST-Compliant Invoices',
+    description: 'Generate invoices that automatically meet GST rules and tax formatting requirements for hassle-free compliance.'
+  },
+  {
+    feature: 'Secure Invoice Links',
+    description: 'Share encrypted, password-protected invoice links to ensure customer data stays safe and private.'
+  },
+  {
+    feature: 'Print-Ready Formats',
+    description: 'Generate printer-friendly invoice layouts for customers who prefer hard copies.'
+  },
+  {
+    feature: 'Mobile-Friendly Access',
+    description: 'Create, send, and view invoices easily on mobile devices for on-the-go business operations.'
+  },
+  {
+    feature: 'Customizable Invoice Messages',
+    description: 'Add personalized notes or instructions to each invoice for better customer communication.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const SharableInvoice = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Freelancer Sends Instant Bill',
-      description: 'A freelance designer completes a project and sends the invoice via WhatsApp instantly.',
-      result: 'Receives payment within 2 hours, with client impressed by the professional format'
-    },
-    {
-      scenario: 'Retailer Sends Home Delivery Invoice',
-      description: 'A retail store sends digital invoices for phone orders delivered to customers.',
-      result: 'Faster order confirmations and reduced paperwork, with 100% invoice delivery success'
-    },
-    {
-      scenario: 'Service-Based Business On-Site Billing',
-      description: 'An appliance repair company creates and shares invoices directly from mobile devices.',
-      result: 'Cuts down end-of-day reconciliation time by 50%'
-    }
-  ],
+  {
+    scenario: 'Faster Billing at Retail Counters',
+    description: 'A retailer uses quick digital invoicing to generate and share bills instantly during checkout.',
+    result: 'Reduced customer waiting time and improved checkout efficiency'
+  },
+  {
+    scenario: 'Bulk Billing for Wholesale Clients',
+    description: 'A wholesaler processes and sends invoices for large client orders in one go using batch invoicing tools.',
+    result: 'Saved several hours on bulk billing and improved client satisfaction'
+  },
+  {
+    scenario: 'Instant GST-Compliant Invoicing for Service Providers',
+    description: 'A service provider generates and shares GST-compliant invoices on the spot after completing a job.',
+    result: 'Faster payment cycles and happier clients thanks to instant billing'
+  }
+],
 
   implementation: {
     setupTime: 'Less than 30 minutes',
