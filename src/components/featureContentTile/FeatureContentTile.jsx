@@ -65,6 +65,22 @@ const FeatureContentTile = ({ feature }) => {
         </div>
       </section>
 
+      {/* Use Cases */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Real-World Use Cases</h2>
+        <div className={styles.useCasesGrid}>
+          {feature.useCases.map((useCase, index) => (
+            <div key={index} className={styles.useCaseCard}>
+              <h3 className={styles.useCaseTitle}>{useCase.scenario}</h3>
+              <p className={styles.useCaseDescription}>{useCase.description}</p>
+              <div className={styles.useCaseResult}>
+                <strong>Result: </strong>{useCase.result}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Screenshots */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Feature Screenshots</h2>
@@ -83,24 +99,8 @@ const FeatureContentTile = ({ feature }) => {
         </div>
       </section>
 
-      {/* Use Cases */}
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Real-World Use Cases</h2>
-        <div className={styles.useCasesGrid}>
-          {feature.useCases.map((useCase, index) => (
-            <div key={index} className={styles.useCaseCard}>
-              <h3 className={styles.useCaseTitle}>{useCase.scenario}</h3>
-              <p className={styles.useCaseDescription}>{useCase.description}</p>
-              <div className={styles.useCaseResult}>
-                <strong>Result: </strong>{useCase.result}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Implementation */}
-      <section className={styles.section}>
+      {/* <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Implementation Details</h2>
         <div className={styles.implementationGrid}>
           <div className={styles.implementationCard}>
@@ -124,10 +124,10 @@ const FeatureContentTile = ({ feature }) => {
             ))}
           </ol>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing & ROI */}
-      <section className={styles.section}>
+      {/* <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Pricing & Return on Investment</h2>
         <div className={styles.pricingGrid}>
           <div className={styles.pricingCard}>
@@ -143,7 +143,7 @@ const FeatureContentTile = ({ feature }) => {
             <p>{feature.pricing.roi}</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
