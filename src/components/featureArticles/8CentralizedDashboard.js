@@ -3,51 +3,66 @@ const CentralizedDashboard = () => ({
   shortDescription: 'Access all your business data through a single dashboard',
   category: 'Business Intelligence',
   image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Monitor and manage your entire business from a unified dashboard. View key metrics, performance summaries, and actionable insights in one place to make faster, data-driven decisions and improve overall operational efficiency.',
+  detailedDescription: 'IndiaBills’ Centralised Dashboard brings all your data — sales, stock, expenses, and reports — into one easy view for smarter decisions.',
 
   whatMakesItDifferent: [
-    'Unified access to sales, inventory, finance, and customer data',
-    'Customizable widgets and layouts tailored to business needs',
-    'Real-time KPIs and visual insights for instant decision-making',
-    'Role-based data visibility and dashboard personalization',
-    'Drill-down analytics from high-level trends to granular details',
-    'Seamless integration with all IndiaBills modules and tools'
+    'One-screen control',
+    'Live updates',
+    'Customisable panels',
+    'Alerts built-in',
+    'Visual charts',
+    'Multi-location data'
   ],
 
   idealFor: [
     {
-      businessType: 'All business types',
-      description: 'Whether you are a startup, retailer, manufacturer, or service provider, a centralized dashboard offers real-time visibility into your entire business from one place.',
-      benefits: ['Boost efficiency through unified visibility', 'Quickly identify and respond to issues', 'Streamline cross-departmental communication', 'Enhance decision-making with actionable insights']
+      businessType: 'Retail Chains',
+      description: 'Manage all outlets from HQ.',
+      benefits: ['See full business view', 'Spot top stores', 'Act fast', 'Plan better']
+    },
+    {
+      businessType: 'Wholesalers',
+      description: 'Keep an eye on big numbers.',
+      benefits: ['Stock flow view', 'Order status', 'Financial health', 'Supplier stats']
+    },
+    {
+      businessType: 'Supermarkets',
+      description: 'Balance stock, sales, and cost.',
+      benefits: ['Quick view of key metrics', 'Spot issues', 'Faster decisions', 'Easy comparison']
+    },
+    {
+      businessType: 'Service Providers',
+      description: 'Track jobs + products sold.',
+      benefits: ['One place for all data', 'See service status', 'Combine reports', 'Plan resources']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Real-Time Metrics',
-      description: 'Track live KPIs such as revenue, expenses, inventory status, customer activity, and more.'
-    },
-    {
-      feature: 'Customizable Layouts',
-      description: 'Design your dashboard using drag-and-drop widgets that reflect what matters most to your role or business.'
-    },
-    {
-      feature: 'Cross-Module Integration',
-      description: 'Pull data from various modules—Sales, Inventory, Accounting, CRM—for complete visibility.'
-    },
-    {
-      feature: 'Role-Based Access',
-      description: 'Show personalized dashboards to managers, team leads, or staff based on access permissions.'
-    },
-    {
-      feature: 'Drill-Down Reports',
-      description: 'Click into summary widgets to view detailed reports and transactional data beneath each KPI.'
-    },
-    {
-      feature: 'Mobile-Friendly View',
-      description: 'Access your dashboard on any device with a responsive, mobile-optimized layout.'
-    }
-  ],
+  {
+    feature: 'All-in-One Data Dashboard',
+    description: 'Get a comprehensive, consolidated view of sales, stock, finances, and more from a single screen.'
+  },
+  {
+    feature: 'Live Data Sync',
+    description: 'View real-time data updates across all modules for accurate, up-to-the-minute decision making.'
+  },
+  {
+    feature: 'Customizable Widgets',
+    description: 'Personalize your dashboard with drag-and-drop widgets to display the metrics most relevant to you.'
+  },
+  {
+    feature: 'Actionable Alerts',
+    description: 'Receive instant, actionable alerts for low stock, pending orders, due payments, and more.'
+  },
+  {
+    feature: 'Visual Charts and Graphs',
+    description: 'Understand business trends quickly with interactive charts and graphical summaries of key data.'
+  },
+  {
+    feature: 'Multi-Branch Monitoring',
+    description: 'Track performance and inventory across multiple branches or locations with centralized visibility.'
+  }
+],
 
   screenshots: [
     {
@@ -68,22 +83,22 @@ const CentralizedDashboard = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Daily Operations Monitoring',
-      description: 'A retail manager uses the centralized dashboard to track daily sales, low-stock alerts, and employee performance.',
-      result: '25% faster issue resolution and improved team coordination'
-    },
-    {
-      scenario: 'Executive Business Overview',
-      description: 'A CEO uses the dashboard for real-time financial and operational summaries during strategic planning.',
-      result: 'Sharper insights and 40% less time spent on compiling reports'
-    },
-    {
-      scenario: 'Franchise Oversight',
-      description: 'A franchise owner monitors performance metrics of all branches from one place.',
-      result: 'Consistent performance tracking and quicker interventions across outlets'
-    }
-  ],
+  {
+    scenario: 'Real-Time Stock Monitoring for Retail Chains',
+    description: 'A retail chain manager uses live dashboard alerts to quickly identify low-stock items across multiple stores.',
+    result: 'Reduced stockouts and improved product availability on shelves'
+  },
+  {
+    scenario: 'Live Order Tracking for Wholesalers',
+    description: 'A wholesaler monitors real-time order status from placement to dispatch, ensuring faster processing and delivery scheduling.',
+    result: 'Accelerated dispatch times and improved customer satisfaction'
+  },
+  {
+    scenario: 'Sales Trend Analysis for Supermarkets',
+    description: 'A supermarket analyzes daily and weekly sales trends using dashboard reports to plan targeted promotional offers.',
+    result: 'Better offer planning and increased sales during promotional periods'
+  }
+],
 
   implementation: {
     setupTime: '1-2 hours',
