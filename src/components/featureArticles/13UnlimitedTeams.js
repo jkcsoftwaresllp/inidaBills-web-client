@@ -3,66 +3,66 @@ const UnlimitedTeams = () => ({
   shortDescription: 'Manage teams with flexible access controls',
   category: 'User & Team Management',
   image: 'https://images.unsplash.com/photo-1581090700227-1c72ba1cfb0f?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Create and manage multiple teams under one business account. Assign roles, customize access levels, and monitor team activity and performance—all from one centralized platform. Ideal for growing businesses with diverse functions or locations.',
+  detailedDescription: 'IndiaBills lets you add unlimited team members, helping you scale without worrying about user limits.',
 
   whatMakesItDifferent: [
-    'Create unlimited teams under a single organization',
-    'Assign team-specific roles and permissions',
-    'Monitor individual and team performance metrics',
-    'Team-based access control for modules and data',
-    'Supports cross-functional or location-based team setups',
-    'Flexible onboarding and deactivation workflows'
+    'No cap on users',
+    'Custom access roles',
+    'Activity tracking',
+    'Team-based reports',
+    'Cost-effective scaling',
+    'Instant team setup'
   ],
 
   idealFor: [
     {
-      businessType: 'Medium to Large Businesses',
-      description: 'Manage multiple departments like sales, support, finance, and operations within one account.',
-      benefits: ['Streamline organization structure', 'Boost accountability', 'Enhance interdepartmental collaboration', 'Enable controlled data sharing']
+      businessType: 'Retail Chains',
+      description: 'Manage large staff easily.',
+      benefits: ['Add all employees', 'Role-based access', 'Track actions', 'Boost security']
     },
     {
-      businessType: 'Franchises',
-      description: 'Perfect for managing teams across different branches or franchise locations.',
-      benefits: ['Maintain standardized roles', 'Monitor branch performance centrally', 'Ensure operational consistency', 'Assign localized access']
+      businessType: 'Wholesalers',
+      description: 'Big teams, easy management.',
+      benefits: ['User limits removed', 'Assign roles', 'Track work', 'Safer ops']
     },
     {
-      businessType: 'Sales Teams',
-      description: 'Ideal for managing dynamic sales teams with territory-based operations and hierarchy.',
-      benefits: ['Track individual targets and goals', 'Assign leads by team', 'Generate team-wise reports', 'Maintain secure access to CRM and billing']
+      businessType: 'Supermarkets',
+      description: 'Control large teams smartly.',
+      benefits: ['Team reports', 'Track changes', 'Set rights', 'No limits']
     },
     {
-      businessType: 'Customer Support Teams',
-      description: 'Structure customer service operations across shifts or channels.',
-      benefits: ['Define roles for chat, email, or voice support', 'Monitor team productivity', 'Control ticket visibility and reassignment', 'Track resolution time per team']
+      businessType: 'Service Companies',
+      description: 'Manage projects with big teams.',
+      benefits: ['Unlimited members', 'Track work', 'Assign permissions', 'Project security']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Unlimited Team Creation',
-      description: 'Add as many teams as needed, categorized by department, function, or region.'
-    },
-    {
-      feature: 'Role & Permission Control',
-      description: 'Assign roles and set what each team can view, edit, or manage.'
-    },
-    {
-      feature: 'Team Activity Monitoring',
-      description: 'Track performance, login patterns, and recent activity per team or user.'
-    },
-    {
-      feature: 'Cross-Team Collaboration',
-      description: 'Enable collaboration between teams with customizable visibility settings.'
-    },
-    {
-      feature: 'One-Click Deactivation',
-      description: 'Easily disable or reassign users from one team to another with minimal effort.'
-    },
-    {
-      feature: 'Team-Based Reporting',
-      description: 'Generate productivity and operational reports by team, time period, or task type.'
-    }
-  ],
+  {
+    feature: 'Unlimited User Accounts',
+    description: 'Add unlimited users to your system without any extra licensing or hidden fees.'
+  },
+  {
+    feature: 'Custom Role Management',
+    description: 'Define and manage custom user roles with specific permissions for viewing, editing, or managing different modules.'
+  },
+  {
+    feature: 'Detailed User Activity Logs',
+    description: 'Track every user’s login history, actions, and changes for better visibility and control.'
+  },
+  {
+    feature: 'Easy User Setup',
+    description: 'Quickly add new users at any time with simple onboarding and role assignment.'
+  },
+  {
+    feature: 'Team Productivity Reports',
+    description: 'Generate performance and activity reports to monitor team productivity and task completion rates.'
+  },
+  {
+    feature: 'Granular Access Rights',
+    description: 'Set precise data access levels for each user to ensure business data security and privacy.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const UnlimitedTeams = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Multi-Department Setup',
-      description: 'A business uses the feature to segment access for sales, support, and accounts teams.',
-      result: 'Improved focus, reduced data clutter, and enhanced internal security'
-    },
-    {
-      scenario: 'Franchise-Level Management',
-      description: 'A chain of retail stores sets up a team per location to streamline reporting and access.',
-      result: 'Standardized workflows and centralized oversight across branches'
-    },
-    {
-      scenario: 'Sales Team Expansion',
-      description: 'A fast-growing startup builds and manages regional sales teams under one platform.',
-      result: 'Seamless scalability and improved tracking of sales performance'
-    }
-  ],
+  {
+    scenario: 'Fast Staff Onboarding for Retail Chains',
+    description: 'A retail chain quickly adds new employees to the system with predefined roles and permissions.',
+    result: 'Zero onboarding delays and immediate system access for new staff'
+  },
+  {
+    scenario: 'Scalable Team Management for Wholesalers',
+    description: 'A wholesaler expands its team to handle business growth without worrying about extra user licensing costs.',
+    result: 'Seamless team scaling with no additional software expenses'
+  },
+  {
+    scenario: 'Team Activity Tracking for Service Providers',
+    description: 'A service company monitors user activity and task completion rates to evaluate team productivity.',
+    result: 'Improved team output and better performance visibility'
+  }
+],
 
   implementation: {
     setupTime: '1–2 hours',
