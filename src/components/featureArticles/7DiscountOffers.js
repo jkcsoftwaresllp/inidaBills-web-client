@@ -3,56 +3,66 @@ const DiscountOffers = () => ({
   shortDescription: 'Easily apply discounts and manage special offers',
   category: 'Sales & Promotions',
   image: 'https://images.unsplash.com/photo-1549921296-3a6b6363f4f1?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Run promotional campaigns effortlessly by configuring discounts and limited-time offers. With flexible rules, real-time application at checkout, and detailed analytics, you can boost sales while staying in control of your margins.',
+  detailedDescription: 'IndiaBills lets you apply discounts and create special offers directly in your store section, helping attract customers and boost sales without manual effort',
 
   whatMakesItDifferent: [
-    'Flexible discount rules (percentage, flat rate, BOGO, etc.)',
-    'Schedule time-bound promotions and festive campaigns',
-    'Apply offers by product, category, customer group, or cart value',
-    'Auto-apply discounts at checkout or through coupons',
-    'In-depth performance tracking of each campaign',
-    'Multi-channel support—POS, online store, and mobile app'
+    'Flexible discount rules',
+    'Store-wide or item-specific',
+    'Combo offers',
+    'Auto-apply at checkout',
+    'Time-limited deals',
+    'Works with GST'
   ],
 
   idealFor: [
     {
-      businessType: 'Retail',
-      description: 'Perfect for in-store promotions, seasonal sales, and customer-specific discounts.',
-      benefits: ['Increase walk-in sales', 'Clear old inventory', 'Run flash sales with ease', 'Attract returning customers']
+      businessType: 'Retail Shops',
+      description: 'Encourage repeat buyers.',
+      benefits: ['Easy to run offers', 'Boosts footfall', 'Clears stock', 'Builds loyalty']
     },
     {
-      businessType: 'Online businesses',
-      description: 'Ideal for e-commerce platforms looking to run time-sensitive offers or loyalty promotions.',
-      benefits: ['Boost cart conversions', 'Enable discount codes and auto-applied promos', 'Target specific customer segments', 'Integrate with checkout and email systems']
+      businessType: 'Supermarkets',
+      description: 'Smooth festive discounts.',
+      benefits: ['Applies at checkout', 'Simple combo deals', 'Handles volume', 'Faster billing']
+    },
+    {
+      businessType: 'Wholesalers',
+      description: 'Supports bulk order offers.',
+      benefits: ['Auto bulk discounts', 'Quick order processing', 'Builds client trust', 'Improves sales']
+    },
+    {
+      businessType: 'Electronics Stores',
+      description: 'High-ticket item deals.',
+      benefits: ['Big item discount control', 'Handles EMI offers', 'Correct GST', 'Builds brand trust']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Rule-Based Discount Engine',
-      description: 'Create and manage various types of offers like flat discounts, percentages, or conditional deals.'
-    },
-    {
-      feature: 'Time-Sensitive Promotions',
-      description: 'Schedule start and end dates for limited-time deals automatically.'
-    },
-    {
-      feature: 'Coupon Code Management',
-      description: 'Generate and manage unique or reusable coupon codes with usage limits.'
-    },
-    {
-      feature: 'Customer Segmentation',
-      description: 'Target offers based on customer type, purchase history, or loyalty tier.'
-    },
-    {
-      feature: 'Real-Time Checkout Integration',
-      description: 'Seamlessly apply discounts across POS and online store interfaces in real-time.'
-    },
-    {
-      feature: 'Offer Analytics',
-      description: 'Track offer performance metrics like redemption rate, revenue impact, and best-selling discounted items.'
-    }
-  ],
+  {
+    feature: 'Flexible Discount Types',
+    description: 'Easily set up flat-rate or percentage-based discounts to suit different promotional strategies.'
+  },
+  {
+    feature: 'Combo Deal Management',
+    description: 'Create bundled offers by combining multiple products into a single discounted package.'
+  },
+  {
+    feature: 'Time-Bound Promotions',
+    description: 'Schedule offers with specific start and end dates to run limited-time deals automatically.'
+  },
+  {
+    feature: 'Auto-Apply Discount Rules',
+    description: 'Define rule-based conditions for discounts to apply automatically at checkout without manual intervention.'
+  },
+  {
+    feature: 'GST-Compatible Discounts',
+    description: 'Ensure all discounts are accurately reflected in GST calculations for hassle-free tax compliance.'
+  },
+  {
+    feature: 'Offer Performance Reporting',
+    description: 'Generate detailed reports to analyze the success of promotional campaigns and track sales impact.'
+  }
+],
 
   screenshots: [
     {
@@ -73,22 +83,22 @@ const DiscountOffers = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Festive Season Sale',
-      description: 'A retail store launches a 20% discount on clothing during the festive season.',
-      result: '45% increase in foot traffic and 30% growth in total revenue during campaign'
-    },
-    {
-      scenario: 'First-Time Buyer Discount',
-      description: 'An online store gives ₹100 off to first-time users using a coupon code.',
-      result: '25% increase in new customer conversions and higher repeat purchase rate'
-    },
-    {
-      scenario: 'Buy One Get One (BOGO)',
-      description: 'A beauty brand offers BOGO deals on select items to clear out expiring stock.',
-      result: 'Reduced unsold inventory by 70% in 2 weeks'
-    }
-  ],
+  {
+    scenario: 'Clearing Old Stock with Targeted Offers',
+    description: 'A retail shop runs limited-time discounts on older inventory to move stock quickly and free up shelf space.',
+    result: 'Faster clearance of slow-moving items and improved cash flow'
+  },
+  {
+    scenario: 'Bulk Deal Promotions for Wholesalers',
+    description: 'A wholesaler offers special bulk purchase discounts to incentivize larger order volumes from retailers.',
+    result: 'Increased sales volume and stronger relationships with key customers'
+  },
+  {
+    scenario: 'Festival Discount Campaign for Supermarkets',
+    description: 'A supermarket runs a festival-themed discount event, offering special prices on essential items to attract shoppers.',
+    result: 'Higher footfall and boosted overall sales during the festive period'
+  }
+],
 
   implementation: {
     setupTime: '1-2 hours',
