@@ -3,61 +3,66 @@ const UnlimitedWarehouse = () => ({
   shortDescription: 'Manage multiple warehouses with unlimited capacity',
   category: 'Inventory Management',
   image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437f0?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Track stock and movements across all your warehouses without limits. Our Unlimited Warehouse feature empowers your business to expand effortlessly, offering centralized control, real-time tracking, and seamless operations across any number of storage locations.',
+  detailedDescription: 'The Unlimited Warehouse feature lets businesses manage stock across as many warehouses or branches as needed, all from one system.',
 
   whatMakesItDifferent: [
-    'No cap on the number of warehouses or storage zones',
-    'Centralized visibility and control for distributed inventory',
-    'Custom warehouse hierarchy and role-based access',
-    'Smart transfers between warehouses with automated documentation',
-    'Support for temperature-controlled or specialized warehouses',
-    'Real-time sync with logistics and dispatch operations'
+    'No warehouse limit',
+    'Central control',
+    'Separate stock data',
+    'Easy transfer',
+    'Detailed tracking',
+    'Low-stock per location alerts'
   ],
 
   idealFor: [
     {
-      businessType: 'Retail',
-      description: 'Ideal for retail businesses with regional stock hubs or back-end fulfillment centers.',
-      benefits: ['Improve regional dispatch speed', 'Enable stock redistribution between stores', 'Lower last-mile delivery times', 'Enhance local inventory accuracy']
+      businessType: 'Retail Chains',
+      description: 'Handle multiple stores easily.',
+      benefits: ['Central stock view', 'Location alerts', 'Easy transfer', 'Efficient restock']
     },
     {
-      businessType: 'Wholesale',
-      description: 'Best suited for wholesalers managing high-volume storage and inter-warehouse transfers.',
-      benefits: ['Streamline inter-warehouse transfers', 'Reduce bulk order errors', 'Maintain centralized purchase visibility', 'Optimize supplier deliveries']
+      businessType: 'Wholesalers',
+      description: 'Control stock across locations.',
+      benefits: ['Multi-location visibility', 'Bulk transfer', 'Supplier coordination', 'Reduce waste']
     },
     {
-      businessType: 'Logistics',
-      description: 'Perfect for logistics companies operating multiple storage nodes or distribution points.',
-      benefits: ['Monitor warehouse performance', 'Track movement across nodes', 'Improve fulfillment SLAs', 'Enable detailed operational reporting']
+      businessType: 'Pharmacies',
+      description: 'Handle main and branch stocks.',
+      benefits: ['Location expiry tracking', 'Medicine availability', 'Fast transfer', 'Prevent shortages']
+    },
+    {
+      businessType: 'Supermarkets',
+      description: 'Manage big stock across stores.',
+      benefits: ['Accurate stock data', 'Avoid overstock', 'Smooth transfers', 'Plan better']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Unlimited Warehouses',
-      description: 'Add and manage any number of warehouse locations without additional limits or costs.'
-    },
-    {
-      feature: 'Central Dashboard',
-      description: 'Unified dashboard showing stock summaries, alerts, and movements across all warehouses.'
-    },
-    {
-      feature: 'Smart Transfers',
-      description: 'Easily move stock between warehouses with auto-generated documentation and audit trails.'
-    },
-    {
-      feature: 'Zone and Rack Mapping',
-      description: 'Map zones, aisles, and racks for precise storage and easy retrieval.'
-    },
-    {
-      feature: 'User Permissions',
-      description: 'Assign roles and access levels based on warehouse responsibilities and location.'
-    },
-    {
-      feature: 'Advanced Filters & Reporting',
-      description: 'Generate location-specific reports for better stock planning and performance insights.'
-    }
-  ],
+  {
+    feature: 'Unlimited Warehouse Locations',
+    description: 'Manage an unlimited number of warehouses or stock locations without any system-imposed restrictions.'
+  },
+  {
+    feature: 'Centralized Stock Control',
+    description: 'Monitor and manage stock levels across all locations from a single, unified system.'
+  },
+  {
+    feature: 'Per-Warehouse Stock Visibility',
+    description: 'View real-time stock levels for each individual warehouse to enable better inventory decisions.'
+  },
+  {
+    feature: 'Easy Inter-Location Transfers',
+    description: 'Quickly transfer items between warehouses with automated tracking and documentation.'
+  },
+  {
+    feature: 'Location-Specific Reports',
+    description: 'Generate detailed inventory and movement reports for each warehouse location separately.'
+  },
+  {
+    feature: 'Location-Based Stock Alerts',
+    description: 'Receive low-stock and reorder alerts specific to each warehouse to avoid stockouts at any location.'
+  }
+],
 
   screenshots: [
     {
@@ -78,22 +83,22 @@ const UnlimitedWarehouse = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Regional Stock Allocation',
-      description: 'A retail chain distributes stock across regional warehouses based on demand data.',
-      result: '25% reduction in delivery time and 15% boost in product availability'
-    },
-    {
-      scenario: 'Bulk Goods Distribution',
-      description: 'A wholesaler manages multiple bulk warehouses and coordinates transfers efficiently.',
-      result: '35% reduction in inventory mismatch and enhanced delivery accuracy'
-    },
-    {
-      scenario: 'Distributed Fulfillment Centers',
-      description: 'A logistics provider uses decentralized warehouses to fulfill orders faster.',
-      result: '20% increase in same-day dispatch and improved delivery SLAs'
-    }
-  ],
+  {
+    scenario: 'Preventing Store Stockouts',
+    description: 'A retail chain uses real-time stock transfer capabilities to quickly move inventory between stores and avoid empty shelves during high demand.',
+    result: 'Reduced stockouts and improved on-shelf availability across all store locations'
+  },
+  {
+    scenario: 'Smart Stock Balancing for Fast Fulfillment',
+    description: 'A wholesaler dynamically transfers stock between warehouses to quickly fulfill urgent bulk orders for key customers.',
+    result: 'Faster order fulfillment and better stock utilization across warehouses'
+  },
+  {
+    scenario: 'Timely Medicine Availability in Branches',
+    description: 'A pharmacy chain shifts essential medicines to branches with urgent demand, ensuring critical stock reaches the right location on time.',
+    result: 'Improved patient service and ensured timely availability of life-saving medicines'
+  }
+],
 
   implementation: {
     setupTime: '3-5 hours',
