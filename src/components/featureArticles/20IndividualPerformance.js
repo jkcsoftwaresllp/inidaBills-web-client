@@ -3,66 +3,66 @@ const IndividualPerformance = () => ({
   shortDescription: 'Effortlessly track employee productivity and contributions',
   category: 'Team & Productivity',
   image: 'https://images.unsplash.com/photo-1557425493-04a9d3bcdc80?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Track employee productivity and sales contributions with individual performance analytics. Recognize top performers, identify training needs, and optimize your workforce for better business outcomes. Stay on top of who’s driving growth and who needs support—all from one place.',
+  detailedDescription: 'IndiaBills lets you see how each team member contributes to sales and operations, helping boost productivity.',
 
   whatMakesItDifferent: [
-    'Real-time tracking of sales and task completion per employee',
-    'Performance summaries with custom timeframes and KPIs',
-    'Leaderboards to motivate and reward top performers',
-    'Supports roles across sales, billing, service, and delivery teams',
-    'Daily/weekly/monthly productivity trends',
-    'Exportable reports for payroll and performance reviews'
+    'Track sales per user',
+    'Activity logs',
+    'Custom targets',
+    'User reports',
+    'Multi-branch tracking',
+    'Boosts accountability'
   ],
 
   idealFor: [
     {
-      businessType: 'Sales Teams',
-      description: 'Track targets, conversions, and activities of each salesperson across territories.',
-      benefits: ['Boost motivation with live rankings', 'Reward high performers', 'Spot training needs early', 'Improve team accountability']
-    },
-    {
       businessType: 'Retail Stores',
-      description: 'Monitor POS activity and individual cashier sales or customer handling quality.',
-      benefits: ['Track cashier-wise revenue', 'Identify peak vs underperforming shifts', 'Improve shift scheduling', 'Reward customer service excellence']
+      description: 'See staff sales.',
+      benefits: ['Spot top sellers', 'Motivate staff', 'Improve service', 'Track work']
     },
     {
-      businessType: 'Service Providers',
-      description: 'Track individual technician or staff productivity based on tasks completed or hours logged.',
-      benefits: ['Measure work quality and speed', 'Balance workloads', 'Enable fair incentive calculations', 'Spot service bottlenecks']
+      businessType: 'Wholesalers',
+      description: 'Track large teams.',
+      benefits: ['Staff targets', 'Clear logs', 'Safer deals', 'Better planning']
     },
     {
-      businessType: 'Franchises or Multi-Branch Chains',
-      description: 'Compare team performance across branches for training and operational consistency.',
-      benefits: ['Ensure standard KPIs are met', 'Replicate success models', 'Address branch-level performance issues']
+      businessType: 'Supermarkets',
+      description: 'Large team reports.',
+      benefits: ['Spot issues', 'Track staff', 'Plan shifts', 'Motivate']
+    },
+    {
+      businessType: 'Service Firms',
+      description: 'Track performance.',
+      benefits: ['User logs', 'Track work', 'Spot gaps', 'Reward top work']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Live Performance Dashboard',
-      description: 'Monitor real-time KPIs for each staff member including sales, tasks, and hours.'
-    },
-    {
-      feature: 'Custom KPI Setup',
-      description: 'Define what matters—sales targets, customer handling, completed jobs, etc.'
-    },
-    {
-      feature: 'Leaderboards & Recognition',
-      description: 'Create healthy competition through leaderboards and incentives.'
-    },
-    {
-      feature: 'Exportable Reports',
-      description: 'Export individual or team performance reports for HR and payroll teams.'
-    },
-    {
-      feature: 'Performance History',
-      description: 'Track trends for individuals over time to evaluate growth or stagnation.'
-    },
-    {
-      feature: 'Role-Based Metrics',
-      description: 'Track performance by role type—sales, cashier, delivery, technician, etc.'
-    }
-  ],
+  {
+    feature: 'Individual Sales Tracking',
+    description: 'Monitor sales performance for each staff member with detailed transaction data.'
+  },
+  {
+    feature: 'Activity Logging',
+    description: 'Track all user activities including logins, edits, and key actions for accountability.'
+  },
+  {
+    feature: 'Target Setting & Tracking',
+    description: 'Set performance targets for users and track their achievement status in real time.'
+  },
+  {
+    feature: 'User-Specific Reports',
+    description: 'Generate performance reports for individual employees for easy review and feedback.'
+  },
+  {
+    feature: 'Multi-Location Insights',
+    description: 'View consolidated or branch-wise user performance across multiple locations.'
+  },
+  {
+    feature: 'Exportable Performance Data',
+    description: 'Download user performance reports in Excel or PDF formats for team reviews and sharing.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const IndividualPerformance = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Retail Owner Evaluates Cashier Productivity',
-      description: 'A multi-counter grocery store tracks each cashier’s daily billing and customer handling efficiency.',
-      result: 'Improved shift allocation and reduced customer complaints by 25%'
-    },
-    {
-      scenario: 'Sales Manager Rewards Top Performer',
-      description: 'Weekly leaderboard helps a regional sales manager identify top performers for incentive payouts.',
-      result: 'Sales conversion rate increased by 18% due to gamified competition'
-    },
-    {
-      scenario: 'Service Business Monitors Staff Efficiency',
-      description: 'A repair service tracks technician work quality and speed over the month.',
-      result: 'Reduced turnaround time and better customer satisfaction ratings'
-    }
-  ],
+  {
+    scenario: 'Retailer Rewards High-Performing Staff',
+    description: 'A retail store tracks individual sales and recognizes top performers with incentives.',
+    result: 'Boosts overall sales by 20% and improves team motivation'
+  },
+  {
+    scenario: 'Wholesaler Identifies Training Needs',
+    description: 'A wholesale business uses user activity reports to spot underperforming team members and schedule targeted training.',
+    result: 'Reduces processing errors by 30% and improves team efficiency'
+  },
+  {
+    scenario: 'Supermarket Optimizes Shift Planning',
+    description: 'A supermarket manager uses performance data to allocate staff shifts based on peak hours and productivity patterns.',
+    result: 'Improves checkout speed and reduces customer wait time by 25%'
+  }
+],
 
   implementation: {
     setupTime: '1–2 hours',
