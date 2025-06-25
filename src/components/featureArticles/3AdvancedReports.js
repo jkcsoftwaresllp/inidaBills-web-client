@@ -3,66 +3,67 @@ const AdvancedReports = () => ({
   shortDescription: 'Generate detailed reports for orders, sales, and more',
   category: 'Analytics & Reporting',
   image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Unlock powerful business insights with our comprehensive reporting system. Generate detailed analytics on sales, inventory, customer behavior, and financial performance to make data-driven decisions that drive growth.',
+  detailedDescription: 'The Reports feature in IndiaBills provides complete business insights, from sales to tax to stock, helping owners make smarter decisions faster.',
   
   whatMakesItDifferent: [
-    'Real-time report generation with live data updates',
-    'Customizable report templates for specific business needs',
-    'Interactive dashboards with drill-down capabilities',
-    'Automated report scheduling and email delivery',
-    'Multi-format export options (PDF, Excel, CSV)',
-    'Advanced filtering and data segmentation options'
+    'All-in-one reporting',
+    'Auto-generated reports',
+    'GST-ready reports',
+    'Stock report integration',
+    'Visual charts',
+    'Instant exports'
   ],
 
   idealFor: [
     {
-      businessType: 'All Business Types',
-      description: 'Essential for any business looking to understand performance metrics, identify trends, and make informed decisions based on data.',
-      benefits: ['Data-driven decision making', 'Performance tracking', 'Trend identification', 'Strategic planning support']
+      businessType: 'Retail Shops',
+      description: 'Stay on top of numbers daily.',
+      benefits: ['Tracks sales trends', 'Shows profit clearly', 'Helps plan reorders', 'Eases tax filing']
     },
     {
-      businessType: 'Retail Chains',
-      description: 'Perfect for multi-location retailers needing consolidated reporting across all stores and channels.',
-      benefits: ['Multi-location performance comparison', 'Product performance analysis', 'Customer behavior insights', 'Inventory optimization']
+      businessType: 'Wholesalers',
+      description: 'Clear records for bulk operations.',
+      benefits: ['Bulk sales data', 'GST summaries', 'Supplier stats', 'Stock movement logs']
     },
     {
-      businessType: 'Wholesale Distributors',
-      description: 'Ideal for distributors tracking supplier performance, customer trends, and territory-wise sales analysis.',
-      benefits: ['Supplier performance tracking', 'Territory analysis', 'Customer profitability', 'Demand forecasting']
+      businessType: 'Pharmacies',
+      description: 'Combine stock and sales insights.',
+      benefits: ['Expiry data', 'Medicine trends', 'GST-ready', 'Audit-friendly']
     },
     {
-      businessType: 'Manufacturing Units',
-      description: 'Critical for manufacturers monitoring production efficiency, material costs, and finished goods performance.',
-      benefits: ['Production efficiency tracking', 'Cost analysis', 'Quality metrics', 'Supply chain optimization']
+      businessType: 'Supermarkets',
+      description: 'Simplify large data sets.',
+      benefits: ['Category reports', 'Tax summaries', 'Snapshot stock views', 'Business insights']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Sales Analytics',
-      description: 'Comprehensive sales reports with trend analysis, product performance, and customer insights.'
-    },
-    {
-      feature: 'Inventory Reports',
-      description: 'Detailed inventory analysis including stock levels, movement patterns, and valuation reports.'
-    },
-    {
-      feature: 'Financial Dashboards',
-      description: 'Real-time financial overview with profit/loss analysis, cash flow tracking, and expense monitoring.'
-    },
-    {
-      feature: 'Customer Analytics',
-      description: 'Customer behavior analysis, purchase patterns, and loyalty metrics for better customer management.'
-    },
-    {
-      feature: 'Custom Report Builder',
-      description: 'Build custom reports with drag-and-drop interface and advanced filtering options.'
-    },
-    {
-      feature: 'Automated Scheduling',
-      description: 'Schedule reports to be automatically generated and emailed to stakeholders at specified intervals.'
-    }
-  ],
+  {
+    feature: 'Customizable Sales Reports',
+    description: 'Flexible sales reporting with filterable views for tracking performance by product, period, or customer segment.'
+  },
+  {
+    feature: 'Tax-Ready Reports',
+    description: 'Pre-formatted tax reports designed to simplify GST filing and ensure compliance with local tax regulations.'
+  },
+  {
+    feature: 'Stock Flow Logs',
+    description: 'Clear visibility of inventory inflow and outflow with detailed transaction logs for each stock movement.'
+  },
+  {
+    feature: 'Instant Profit Reports',
+    description: 'Real-time margin and profitability analysis to help track profits across products and sales channels.'
+  },
+  {
+    feature: 'Exportable Report Files',
+    description: 'Easily export reports in Excel, CSV, or PDF formats for sharing with teams, accountants, or auditors.'
+  },
+  {
+    feature: 'Visual Data Insights',
+    description: 'Interactive charts and graphs that provide at-a-glance summaries of key business metrics and trends.'
+  }
+],
+
 
   screenshots: [
     {
@@ -83,22 +84,22 @@ const AdvancedReports = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Seasonal Business Planning',
-      description: 'A gift shop uses historical sales reports to identify seasonal trends and plan inventory for upcoming festivals and holidays.',
-      result: '35% increase in seasonal sales through better inventory planning and targeted promotions'
-    },
-    {
-      scenario: 'Multi-Location Performance Analysis',
-      description: 'A restaurant chain analyzes performance across all outlets to identify best practices and optimize underperforming locations.',
-      result: '25% improvement in overall profitability through location-specific optimization strategies'
-    },
-    {
-      scenario: 'Customer Segmentation Strategy',
-      description: 'An electronics retailer uses customer analytics to segment customers and create targeted marketing campaigns.',
-      result: '40% increase in customer retention and 20% growth in average order value'
-    }
-  ],
+  {
+    scenario: 'Smart Restocking Decisions',
+    description: 'A retailer leverages detailed sales reports to identify best-selling products and plan timely restocks, ensuring high-demand items are always available.',
+    result: 'Improved sales by minimizing stockouts on popular items'
+  },
+  {
+    scenario: 'Stress-Free GST Filing',
+    description: 'A wholesaler automates GST report generation, making tax filing faster and error-free without manual calculations.',
+    result: 'Saved several hours per month on tax preparation and reduced filing errors'
+  },
+  {
+    scenario: 'Slow-Moving Stock Clearance',
+    description: 'A pharmacy analyzes inventory reports to identify slow-moving products and runs targeted clearance promotions to free up shelf space.',
+    result: 'Reduced dead stock and improved cash flow through better inventory turnover'
+  }
+],
 
   implementation: {
     setupTime: '1-2 hours',
