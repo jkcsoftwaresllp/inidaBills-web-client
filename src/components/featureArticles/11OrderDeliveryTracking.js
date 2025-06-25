@@ -3,66 +3,66 @@ const OrderDeliveryTracking = () => ({
   shortDescription: 'Seamlessly track orders and deliveries in real-time',
   category: 'Logistics & Fulfillment',
   image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Stay on top of every order and its delivery status. Provide better customer service with accurate and timely tracking updates. From packing to delivery, monitor the full lifecycle of each order with location updates, delivery confirmations, and status alerts.',
+  detailedDescription: 'IndiaBills helps you track orders from placement to delivery so your customers always get timely updates.',
 
   whatMakesItDifferent: [
-    'Real-time order status tracking from placement to delivery',
-    'Live delivery updates with ETA predictions',
-    'Geo-tracking of delivery agents or vehicles',
-    'Customer notifications via email, SMS, or app',
-    'Order timeline with complete event history',
-    'Support for partial deliveries and split shipments'
+    'Live order status',
+    'Customer updates',
+    'Link to stock',
+    'Track by invoice',
+    'Delay alerts',
+    'Delivery reports'
   ],
 
   idealFor: [
     {
-      businessType: 'E-commerce',
-      description: 'Deliver better online shopping experiences with transparent tracking and reduced delivery anxiety.',
-      benefits: ['Improve customer trust', 'Reduce “where is my order” inquiries', 'Enable fast issue resolution', 'Boost repeat purchases']
+      businessType: 'Retail Shops',
+      description: 'Ensures customers are updated.',
+      benefits: ['Builds trust', 'Reduces queries', 'Fewer missed deliveries', 'Better reviews']
     },
     {
-      businessType: 'Logistics',
-      description: 'Essential for logistics firms handling B2B or B2C parcel and freight movement.',
-      benefits: ['Track vehicle and delivery agent movements', 'Improve route planning', 'Enhance delivery SLAs', 'Reduce misplacements']
+      businessType: 'Wholesalers',
+      description: 'Handles bulk order tracking.',
+      benefits: ['See order flow', 'Prevents lost orders', 'Helps in planning', 'Easy client updates']
     },
     {
-      businessType: 'Retail',
-      description: 'Ideal for retail chains with home delivery or store pickup options.',
-      benefits: ['Sync in-store and online orders', 'Ensure timely fulfillment', 'Notify customers proactively', 'Optimize delivery resources']
+      businessType: 'Pharmacies',
+      description: 'Ensures medicines reach on time.',
+      benefits: ['Tracks sensitive orders', 'Safer delivery', 'Alerts on delays', 'Builds loyalty']
     },
     {
-      businessType: 'FMCG & Food Delivery',
-      description: 'Track time-sensitive deliveries like groceries or restaurant orders.',
-      benefits: ['Minimize delays', 'Ensure freshness and satisfaction', 'Auto-assign routes based on location', 'Track feedback post-delivery']
+      businessType: 'Supermarkets',
+      description: 'Tracks online orders.',
+      benefits: ['Clear delivery info', 'Helps team coordination', 'Prevents misses', 'Boosts satisfaction']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Order Timeline View',
-      description: 'Track every step of the order from confirmation, packing, dispatch to delivery.'
-    },
-    {
-      feature: 'Live Geo-Tracking',
-      description: 'View real-time location of delivery agents or vehicles on the map.'
-    },
-    {
-      feature: 'Status Notifications',
-      description: 'Send automated alerts to customers via email, SMS, or app when status updates.'
-    },
-    {
-      feature: 'Delivery Confirmation',
-      description: 'Capture proof of delivery through OTP, signature, or photo.'
-    },
-    {
-      feature: 'Partial Fulfillment Support',
-      description: 'Handle multi-item or multi-location orders with split shipments.'
-    },
-    {
-      feature: 'Analytics & Delivery Reports',
-      description: 'Monitor delivery performance, delays, and success rate with detailed reports.'
-    }
-  ],
+  {
+    feature: 'Live Order Tracking',
+    description: 'Track order status in real-time from processing to delivery, keeping your team and customers updated at every step.'
+  },
+  {
+    feature: 'Automated Customer Notifications',
+    description: 'Send automatic order status updates to customers via SMS, email, or app notifications to enhance communication.'
+  },
+  {
+    feature: 'Stock Synchronization',
+    description: 'Automatically sync stock levels with order status to reduce manual data entry and inventory errors.'
+  },
+  {
+    feature: 'Delivery Performance Monitoring',
+    description: 'Track key delivery metrics like on-time rate, average delivery time, and fulfillment efficiency.'
+  },
+  {
+    feature: 'Delay Alerts and Escalations',
+    description: 'Receive instant alerts for delayed deliveries, enabling quick action to prevent customer dissatisfaction.'
+  },
+  {
+    feature: 'Downloadable Delivery Reports',
+    description: 'Export detailed delivery performance and order fulfillment reports for auditing and internal review.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const OrderDeliveryTracking = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Same-Day Delivery Tracking',
-      description: 'An e-commerce company offers same-day delivery and uses live tracking to ensure timely drop-offs.',
-      result: '95% on-time deliveries and 40% reduction in customer queries'
-    },
-    {
-      scenario: 'Multi-Stop Logistics',
-      description: 'A logistics company uses geo-tracking to optimize delivery routes and minimize fuel costs.',
-      result: '20% reduction in delivery time and operational costs'
-    },
-    {
-      scenario: 'Order Split Across Warehouses',
-      description: 'A retail business fulfills an order from two different warehouse locations.',
-      result: 'Improved fulfillment flexibility with 100% accurate delivery tracking'
-    }
-  ],
+  {
+    scenario: 'Boosting Customer Reviews with Timely Updates',
+    description: 'A retailer improves customer communication by sending real-time delivery updates and notifications throughout the order journey.',
+    result: 'Higher customer satisfaction and an increase in positive online reviews'
+  },
+  {
+    scenario: 'Tracking Bulk Order Deliveries for Wholesalers',
+    description: 'A wholesaler manages and monitors large, multi-item shipments with real-time tracking to ensure timely delivery to retailers.',
+    result: 'Improved delivery rates and better tracking of bulk orders'
+  },
+  {
+    scenario: 'Ensuring Timely Medicine Delivery for Pharmacies',
+    description: 'A pharmacy uses live tracking and delay alerts to ensure critical medicines reach patients or branches on time and safely.',
+    result: 'Faster, safer deliveries and improved patient service levels'
+  }
+],
 
   implementation: {
     setupTime: '2–4 hours',
