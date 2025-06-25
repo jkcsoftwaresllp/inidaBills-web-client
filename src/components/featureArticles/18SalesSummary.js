@@ -3,66 +3,66 @@ const SalesSummary = () => ({
   shortDescription: 'Get a sales summary for better business insights',
   category: 'Analytics & Reporting',
   image: 'https://images.unsplash.com/photo-1556740772-1a741367b93e?auto=format&fit=crop&w=1200',
-  detailedDescription: 'Access detailed sales summaries with performance trends, top-selling products, and revenue breakdowns. Identify growth opportunities, monitor sales KPIs, and make informed business decisions with a clear view of your sales performance.',
+  detailedDescription: 'IndiaBills’ Sales Summary gives you a clear picture of daily, weekly, and monthly sales to track growth and plan better.',
 
   whatMakesItDifferent: [
-    'Daily, weekly, and monthly sales summaries at a glance',
-    'Breakdowns by product, category, location, or salesperson',
-    'Top-selling products and low-performing SKUs analysis',
-    'Trend graphs and comparisons over custom periods',
-    'Integrated with billing and inventory modules',
-    'Exportable reports in Excel or PDF format'
+    'Live updates',
+    'Custom date filters',
+    'Category view',
+    'TLocation summary',
+    'Profit snapshot',
+    'Downloadable'
   ],
 
   idealFor: [
     {
-      businessType: 'Retail',
-      description: 'Helps retail businesses understand peak sales periods, bestsellers, and performance by store.',
-      benefits: ['Optimize inventory restocking', 'Run targeted promotions', 'Track cashier or POS performance', 'Avoid stockouts of fast-moving items']
+      businessType: ' Retail Shops',
+      description: 'See what’s selling.',
+      benefits: ['Daily report', 'Spot trends', 'Track top items', 'Plan stock']
     },
     {
-      businessType: 'Wholesale',
-      description: 'Ideal for bulk sellers to track order volumes by client, region, or product line.',
-      benefits: ['Identify high-value customers', 'Improve credit and delivery management', 'Detect product demand shifts', 'Reduce slow-moving stock']
+      businessType: 'Wholesalers',
+      description: 'Big-picture view.',
+      benefits: ['Bulk sales logs', 'Supplier stats', 'Profit check', 'Plan better']
     },
     {
-      businessType: 'E-commerce',
-      description: 'Gives online stores clarity on daily orders, returns, channel-wise sales, and revenue.',
-      benefits: ['Optimize ad spending by product', 'Track platform-specific performance (e.g., website, marketplace)', 'Forecast order volume spikes', 'Improve fulfillment strategy']
+      businessType: 'Supermarkets',
+      description: 'Track categories easily.',
+      benefits: ['Fast reports', 'Category view', 'Plan orders', 'Spot slow movers']
     },
     {
-      businessType: 'Franchises or Multi-Store Chains',
-      description: 'Compare performance between outlets to guide operations and marketing strategy.',
-      benefits: ['Identify top-performing stores', 'Standardize training and strategy', 'Set store-wise goals', 'Balance stock between locations']
+      businessType: 'Service Firms',
+      description: 'See service + sales.',
+      benefits: ['Combine data', 'Quick reports', 'Track work', 'Plan growth']
     }
   ],
 
   keyFeatures: [
-    {
-      feature: 'Sales Overview Dashboard',
-      description: 'Real-time dashboard displaying revenue, units sold, and order count over time.'
-    },
-    {
-      feature: 'Top Products & Categories',
-      description: 'Highlights your best-performing products and product lines by revenue and quantity.'
-    },
-    {
-      feature: 'Custom Date Filters',
-      description: 'Analyze sales performance over any custom period—daily, weekly, monthly, or annually.'
-    },
-    {
-      feature: 'Sales by Location & User',
-      description: 'Breakdown of sales by branches, sales reps, or regions for deeper business analysis.'
-    },
-    {
-      feature: 'Exportable Reports',
-      description: 'Download sales summaries as Excel or PDF reports for external sharing or audit use.'
-    },
-    {
-      feature: 'Trend Comparison Charts',
-      description: 'Compare growth trends with past periods to assess business health and progress.'
-    }
-  ],
+  {
+    feature: 'Live Sales Tracking',
+    description: 'View real-time sales data including revenue, order counts, and units sold as transactions happen.'
+  },
+  {
+    feature: 'Custom Date Range Filters',
+    description: 'Generate sales reports for any time frame—daily, weekly, monthly, or for a custom date range.'
+  },
+  {
+    feature: 'Category-Wise Sales Breakdown',
+    description: 'Analyze sales performance by product categories to identify top-selling and underperforming segments.'
+  },
+  {
+    feature: 'Branch-Wise Sales View',
+    description: 'Track and compare sales across multiple branches or store locations for better decision-making.'
+  },
+  {
+    feature: 'Quick Profitability Snapshot',
+    description: 'Instantly view gross profit margins and sales-to-cost ratios without needing complex reports.'
+  },
+  {
+    feature: 'Downloadable Sales Reports',
+    description: 'Export detailed sales data in Excel or PDF formats for sharing with teams, auditors, or stakeholders.'
+  }
+],
 
   screenshots: [
     {
@@ -83,22 +83,22 @@ const SalesSummary = () => ({
   ],
 
   useCases: [
-    {
-      scenario: 'Retail Owner Analyzes Festive Sales',
-      description: 'A retail owner uses the sales summary dashboard to compare Diwali season sales with the previous year.',
-      result: 'Improves inventory planning and marketing spend for the next festive cycle'
-    },
-    {
-      scenario: 'E-commerce Business Tracks Top Products',
-      description: 'An online store filters sales by product category to optimize their digital ad campaigns.',
-      result: 'Increases return on ad spend (ROAS) by 35% through targeted promotion of top sellers'
-    },
-    {
-      scenario: 'Wholesale Manager Reviews Monthly Orders',
-      description: 'A distributor downloads monthly summaries to report on high-volume clients and product movement.',
-      result: 'Streamlines client servicing and boosts revenue through targeted engagement'
-    }
-  ],
+  {
+    scenario: 'Retailer Plans Smart Restocking',
+    description: 'A retail shop uses daily sales summaries and stock reports to decide which items need immediate restocking.',
+    result: 'Ensures shelves stay full with fast-moving products and avoids lost sales'
+  },
+  {
+    scenario: 'Wholesaler Targets Top Customers',
+    description: 'A wholesaler analyzes customer-wise sales data to identify high-value clients for exclusive deals and offers.',
+    result: 'Boosts repeat business and improves customer loyalty by focusing on top buyers'
+  },
+  {
+    scenario: 'Supermarket Adjusts Order Volumes',
+    description: 'A supermarket monitors product-wise sales and adjusts supplier orders to reduce overstock and minimize waste.',
+    result: 'Cuts inventory holding costs and improves stock turnover rates'
+  }
+],
 
   implementation: {
     setupTime: 'Instant (auto-enabled)',
