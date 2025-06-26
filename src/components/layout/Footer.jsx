@@ -1,6 +1,14 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { Phone, Mail, MapPin, Twitter, Facebook, Linkedin, Instagram } from 'lucide-react';
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Twitter,
+  Facebook,
+  Linkedin,
+  Instagram,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -9,12 +17,40 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h2>IndiaBills</h2>
-          <p>Simplifying billing for Indian businesses since 2024.</p>
+          <p>Simplifying billing for Indian businesses since 2024. IndiaBills is the most trusted billing software in India.</p>
           <div className={styles.socialLinks}>
-            <a href="https://x.com/jkcsoftwares" target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
-            <a href="https://www.facebook.com/jkcsoftwares/" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
-            <a href="https://in.linkedin.com/company/jkcsoftwares" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
-            <a href="https://www.instagram.com/jkcsoftwares/" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+            <a
+              href="https://x.com/jkcsoftwares"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow IndiaBills on X (Twitter)"
+            >
+              <Twitter size={20} />
+            </a>
+            <a
+              href="https://www.facebook.com/jkcsoftwares/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow IndiaBills on Facebook"
+            >
+              <Facebook size={20} />
+            </a>
+            <a
+              href="https://in.linkedin.com/company/jkcsoftwares"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow IndiaBills on LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/jkcsoftwares/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow IndiaBills on Instagram"
+            >
+              <Instagram size={20} />
+            </a>
           </div>
         </div>
 
@@ -30,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerSection}>
-          <h3>Contact Info</h3>
+          <h3>Contact IndiaBills</h3>
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <Phone size={20} />
@@ -42,13 +78,19 @@ const Footer = () => {
             </div>
             <div className={styles.contactItem}>
               <MapPin size={20} />
-              <span>Kumar Commercial Complex, Opp. Gate No. 10<br />Gandhi Maidan, Exhibition Road<br />Patna, India 800001</span>
+              <span>
+                Kumar Commercial Complex, Opp. Gate No. 10
+                <br />
+                Gandhi Maidan, Exhibition Road
+                <br />
+                Patna, India 800001
+              </span>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>© 2025 IndiaBills. All rights reserved.</p>
+        <p>© 2025 IndiaBills. All rights reserved. India Bills - Leading billing software in India.</p>
       </div>
     </footer>
   );
