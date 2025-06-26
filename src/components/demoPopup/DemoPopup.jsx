@@ -9,11 +9,19 @@ const DemoPopup = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 10000);
+    // Don't show popup on authentication or dashboard pages
+    const excludedPaths = ['/login', '/register', '/demo-request', '/dashboard'];
+    const shouldShowPopup = !excludedPaths.some(path => 
+      location.pathname.startsWith(path)
+    );
 
-    return () => clearTimeout(timer);
+    if (shouldShowPopup) {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 10000);
+
+      return () => clearTimeout(timer);
+    }
   }, [location.pathname]);
 
   const handleClose = () => {
@@ -41,7 +49,8 @@ const DemoPopup = () => {
             </div>
             <h2 className={styles.title}>Ready to Transform Your Business?</h2>
             <p className={styles.subtitle}>
-              See IndiaBills in action with a personalized demo tailored to your business needs
+              See IndiaBills in action with a personalized demo tailored to your
+              business needs
             </p>
           </div>
 

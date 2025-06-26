@@ -87,11 +87,21 @@ const Pricing = () => {
 
   return (
     <div className={styles.container}>
+      {/* SEO Content for IndiaBills and India Bills */}
+      <div style={{ display: 'none' }}>
+        <h1>IndiaBills Pricing - Affordable Billing Software Plans</h1>
+        <h2>India Bills Pricing Plans</h2>
+        <h3>IndiaBills Annual Subscription</h3>
+        <h4>India Bills Setup Assistance</h4>
+        <p>IndiaBills offers the most competitive pricing for billing software in India. India Bills pricing is designed for businesses of all sizes.</p>
+      </div>
+
       <section className={styles.hero}>
         <h1>Simple, Transparent Pricing</h1>
         <p>
-          Choose the perfect plan for your business. No hidden fees, no surprises. 
-          Start with our free trial and upgrade when you're ready to scale.
+          Choose the perfect IndiaBills plan for your business. No hidden fees, no
+          surprises. Start with our free trial and upgrade when you're ready to
+          scale. India Bills offers affordable pricing for all business types.
         </p>
       </section>
 

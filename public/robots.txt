@@ -11,6 +11,10 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /demo-request
 
 # Allow important pages
 Allow: /home
@@ -22,3 +26,7 @@ Allow: /blog/
 Allow: /aboutus
 Allow: /contactus
 Allow: /faqs
+
+# IndiaBills specific pages
+Allow: /indiabills
+Allow: /india-bills
