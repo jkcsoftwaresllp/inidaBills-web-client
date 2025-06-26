@@ -30,14 +30,14 @@ const Contact = () => {
     setNotification({
       isVisible: true,
       message,
-      type
+      type,
     });
   };
 
   const hideNotification = () => {
-    setNotification(prev => ({
+    setNotification((prev) => ({
       ...prev,
-      isVisible: false
+      isVisible: false,
     }));
   };
 
@@ -58,13 +58,13 @@ const Contact = () => {
       });
 
       const result = await response.text();
-      
+
       // Show custom success notification
       showNotification(
-        'Message sent successfully! We\'ll get back to you within 24 hours.',
+        "Message sent successfully! We'll get back to you within 24 hours.",
         'success'
       );
-      
+
       // Reset form
       setFormData({
         Name: '',
@@ -86,6 +86,15 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
+      {/* SEO Content for IndiaBills and India Bills */}
+      <div style={{ display: 'none' }}>
+        <h1>Contact IndiaBills - Get Support for Billing Software</h1>
+        <h2>India Bills Contact Information</h2>
+        <h3>IndiaBills Customer Support</h3>
+        <h4>India Bills Help and Assistance</h4>
+        <p>Contact IndiaBills for any queries about our billing software. India Bills support team is available 24/7 to help you.</p>
+      </div>
+
       <CustomNotification
         message={notification.message}
         type={notification.type}
@@ -95,10 +104,11 @@ const Contact = () => {
       />
 
       <section className={styles.hero}>
-        <h1>Get in Touch</h1>
+        <h1>Get in Touch with IndiaBills</h1>
         <p>
-          Have questions about IndiaBills? Need help getting started? 
-          Our team is here to help you succeed. Reach out to us anytime.
+          Have questions about IndiaBills? Need help getting started? Our team
+          is here to help you succeed. Reach out to us anytime for India Bills
+          support and assistance.
         </p>
       </section>
 
@@ -106,10 +116,10 @@ const Contact = () => {
         {/* Left Side - Get in Touch */}
         <div className={styles.contactInfo}>
           <div className={styles.contactHeader}>
-            <h2>Get in Touch</h2>
-            <p>Multiple ways to reach us. Choose what works best for you.</p>
+            <h2>Get in Touch with IndiaBills</h2>
+            <p>Multiple ways to reach us. Choose what works best for you to contact India Bills.</p>
           </div>
-          
+
           <div className={styles.contactTiles}>
             {/* Top Row */}
             <div className={styles.tileRow}>
@@ -121,16 +131,16 @@ const Contact = () => {
                   'Patna, India 800001',
                 ]}
               />
-              <Tile 
-                tittle="Call Us" 
+              <Tile
+                tittle="Call Us"
                 para={[
                   '+91 7322005500',
                   'Monday - Saturday',
-                  '9:00 AM - 6:00 PM IST'
-                ]} 
+                  '9:00 AM - 6:00 PM IST',
+                ]}
               />
             </div>
-            
+
             {/* Bottom Row */}
             <div className={styles.tileRow}>
               <Tile
@@ -138,7 +148,7 @@ const Contact = () => {
                 para={[
                   'team@jkcsoftwares.com',
                   'support@indiabills.com',
-                  'Quick response within 24 hours'
+                  'Quick response within 24 hours',
                 ]}
               />
               <Tile
@@ -146,7 +156,7 @@ const Contact = () => {
                 para={[
                   'Monday - Saturday: 9:00 AM - 6:00 PM',
                   'Sunday: Closed',
-                  'Emergency support available'
+                  'Emergency support available',
                 ]}
               />
             </div>
@@ -157,9 +167,12 @@ const Contact = () => {
         <section className={styles.contactForm}>
           <div className={styles.formHeader}>
             <h2>Send us a Message</h2>
-            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            <p>
+              Fill out the form below and we'll get back to you as soon as
+              possible regarding IndiaBills.
+            </p>
           </div>
-          
+
           <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.formRow}>
               <div className={styles.formGroup}>
@@ -211,11 +224,11 @@ const Contact = () => {
                   required
                 >
                   <option value="">Select a subject</option>
-                  <option value="support">Technical Support</option>
-                  <option value="sales">Sales Inquiry</option>
-                  <option value="billing">Billing Question</option>
-                  <option value="demo">Request Demo</option>
-                  <option value="partnership">Partnership</option>
+                  <option value="support">IndiaBills Technical Support</option>
+                  <option value="sales">IndiaBills Sales Inquiry</option>
+                  <option value="billing">IndiaBills Billing Question</option>
+                  <option value="demo">Request IndiaBills Demo</option>
+                  <option value="partnership">IndiaBills Partnership</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -226,7 +239,7 @@ const Contact = () => {
               <textarea
                 id="Message"
                 name="Message"
-                placeholder="Tell us how we can help you..."
+                placeholder="Tell us how IndiaBills can help you..."
                 rows="6"
                 value={formData.Message}
                 onChange={handleChange}
@@ -234,12 +247,12 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className={styles.submitButton}
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? 'Sending...' : 'Send Message to IndiaBills'}
             </button>
           </form>
         </section>
