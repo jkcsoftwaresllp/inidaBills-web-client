@@ -202,7 +202,7 @@ const FAQsPage = () => {
       </div>
 
       <section className={styles.hero}>
-        <h1>Frequently Asked Questions about IndiaBills</h1>
+        <h1>Frequently Asked Questions</h1>
         <p>
           Find answers to common questions about IndiaBills. Can't find what
           you're looking for? Contact our support team for personalized
