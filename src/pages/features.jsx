@@ -3,245 +3,229 @@ import React, { useState } from 'react';
 import Header from '../components/layout/Header';
 import { Link } from 'react-router-dom';
 import TilesContainer from '../components/containerTestimonials/TilesContainer';
-import Tile from '../components/containerTestimonials/Tile';
-// import FeatureDetails from '../components/featureDetails/FeatureDetails';
-import Testimonials from '../components/containerTestimonials/Testimonials'
+import FeatureTileWithIcon from '../components/containerTestimonials/FeatureTileWithIcon';
+import Testimonials from '../components/containerTestimonials/Testimonials';
 import UserDetails from '../components/home/UserDetails';
 import styles from './features.module.css';
+import RealTimeStockTracking from '../Icons/RealTimeStockTracking.png';
+import GSTBilling from '../Icons/GSTBilling.png';
+import Reports from '../Icons/Reports.png';
+import DedicatedCustomerSupport from '../Icons/DedicatedCustomerSupport.png';
+import UnlimitedWarehouse from '../Icons/UnlimitedWarehouse.png';
+import ExpiryAlert from '../Icons/ExpiryAlert.png';
+import DiscountAndOffers from '../Icons/DiscountAndOffers.png';
+import CentralizedDashboard from '../Icons/CentralizedDashboard.png';
+import UserAccessManagement from '../Icons/UserAccessManagement.png';
+import ExpensesTracking from '../Icons/ExpensesTracking.png';
+import OrderDeliveryTracking from '../Icons/OrderDeliveryTracking.png';
+import SharableInvoice from '../Icons/SharableInvoice.png';
+import UnlimitedTeams from '../Icons/UnlimitedTeams.png';
+import CustomBusinessURL from '../Icons/CustomBusinessURL.png';
+import Suppliers from '../Icons/Suppliers.png';
+import CreditManagement from '../Icons/CreditManagement.png';
+import SecurityOfData from '../Icons/SecurityOfData.png';
+import SalesSummary from '../Icons/SalesSummary.png';
+import CustomOrdersWithApp from '../Icons/CustomOrdersWithApp.png';
+import IndividualPerformance from '../Icons/IndividualPerformance.png';
 
 const featuresData = [
   {
     id: 1,
-    title: "Real Time Stock Tracking",
+    title: 'Real Time Stock Tracking',
     slug: 'real-time-stock-tracking',
-    shortDescription: "Monitor real-time stock trends for smarter decisions",
-    detailedDescription: "Keep track of your inventory in real-time with our advanced stock tracking system. Monitor stock levels, get low stock alerts, and make data-driven decisions to optimize your inventory management.",
-    businessTypes: [
-      "Retail stores",
-      "Wholesale businesses",
-      "E-commerce platforms",
-      "Manufacturing units"
-    ],
-    screenshot: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800"
+    shortDescription: 'Monitor real-time stock trends for smarter decisions',
+    icon: <img src={RealTimeStockTracking} alt="Real Time Stock Tracking" width={40} height={40} />,
   },
   {
     id: 2,
-    title: "GST Billing",
+    title: 'GST Billing',
     slug: 'gst-billing',
-    shortDescription: "Effortless GST billing and inventory management",
-    detailedDescription: "Generate GST-compliant invoices instantly with our automated billing system. Handle multiple tax rates, manage GSTIN details, and generate tax reports effortlessly.",
-    businessTypes: [
-      "Small businesses",
-      "Service providers",
-      "Retailers",
-      "B2B companies"
-    ],
-    screenshot: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800"
+    shortDescription: 'Effortless GST billing and inventory management',
+    icon: <img src={GSTBilling} alt="GST Billing" width={40} height={40} />,
   },
   {
     id: 3,
-    title: "Reports",
+    title: 'Reports',
     slug: 'advanced-reports',
-    shortDescription: "Generate detailed reports for orders, sales, and more",
-    detailedDescription: "Analyze your business performance with customizable reports for sales, orders, inventory and more.",
-    businessTypes: ["All business types"],
-    screenshot: "https://www.rib-software.com/app/uploads/2024/06/sales-analytical-report.webp"
+    shortDescription: 'Generate detailed reports for orders, sales, and more',
+    icon: <img src={Reports} alt="Reports" width={40} height={40} />,
   },
   {
     id: 4,
-    title: "Dedicated Customer Support",
+    title: 'Dedicated Customer Support',
     slug: 'dedicated-customer-support',
-    shortDescription: "Reliable customer support whenever you need it",
-    detailedDescription: "Our dedicated support team is available to assist you with any queries or issues you face, ensuring smooth business operations.",
-    businessTypes: ["All"],
-    screenshot: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800"
+    shortDescription: 'Reliable customer support whenever you need it',
+    icon: <img src={DedicatedCustomerSupport} alt="Dedicated Customer Support" width={40} height={40} />,
   },
   {
     id: 5,
-    title: "Unlimited Warehouse",
+    title: 'Unlimited Warehouse',
     slug: 'unlimited-warehouse',
-    shortDescription: "Manage multiple warehouses with unlimited capacity",
-    detailedDescription: "Track stock and movements across all your warehouses without limits.",
-    businessTypes: ["Retail", "Wholesale", "Logistics"],
-    screenshot: "https://5.imimg.com/data5/UF/TH/KH/SELLER-12494872/warehouse-management-system-500x500.jpg"
+    shortDescription: 'Manage multiple warehouses with unlimited capacity',
+    icon: <img src={UnlimitedWarehouse} alt="Unlimited Warehouse" width={40} height={40} />,
   },
   {
     id: 6,
-    title: "Expiry Alert",
+    title: 'Expiry Alert',
     slug: 'expiry-alert',
-    shortDescription: "Get timely expiry alerts to avoid stock wastage",
-    detailedDescription: "Prevent losses by receiving expiry alerts on perishable or time-sensitive inventory.",
-    businessTypes: ["Pharmacies", "FMCG", "Grocery stores"],
-    screenshot: "https://c8.alamy.com/comp/EPWPDW/illustration-of-expired-label-design-red-icon-EPWPDW.jpg"
+    shortDescription: 'Get timely expiry alerts to avoid stock wastage',
+    icon: <img src={ExpiryAlert} alt="Expiry Alert" width={40} height={40} />,
   },
   {
     id: 7,
-    title: "Discount & Offers",
+    title: 'Discount & Offers',
     slug: 'discount-offers',
-    shortDescription: "Easily apply discounts and manage special offers",
-    detailedDescription: "Run promotional campaigns effortlessly by configuring discounts and limited-time offers.",
-    businessTypes: ["Retail", "Online businesses"],
-    screenshot: "https://images.unsplash.com/photo-1549921296-3a6b6363f4f1?auto=format&fit=crop&w=800"
+    shortDescription: 'Easily apply discounts and manage special offers',
+    icon: <img src={DiscountAndOffers} alt="Discount & Offers" width={40} height={40} />,
   },
   {
     id: 8,
-    title: "Centralized Dashboard",
+    title: 'Centralized Dashboard',
     slug: 'centralized-dashboard',
-    shortDescription: "Access all your business data through a single dashboard",
-    detailedDescription: "Monitor and manage your entire business from a unified dashboard. View key metrics, performance summaries, and actionable insights in one place.",
-    businessTypes: ["All business types"],
-    screenshot: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800"
+    shortDescription: 'Access all your business data through a single dashboard',
+    icon: <img src={CentralizedDashboard} alt="Centralized Dashboard" width={40} height={40} />,
   },
   {
     id: 9,
-    title: "User Access Management",
+    title: 'User Access Management',
     slug: 'user-access-management',
-    shortDescription: "Control access with customizable roles and permissions",
-    detailedDescription: "Define roles and assign specific permissions to team members to ensure data security and operational control.",
-    businessTypes: ["Organizations with multiple users", "Retail chains", "Franchises"],
-    screenshot: "https://images.unsplash.com/photo-1614849963646-a54ce1d63bfb?auto=format&fit=crop&w=800"
+    shortDescription: 'Control access with customizable roles and permissions',
+    icon: <img src={UserAccessManagement} alt="User Access Management" width={40} height={40} />,
   },
   {
     id: 10,
-    title: "Expenses Tracking",
+    title: 'Expenses Tracking',
     slug: 'expenses-tracking',
-    shortDescription: "Track and manage business expenses",
-    detailedDescription: "Record, categorize, and analyze your business expenses for better financial control and decision-making.",
-    businessTypes: ["All businesses", "Finance teams"],
-    screenshot: "https://images.unsplash.com/photo-1611974789856-9f9536d4f63c?auto=format&fit=crop&w=800"
+    shortDescription: 'Track and manage business expenses',
+    icon: <img src={ExpensesTracking} alt="Expenses Tracking" width={40} height={40} />,
   },
   {
     id: 11,
-    title: "Order/Delivery Tracking",
+    title: 'Order/Delivery Tracking',
     slug: 'order-delivery-tracking',
-    shortDescription: "Seamlessly track orders and deliveries in real-time",
-    detailedDescription: "Stay on top of every order and its delivery status. Provide better customer service with accurate and timely tracking updates.",
-    businessTypes: ["E-commerce", "Logistics", "Retail"],
-    screenshot: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=format&fit=crop&w=800"
+    shortDescription: 'Seamlessly track orders and deliveries in real-time',
+    icon: <img src={OrderDeliveryTracking} alt="Order/Delivery Tracking" width={40} height={40} />,
   },
   {
     id: 12,
-    title: "Sharable Invoice",
+    title: 'Sharable Invoice',
     slug: 'sharable-invoice',
-    shortDescription: "Create invoices & share instantly with customers",
-    detailedDescription: "Generate professional invoices and share them instantly via email, WhatsApp, or download links. Streamline your billing process and get paid faster.",
-    businessTypes: ["Freelancers", "Service providers", "Retailers"],
-    screenshot: "https://images.unsplash.com/photo-1581092588429-8b6b9c03a0ba?auto=format&fit=crop&w=800"
+    shortDescription: 'Create invoices & share instantly with customers',
+    icon: <img src={SharableInvoice} alt="Sharable Invoice" width={40} height={40} />,
   },
   {
     id: 13,
-    title: "Unlimited Teams",
+    title: 'Unlimited Teams',
     slug: 'unlimited-teams',
-    shortDescription: "Manage teams with flexible access controls",
-    detailedDescription: "Create and manage multiple teams under one business account. Assign roles and monitor performance with ease.",
-    businessTypes: ["Medium to large businesses", "Franchises", "Sales teams"],
-    screenshot: "https://images.unsplash.com/photo-1581090700227-1c72ba1cfb0f?auto=format&fit=crop&w=800"
+    shortDescription: 'Manage teams with flexible access controls',
+    icon: <img src={UnlimitedTeams} alt="Unlimited Teams" width={40} height={40} />,
   },
   {
     id: 14,
-    title: "Custom Business URL",
+    title: 'Custom Business URL',
     slug: 'custom-business-url',
-    shortDescription: "Get a custom business URL for a personalized online presence",
-    detailedDescription: "Enhance your brand with a custom business URL. Share your branded link with clients for invoices, catalogs, and communication.",
-    businessTypes: ["All businesses", "Freelancers", "Agencies"],
-    screenshot: "https://images.unsplash.com/photo-1581091870621-3b5dd89f4d30?auto=format&fit=crop&w=800"
+    shortDescription: 'Get a custom business URL for a personalized online presence',
+    icon: <img src={CustomBusinessURL} alt="Custom Business URL" width={40} height={40} />,
   },
   {
     id: 15,
-    title: "Suppliers",
+    title: 'Suppliers',
     slug: 'suppliers',
-    shortDescription: "Manage and track all your suppliers in one place",
-    detailedDescription: "Keep a centralized record of all your suppliers. Track transactions, payments, and product flow from multiple vendors effortlessly.",
-    businessTypes: ["Retailers", "Wholesalers", "Manufacturers"],
-    screenshot: "https://images.unsplash.com/photo-1566202166293-7f78a062aa7e?auto=format&fit=crop&w=800"
+    shortDescription: 'Manage and track all your suppliers in one place',
+    icon: <img src={Suppliers} alt="Suppliers" width={40} height={40} />,
   },
   {
     id: 16,
-    title: "Credit Management",
+    title: 'Credit Management',
     slug: 'credit-management',
-    shortDescription: "Efficiently manage customer credits and payment terms",
-    detailedDescription: "Offer and track credit terms with customers, set credit limits, and receive timely alerts for pending payments. Improve cash flow and reduce defaults.",
-    businessTypes: ["Retail stores", "Distributors", "B2B services"],
-    screenshot: "https://images.unsplash.com/photo-1605902711665-6f8fdf05f7b3?auto=format&fit=crop&w=800"
+    shortDescription: 'Efficiently manage customer credits and payment terms',
+    icon: <img src={CreditManagement} alt="Credit Management" width={40} height={40} />,
   },
   {
     id: 17,
-    title: "Security of Data",
+    title: 'Security of Data',
     slug: 'security-of-data',
-    shortDescription: "Ensure the highest level of data security and privacy",
-    detailedDescription: "Your business data is protected with enterprise-grade security protocols. We use encryption, secure access controls, and regular backups to keep your data safe.",
-    businessTypes: ["All businesses", "Finance & Legal", "Healthcare"],
-    screenshot: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=800"
+    shortDescription: 'Ensure the highest level of data security and privacy',
+    icon: <img src={SecurityOfData} alt="Security of Data" width={40} height={40} />,
   },
   {
     id: 18,
-    title: "Sales Summary",
+    title: 'Sales Summary',
     slug: 'sales-summary',
-    shortDescription: "Get a sales summary for better business insights",
-    detailedDescription: "Access detailed sales summaries with performance trends, top-selling products, and revenue breakdowns to make informed business decisions.",
-    businessTypes: ["Retail", "Wholesale", "E-commerce"],
-    screenshot: "https://images.unsplash.com/photo-1556740772-1a741367b93e?auto=format&fit=crop&w=800"
+    shortDescription: 'Get a sales summary for better business insights',
+    icon: <img src={SalesSummary} alt="Sales Summary" width={40} height={40} />,
   },
   {
     id: 19,
-    title: "Custom Orders with App",
+    title: 'Custom Orders with App',
     slug: 'custom-orders-with-app',
-    shortDescription: "Create and manage custom orders easily through the app",
-    detailedDescription: "Allow your customers or staff to create and manage custom product orders directly from the mobile app, ensuring flexibility and quick processing.",
-    businessTypes: ["Custom manufacturers", "Retailers", "On-demand services"],
-    screenshot: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800"
+    shortDescription: 'Create and manage custom orders easily through the app',
+    icon: <img src={CustomOrdersWithApp} alt="Custom Orders with App" width={40} height={40} />,
   },
   {
     id: 20,
-    title: "Individual Performance",
+    title: 'Individual Performance',
     slug: 'individual-performance',
-    shortDescription: "Effortlessly create and manage custom orders through the app",
-    detailedDescription: "Track employee productivity and sales contributions with individual performance analytics to recognize top performers and optimize your workforce.",
-    businessTypes: ["Sales teams", "Retail stores", "Service providers"],
-    screenshot: "https://images.unsplash.com/photo-1557425493-04a9d3bcdc80?auto=format&fit=crop&w=800"
+    shortDescription: 'Track employee productivity and sales contributions',
+    icon: <img src={IndividualPerformance} alt="Individual Performance" width={40} height={40} />,
   },
 ];
 
 const Features = () => {
+  const handleFeatureClick = (slug) => {
+    // Navigate to feature detail page
+    window.location.href = `/feature/${slug}`;
+  };
+
   return (
     <div className={styles.container}>
       {/* SEO Meta Tags for Features Page */}
       <div style={{ display: 'none' }}>
-        <h1>IndiaBills Features - Complete Billing & Inventory Management Software</h1>
-        <p>Discover powerful features of IndiaBills billing software: GST compliance, real-time stock tracking, automated invoicing, advanced reports, and 24/7 support for Indian businesses.</p>
+        <h1>
+          IndiaBills Features - Complete Billing & Inventory Management Software
+        </h1>
+        <p>
+          Discover powerful features of IndiaBills billing software: GST
+          compliance, real-time stock tracking, automated invoicing, advanced
+          reports, and 24/7 support for Indian businesses.
+        </p>
+        <h2>India Bills Software Features</h2>
+        <h3>IndiaBills Inventory Management</h3>
+        <h4>India Bills GST Billing</h4>
+        <h5>IndiaBills Real-time Stock Tracking</h5>
+        <h6>India Bills Advanced Reports</h6>
       </div>
-      
+
       <section className={styles.hero}>
         <h1>Powerful Features for Modern Businesses</h1>
         <p>
-          Discover comprehensive tools designed to streamline your operations, 
-          boost productivity, and drive growth. Every feature is crafted with 
-          Indian businesses in mind.
+          Discover comprehensive tools designed to streamline your operations,
+          boost productivity, and drive growth. Every IndiaBills feature is crafted with
+          Indian businesses in mind. India Bills provides complete business solutions.
         </p>
       </section>
 
       <TilesContainer
         background={1}
-        tittle="Complete Business Solution"
-        description="From inventory management to customer support, we've got everything your business needs to succeed in today's competitive market. Click on any feature to learn more about how it can transform your business operations."
+        tittle="Complete IndiaBills Business Solution"
+        description="From inventory management to customer support, IndiaBills has everything your business needs to succeed in today's competitive market. India Bills features are designed for Indian businesses. Click on any IndiaBills feature to learn more about how it can transform your business operations."
       >
         {featuresData.map((feature) => (
-          <Link
+          <FeatureTileWithIcon
             key={feature.id}
-            to={`/feature/${feature.slug}`}
-            style={{ textDecoration: 'none', color: 'inherit' }}
-          >
-            <div style={{ cursor: 'pointer' }}>
-              <Tile tittle={feature.title} para={feature.shortDescription} />
-            </div>
-          </Link>
+            icon={feature.icon}
+            title={feature.title}
+            description={feature.shortDescription}
+            onClick={() => handleFeatureClick(feature.slug)}
+            color="primary"
+          />
         ))}
       </TilesContainer>
 
       <TilesContainer
-        tittle={'Success Stories'}
+        tittle={'IndiaBills Success Stories'}
         description={
-          "See how businesses across India are transforming their operations with IndiaBills."
+          'See how businesses across India are transforming their operations with IndiaBills. India Bills has helped thousands of businesses grow.'
         }
         background={0}
       >
