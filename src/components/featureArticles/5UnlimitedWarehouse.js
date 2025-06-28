@@ -1,3 +1,5 @@
+import unlimitedWarehouse from '../../featuresScreenshot/Unlimited_warehouse.png';
+
 const UnlimitedWarehouse = () => ({
   title: 'Unlimited Warehouse',
   shortDescription: 'Manage multiple warehouses with unlimited capacity',
@@ -67,19 +69,19 @@ const UnlimitedWarehouse = () => ({
   screenshots: [
     {
       title: 'Warehouse Dashboard',
-      image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437f0?auto=format&fit=crop&w=800',
+      image: unlimitedWarehouse,
       description: 'Overview of multiple warehouses with stock summaries and quick action options'
     },
-    {
-      title: 'Stock Transfer Log',
-      image: 'https://images.unsplash.com/photo-1626771452406-2b18a76851c0?auto=format&fit=crop&w=800',
-      description: 'Detailed record of stock transfers between different warehouse locations'
-    },
-    {
-      title: 'Rack & Zone Mapping',
-      image: 'https://images.unsplash.com/photo-1581093588401-0707a4c01c33?auto=format&fit=crop&w=800',
-      description: 'Visual representation of storage zones and item placements within a warehouse'
-    }
+    // {
+    //   title: 'Stock Transfer Log',
+    //   image: 'https://images.unsplash.com/photo-1626771452406-2b18a76851c0?auto=format&fit=crop&w=800',
+    //   description: 'Detailed record of stock transfers between different warehouse locations'
+    // },
+    // {
+    //   title: 'Rack & Zone Mapping',
+    //   image: 'https://images.unsplash.com/photo-1581093588401-0707a4c01c33?auto=format&fit=crop&w=800',
+    //   description: 'Visual representation of storage zones and item placements within a warehouse'
+    // }
   ],
 
   useCases: [
