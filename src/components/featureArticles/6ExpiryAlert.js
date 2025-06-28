@@ -1,3 +1,5 @@
+import expiryAlert from '../../featuresScreenshot/Expiry_alert.png';
+
 const ExpiryAlert = () => ({
   title: 'Expiry Alert',
   shortDescription: 'Get timely expiry alerts to avoid stock wastage',
@@ -67,19 +69,19 @@ const ExpiryAlert = () => ({
   screenshots: [
     {
       title: 'Expiry Alerts Dashboard',
-      image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0f69?auto=format&fit=crop&w=800',
+      image: expiryAlert,
       description: 'Dashboard with visual expiry status and real-time alert indicators'
     },
-    {
-      title: 'Batch-Level Tracking',
-      image: 'https://images.unsplash.com/photo-1588776814546-ec7d3c02f71f?auto=format&fit=crop&w=800',
-      description: 'Detailed view of batches and their respective expiry timelines'
-    },
-    {
-      title: 'Smart Notifications',
-      image: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?auto=format&fit=crop&w=800',
-      description: 'In-app and email alerts notifying teams about items nearing expiry'
-    }
+    // {
+    //   title: 'Batch-Level Tracking',
+    //   image: 'https://images.unsplash.com/photo-1588776814546-ec7d3c02f71f?auto=format&fit=crop&w=800',
+    //   description: 'Detailed view of batches and their respective expiry timelines'
+    // },
+    // {
+    //   title: 'Smart Notifications',
+    //   image: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?auto=format&fit=crop&w=800',
+    //   description: 'In-app and email alerts notifying teams about items nearing expiry'
+    // }
   ],
 
   useCases: [
