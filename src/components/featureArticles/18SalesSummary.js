@@ -1,3 +1,5 @@
+import salesReport from '../../featuresScreenshot/sales_report.png';
+
 const SalesSummary = () => ({
   title: 'Sales Summary',
   shortDescription: 'Get a sales summary for better business insights',
@@ -67,19 +69,19 @@ const SalesSummary = () => ({
   screenshots: [
     {
       title: 'Sales Overview Dashboard',
-      image: 'https://images.unsplash.com/photo-1556740772-1a741367b93e?auto=format&fit=crop&w=800',
+      image: salesReport,
       description: 'Visual summary of daily sales, top products, and total revenue across timeframes'
     },
-    {
-      title: 'Product Performance Report',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800',
-      description: 'Detailed view of sales per product or category with sorting by revenue or quantity'
-    },
-    {
-      title: 'Comparison Charts',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec71?auto=format&fit=crop&w=800',
-      description: 'Graphical trend analysis comparing different sales periods or channels'
-    }
+    // {
+    //   title: 'Product Performance Report',
+    //   image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800',
+    //   description: 'Detailed view of sales per product or category with sorting by revenue or quantity'
+    // },
+    // {
+    //   title: 'Comparison Charts',
+    //   image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec71?auto=format&fit=crop&w=800',
+    //   description: 'Graphical trend analysis comparing different sales periods or channels'
+    // }
   ],
 
   useCases: [
