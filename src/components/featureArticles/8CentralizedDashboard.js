@@ -1,3 +1,5 @@
+import centralizedDashboard from '../../featuresScreenshot/dashboard.png';
+
 const CentralizedDashboard = () => ({
   title: 'Centralized Dashboard',
   shortDescription: 'Access all your business data through a single dashboard',
@@ -67,19 +69,19 @@ const CentralizedDashboard = () => ({
   screenshots: [
     {
       title: 'All-in-One Dashboard',
-      image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800',
+      image: centralizedDashboard,
       description: 'Comprehensive overview of all key business areas on one screen'
     },
-    {
-      title: 'Custom Widget Setup',
-      image: 'https://images.unsplash.com/photo-1612837017391-30d4f9e1e2c9?auto=format&fit=crop&w=800',
-      description: 'Choose and arrange widgets like sales graphs, expense summaries, and alerts to match your needs'
-    },
-    {
-      title: 'Mobile Dashboard View',
-      image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800',
-      description: 'Access real-time business stats from your smartphone on the go'
-    }
+    // {
+    //   title: 'Custom Widget Setup',
+    //   image: 'https://images.unsplash.com/photo-1612837017391-30d4f9e1e2c9?auto=format&fit=crop&w=800',
+    //   description: 'Choose and arrange widgets like sales graphs, expense summaries, and alerts to match your needs'
+    // },
+    // {
+    //   title: 'Mobile Dashboard View',
+    //   image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800',
+    //   description: 'Access real-time business stats from your smartphone on the go'
+    // }
   ],
 
   useCases: [
