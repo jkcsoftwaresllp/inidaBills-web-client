@@ -1,3 +1,5 @@
+import customOrders from '../../featuresScreenshot/custom_orders.png';
+
 const CustomOrdersWithApp = () => ({
   title: 'Custom Orders with App',
   shortDescription: 'Create and manage custom orders easily through the app',
@@ -67,19 +69,19 @@ const CustomOrdersWithApp = () => ({
   screenshots: [
     {
       title: 'Custom Order Entry',
-      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800',
+      image: customOrders,
       description: 'App interface for entering custom orders with detailed requirements and attachments'
     },
-    {
-      title: 'Order Status & Updates',
-      image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=format&fit=crop&w=800',
-      description: 'Real-time tracking of order status from submission to fulfillment'
-    },
-    {
-      title: 'Staff Notification Panel',
-      image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
-      description: 'Staff gets notified when a new custom order is placed or needs review'
-    }
+    // {
+    //   title: 'Order Status & Updates',
+    //   image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=format&fit=crop&w=800',
+    //   description: 'Real-time tracking of order status from submission to fulfillment'
+    // },
+    // {
+    //   title: 'Staff Notification Panel',
+    //   image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
+    //   description: 'Staff gets notified when a new custom order is placed or needs review'
+    // }
   ],
 
   useCases: [
