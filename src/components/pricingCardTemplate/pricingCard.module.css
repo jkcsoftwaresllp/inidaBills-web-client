@@ -88,7 +88,7 @@
 .infoButton {
   position: relative;
   cursor: pointer;
-  color: var(--primary-red);
+  color: var(--gray-500);
   opacity: 0.7;
   transition: opacity 0.2s ease;
   padding: 2px;

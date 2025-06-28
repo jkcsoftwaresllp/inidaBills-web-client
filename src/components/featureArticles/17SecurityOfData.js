@@ -1,3 +1,5 @@
+import securityOfData from '../../featuresScreenshot/security.png';
+
 const SecurityOfData = () => ({
   title: 'Security of Data',
   shortDescription: 'Ensure the highest level of data security and privacy',
@@ -67,19 +69,19 @@ const SecurityOfData = () => ({
   screenshots: [
     {
       title: 'Access Control Settings',
-      image: 'https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=800',
+      image: securityOfData,
       description: 'Configure and manage permissions based on user roles and modules'
     },
-    {
-      title: 'Audit Trail Logs',
-      image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
-      description: 'Monitor who accessed what, when, and from where—ensuring complete traceability'
-    },
-    {
-      title: 'Backup & Recovery Options',
-      image: 'https://images.unsplash.com/photo-1611175694983-a6c4c3d5ef67?auto=format&fit=crop&w=800',
-      description: 'Easily access and manage automated backups to restore your data anytime'
-    }
+    // {
+    //   title: 'Audit Trail Logs',
+    //   image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
+    //   description: 'Monitor who accessed what, when, and from where—ensuring complete traceability'
+    // },
+    // {
+    //   title: 'Backup & Recovery Options',
+    //   image: 'https://images.unsplash.com/photo-1611175694983-a6c4c3d5ef67?auto=format&fit=crop&w=800',
+    //   description: 'Easily access and manage automated backups to restore your data anytime'
+    // }
   ],
 
   useCases: [

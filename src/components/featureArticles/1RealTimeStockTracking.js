@@ -1,3 +1,5 @@
+import realTimeStockTracking from '../../featuresScreenshot/Real_time_stock_trackig.png';
+
 const RealTimeStockTracking = () => ({
   title: 'Real Time Stock Tracking',
   shortDescription: 'Monitor real-time stock trends for smarter decisions',
@@ -67,19 +69,19 @@ const RealTimeStockTracking = () => ({
   screenshots: [
     {
       title: 'Real-Time Dashboard',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800',
+      image: realTimeStockTracking,
       description: 'Live inventory dashboard showing current stock levels, movements, and alerts'
     },
-    {
-      title: 'Stock Movement Tracking',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800',
-      description: 'Detailed view of stock movements with timestamps and transaction details'
-    },
-    {
-      title: 'Multi-Location View',
-      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800',
-      description: 'Centralized view of inventory across multiple locations and warehouses'
-    }
+    // {
+    //   title: 'Stock Movement Tracking',
+    //   image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800',
+    //   description: 'Detailed view of stock movements with timestamps and transaction details'
+    // },
+    // {
+    //   title: 'Multi-Location View',
+    //   image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800',
+    //   description: 'Centralized view of inventory across multiple locations and warehouses'
+    // }
   ],
 
   useCases: [

@@ -1,3 +1,5 @@
+import unlimitedTeams from '../../featuresScreenshot/unlimited_teams.png';
+
 const UnlimitedTeams = () => ({
   title: 'Unlimited Teams',
   shortDescription: 'Manage teams with flexible access controls',
@@ -67,19 +69,19 @@ const UnlimitedTeams = () => ({
   screenshots: [
     {
       title: 'Team Management Interface',
-      image: 'https://images.unsplash.com/photo-1581090700227-1c72ba1cfb0f?auto=format&fit=crop&w=800',
+      image: unlimitedTeams,
       description: 'Easily create, organize, and assign members to teams with specific access controls'
     },
-    {
-      title: 'Role & Permission Setup',
-      image: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800',
-      description: 'Set detailed access permissions for each team or role within your organization'
-    },
-    {
-      title: 'Team-Based Analytics',
-      image: 'https://images.unsplash.com/photo-1620200423722-a3e7b0d2f149?auto=format&fit=crop&w=800',
-      description: 'Monitor productivity, task completion, and performance per team with real-time insights'
-    }
+    // {
+    //   title: 'Role & Permission Setup',
+    //   image: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800',
+    //   description: 'Set detailed access permissions for each team or role within your organization'
+    // },
+    // {
+    //   title: 'Team-Based Analytics',
+    //   image: 'https://images.unsplash.com/photo-1620200423722-a3e7b0d2f149?auto=format&fit=crop&w=800',
+    //   description: 'Monitor productivity, task completion, and performance per team with real-time insights'
+    // }
   ],
 
   useCases: [

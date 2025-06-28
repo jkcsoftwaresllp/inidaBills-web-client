@@ -1,3 +1,5 @@
+import sharableInvoice from '../../featuresScreenshot/Shareable_invoice.png';
+
 const SharableInvoice = () => ({
   title: 'Sharable Invoice',
   shortDescription: 'Create invoices & share instantly with customers',
@@ -67,19 +69,19 @@ const SharableInvoice = () => ({
   screenshots: [
     {
       title: 'Sharable Invoice Preview',
-      image: 'https://images.unsplash.com/photo-1581092588429-8b6b9c03a0ba?auto=format&fit=crop&w=800',
+      image: sharableInvoice,
       description: 'View of a professional invoice ready to be shared via link or download'
     },
-    {
-      title: 'Mobile Invoice Sharing',
-      image: 'https://images.unsplash.com/photo-1556742400-b5ec50a9f345?auto=format&fit=crop&w=800',
-      description: 'Mobile-friendly interface for sending invoices instantly to clients on the go'
-    },
-    {
-      title: 'Invoice Customization Options',
-      image: 'https://images.unsplash.com/photo-1608494067040-50e3b2aa6f4c?auto=format&fit=crop&w=800',
-      description: 'Add logo, terms, tax, and branding elements to personalize your invoice'
-    }
+    // {
+    //   title: 'Mobile Invoice Sharing',
+    //   image: 'https://images.unsplash.com/photo-1556742400-b5ec50a9f345?auto=format&fit=crop&w=800',
+    //   description: 'Mobile-friendly interface for sending invoices instantly to clients on the go'
+    // },
+    // {
+    //   title: 'Invoice Customization Options',
+    //   image: 'https://images.unsplash.com/photo-1608494067040-50e3b2aa6f4c?auto=format&fit=crop&w=800',
+    //   description: 'Add logo, terms, tax, and branding elements to personalize your invoice'
+    // }
   ],
 
   useCases: [

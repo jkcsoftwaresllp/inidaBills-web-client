@@ -1,3 +1,5 @@
+import creditManagement from '../../featuresScreenshot/credit_management.png';
+
 const CreditManagement = () => ({
   title: 'Credit Management',
   shortDescription: 'Efficiently manage customer credits and payment terms',
@@ -67,19 +69,19 @@ const CreditManagement = () => ({
   screenshots: [
     {
       title: 'Customer Credit Summary',
-      image: 'https://images.unsplash.com/photo-1605902711665-6f8fdf05f7b3?auto=format&fit=crop&w=800',
+      image: creditManagement,
       description: 'Live overview of each customer’s credit usage, limits, and due amounts'
     },
-    {
-      title: 'Credit Limit Setup',
-      image: 'https://images.unsplash.com/photo-1591696331119-f69a6e32fe98?auto=format&fit=crop&w=800',
-      description: 'Set custom limits, durations, and terms for each customer'
-    },
-    {
-      title: 'Aging Report View',
-      image: 'https://images.unsplash.com/photo-1611974789856-9f9536d4f63c?auto=format&fit=crop&w=800',
-      description: 'Analyze how long payments have been pending to prioritize follow-ups'
-    }
+    // {
+    //   title: 'Credit Limit Setup',
+    //   image: 'https://images.unsplash.com/photo-1591696331119-f69a6e32fe98?auto=format&fit=crop&w=800',
+    //   description: 'Set custom limits, durations, and terms for each customer'
+    // },
+    // {
+    //   title: 'Aging Report View',
+    //   image: 'https://images.unsplash.com/photo-1611974789856-9f9536d4f63c?auto=format&fit=crop&w=800',
+    //   description: 'Analyze how long payments have been pending to prioritize follow-ups'
+    // }
   ],
 
   useCases: [

@@ -1,3 +1,5 @@
+import expenseTracking from '../../featuresScreenshot/Expense_tracking.png';
+
 const ExpensesTracking = () => ({
   title: 'Expenses Tracking',
   shortDescription: 'Track and manage business expenses',
@@ -67,19 +69,19 @@ const ExpensesTracking = () => ({
   screenshots: [
     {
       title: 'Expense Entry Interface',
-      image: 'https://images.unsplash.com/photo-1611974789856-9f9536d4f63c?auto=format&fit=crop&w=800',
+      image: expenseTracking,
       description: 'Simple interface to log expenses with categories, taxes, and receipt uploads'
     },
-    {
-      title: 'Approval Dashboard',
-      image: 'https://images.unsplash.com/photo-1601233742567-638ddf3f1d96?auto=format&fit=crop&w=800',
-      description: 'View and approve expenses based on assigned roles and workflows'
-    },
-    {
-      title: 'Expense Reports',
-      image: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=800',
-      description: 'Detailed visual breakdown of expenses by team, category, or timeframe'
-    }
+    // {
+    //   title: 'Approval Dashboard',
+    //   image: 'https://images.unsplash.com/photo-1601233742567-638ddf3f1d96?auto=format&fit=crop&w=800',
+    //   description: 'View and approve expenses based on assigned roles and workflows'
+    // },
+    // {
+    //   title: 'Expense Reports',
+    //   image: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=800',
+    //   description: 'Detailed visual breakdown of expenses by team, category, or timeframe'
+    // }
   ],
 
   useCases: [

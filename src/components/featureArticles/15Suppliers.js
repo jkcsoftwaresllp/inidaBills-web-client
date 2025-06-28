@@ -1,3 +1,5 @@
+import suppliers from '../../featuresScreenshot/supplier_section.png';
+
 const Suppliers = () => ({
   title: 'Suppliers',
   shortDescription: 'Manage and track all your suppliers in one place',
@@ -67,19 +69,19 @@ const Suppliers = () => ({
   screenshots: [
     {
       title: 'Supplier Dashboard',
-      image: 'https://images.unsplash.com/photo-1566202166293-7f78a062aa7e?auto=format&fit=crop&w=800',
+      image: suppliers,
       description: 'Central view of all supplier contacts, transactions, and activity summaries'
     },
-    {
-      title: 'Purchase History by Supplier',
-      image: 'https://images.unsplash.com/photo-1584622647114-7a60b99f2a7b?auto=format&fit=crop&w=800',
-      description: 'Detailed logs of purchases, invoices, and pending deliveries from each supplier'
-    },
-    {
-      title: 'Supplier Performance Metrics',
-      image: 'https://images.unsplash.com/photo-1597699401792-0df2c9cb2039?auto=format&fit=crop&w=800',
-      description: 'Analytics panel tracking delivery accuracy, timeliness, and cost trends per vendor'
-    }
+    // {
+    //   title: 'Purchase History by Supplier',
+    //   image: 'https://images.unsplash.com/photo-1584622647114-7a60b99f2a7b?auto=format&fit=crop&w=800',
+    //   description: 'Detailed logs of purchases, invoices, and pending deliveries from each supplier'
+    // },
+    // {
+    //   title: 'Supplier Performance Metrics',
+    //   image: 'https://images.unsplash.com/photo-1597699401792-0df2c9cb2039?auto=format&fit=crop&w=800',
+    //   description: 'Analytics panel tracking delivery accuracy, timeliness, and cost trends per vendor'
+    // }
   ],
 
   useCases: [

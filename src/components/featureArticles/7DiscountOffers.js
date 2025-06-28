@@ -1,3 +1,5 @@
+import discountOffers from '../../featuresScreenshot/Discount.png';
+
 const DiscountOffers = () => ({
   title: 'Discount & Offers',
   shortDescription: 'Easily apply discounts and manage special offers',
@@ -67,19 +69,19 @@ const DiscountOffers = () => ({
   screenshots: [
     {
       title: 'Discount Dashboard',
-      image: 'https://images.unsplash.com/photo-1549921296-3a6b6363f4f1?auto=format&fit=crop&w=800',
+      image: discountOffers,
       description: 'Centralized dashboard to view, manage, and analyze all ongoing promotions'
     },
-    {
-      title: 'Coupon Code Setup',
-      image: 'https://images.unsplash.com/photo-1596803245964-0449b9b5b4aa?auto=format&fit=crop&w=800',
-      description: 'Create and assign discount codes with flexible parameters and usage rules'
-    },
-    {
-      title: 'Time-Based Offer Configuration',
-      image: 'https://images.unsplash.com/photo-1583912268184-5b8c509194bb?auto=format&fit=crop&w=800',
-      description: 'Configure start/end times and preview how offers will appear during the promotional period'
-    }
+    // {
+    //   title: 'Coupon Code Setup',
+    //   image: 'https://images.unsplash.com/photo-1596803245964-0449b9b5b4aa?auto=format&fit=crop&w=800',
+    //   description: 'Create and assign discount codes with flexible parameters and usage rules'
+    // },
+    // {
+    //   title: 'Time-Based Offer Configuration',
+    //   image: 'https://images.unsplash.com/photo-1583912268184-5b8c509194bb?auto=format&fit=crop&w=800',
+    //   description: 'Configure start/end times and preview how offers will appear during the promotional period'
+    // }
   ],
 
   useCases: [

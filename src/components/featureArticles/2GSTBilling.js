@@ -1,3 +1,5 @@
+import GstBilling from '../../featuresScreenshot/GST_Billing.png';
+
 const GSTBilling = () => ({
   title: 'GST Billing',
   shortDescription: 'Effortless GST billing and inventory management',
@@ -67,19 +69,19 @@ const GSTBilling = () => ({
   screenshots: [
     {
       title: 'GST Invoice Generation',
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800',
+      image: GstBilling,
       description: 'Professional GST-compliant invoice with all mandatory fields and tax breakdowns'
     },
-    {
-      title: 'Tax Calculation Dashboard',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800',
-      description: 'Automated GST calculation interface showing tax breakdowns and rates'
-    },
-    {
-      title: 'GST Return Preview',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800',
-      description: 'GSTR-1 return preview with all transaction details and tax summaries'
-    }
+    // {
+    //   title: 'Tax Calculation Dashboard',
+    //   image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800',
+    //   description: 'Automated GST calculation interface showing tax breakdowns and rates'
+    // },
+    // {
+    //   title: 'GST Return Preview',
+    //   image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800',
+    //   description: 'GSTR-1 return preview with all transaction details and tax summaries'
+    // }
   ],
 
   useCases: [
