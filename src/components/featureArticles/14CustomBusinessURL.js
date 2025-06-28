@@ -1,3 +1,5 @@
+import customURL from '../../featuresScreenshot/custom_url.png';
+
 const CustomBusinessURL = () => ({
   title: 'Custom Business URL',
   shortDescription: 'Get a custom business URL for a personalized online presence',
@@ -67,19 +69,19 @@ const CustomBusinessURL = () => ({
   screenshots: [
     {
       title: 'Custom URL Activation',
-      image: 'https://images.unsplash.com/photo-1581091870621-3b5dd89f4d30?auto=format&fit=crop&w=800',
+      image: customURL,
       description: 'Activate your branded subdomain and start using it across your business touchpoints'
     },
-    {
-      title: 'Public Invoice Page',
-      image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
-      description: 'Invoices or catalogs opened via your branded link for client access'
-    },
-    {
-      title: 'QR Code Linking',
-      image: 'https://images.unsplash.com/photo-1607082349566-cf5afedbeb5b?auto=format&fit=crop&w=800',
-      description: 'Share your business URL as a QR code on packaging, receipts, or promotions'
-    }
+    // {
+    //   title: 'Public Invoice Page',
+    //   image: 'https://images.unsplash.com/photo-1580910051070-313b0e445484?auto=format&fit=crop&w=800',
+    //   description: 'Invoices or catalogs opened via your branded link for client access'
+    // },
+    // {
+    //   title: 'QR Code Linking',
+    //   image: 'https://images.unsplash.com/photo-1607082349566-cf5afedbeb5b?auto=format&fit=crop&w=800',
+    //   description: 'Share your business URL as a QR code on packaging, receipts, or promotions'
+    // }
   ],
 
   useCases: [
