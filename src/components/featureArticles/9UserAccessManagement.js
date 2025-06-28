@@ -1,3 +1,5 @@
+import userAccessManagement from '../../featuresScreenshot/user_access.png';
+
 const UserAccessManagement = () => ({
   title: 'User Access Management',
   shortDescription: 'Control access with customizable roles and permissions',
@@ -67,19 +69,19 @@ const UserAccessManagement = () => ({
   screenshots: [
     {
       title: 'Role Management Interface',
-      image: 'https://images.unsplash.com/photo-1614849963646-a54ce1d63bfb?auto=format&fit=crop&w=800',
+      image: userAccessManagement,
       description: 'Create and manage roles with detailed permissions for each module'
     },
-    {
-      title: 'User Permission Setup',
-      image: 'https://images.unsplash.com/photo-1624378439575-5b8b6c96c695?auto=format&fit=crop&w=800',
-      description: 'Assign and customize access levels for each user based on department or store'
-    },
-    {
-      title: 'Activity Logs and Audit Trail',
-      image: 'https://images.unsplash.com/photo-1581091012184-7a4c2b2b5a5c?auto=format&fit=crop&w=800',
-      description: 'Track actions performed by users across the platform for accountability and security'
-    }
+    // {
+    //   title: 'User Permission Setup',
+    //   image: 'https://images.unsplash.com/photo-1624378439575-5b8b6c96c695?auto=format&fit=crop&w=800',
+    //   description: 'Assign and customize access levels for each user based on department or store'
+    // },
+    // {
+    //   title: 'Activity Logs and Audit Trail',
+    //   image: 'https://images.unsplash.com/photo-1581091012184-7a4c2b2b5a5c?auto=format&fit=crop&w=800',
+    //   description: 'Track actions performed by users across the platform for accountability and security'
+    // }
   ],
 
   useCases: [
