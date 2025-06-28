@@ -1,3 +1,5 @@
+import individualPerformance from '../../featuresScreenshot/individual_performance.png';
+
 const IndividualPerformance = () => ({
   title: 'Individual Performance',
   shortDescription: 'Effortlessly track employee productivity and contributions',
@@ -67,19 +69,19 @@ const IndividualPerformance = () => ({
   screenshots: [
     {
       title: 'Performance Dashboard',
-      image: 'https://images.unsplash.com/photo-1557425493-04a9d3bcdc80?auto=format&fit=crop&w=800',
+      image: individualPerformance,
       description: 'Real-time overview of team and individual performance across various KPIs'
     },
-    {
-      title: 'Leaderboard View',
-      image: 'https://images.unsplash.com/photo-1629904853893-74a5da9b2c96?auto=format&fit=crop&w=800',
-      description: 'Visual rankings to highlight top performers and create performance-driven culture'
-    },
-    {
-      title: 'Individual Performance Report',
-      image: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800',
-      description: 'Detailed report of employee contribution, targets achieved, and performance trend'
-    }
+    // {
+    //   title: 'Leaderboard View',
+    //   image: 'https://images.unsplash.com/photo-1629904853893-74a5da9b2c96?auto=format&fit=crop&w=800',
+    //   description: 'Visual rankings to highlight top performers and create performance-driven culture'
+    // },
+    // {
+    //   title: 'Individual Performance Report',
+    //   image: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800',
+    //   description: 'Detailed report of employee contribution, targets achieved, and performance trend'
+    // }
   ],
 
   useCases: [
