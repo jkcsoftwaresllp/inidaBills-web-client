@@ -1,3 +1,5 @@
+import orderTracking from '../../featuresScreenshot/order_tracking.png';
+
 const OrderDeliveryTracking = () => ({
   title: 'Order/Delivery Tracking',
   shortDescription: 'Seamlessly track orders and deliveries in real-time',
@@ -67,19 +69,19 @@ const OrderDeliveryTracking = () => ({
   screenshots: [
     {
       title: 'Order Timeline',
-      image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=format&fit=crop&w=800',
+      image: orderTracking,
       description: 'Visual progression of an order from confirmation to delivery completion'
     },
-    {
-      title: 'Live Delivery Map',
-      image: 'https://images.unsplash.com/photo-1605902711899-060e4f0fefb6?auto=format&fit=crop&w=800',
-      description: 'Track delivery agents and vehicles with real-time GPS updates'
-    },
-    {
-      title: 'Customer Notification Interface',
-      image: 'https://images.unsplash.com/photo-1605902711927-3e0d39f0662c?auto=format&fit=crop&w=800',
-      description: 'Sample SMS/email notifications sent to customers on order progress'
-    }
+    // {
+    //   title: 'Live Delivery Map',
+    //   image: 'https://images.unsplash.com/photo-1605902711899-060e4f0fefb6?auto=format&fit=crop&w=800',
+    //   description: 'Track delivery agents and vehicles with real-time GPS updates'
+    // },
+    // {
+    //   title: 'Customer Notification Interface',
+    //   image: 'https://images.unsplash.com/photo-1605902711927-3e0d39f0662c?auto=format&fit=crop&w=800',
+    //   description: 'Sample SMS/email notifications sent to customers on order progress'
+    // }
   ],
 
   useCases: [
